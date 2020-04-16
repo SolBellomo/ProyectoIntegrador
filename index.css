@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(59, 57, 57, 0.829);
+}
+.container{
+    margin: auto;
+    gap: 20px;
+    display: grid;
+}
+.header{
+    display: grid;
+    background-color: black;
+    height: 300px;
+    grid-template-columns: 400px 600px;
+}
+.logo{
+    border-radius: 50%;
+}
