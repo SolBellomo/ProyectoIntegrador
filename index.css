@@ -8,6 +8,7 @@ body{
     margin: auto;
     gap: 20px;
     display: grid;
+    border: 8px solid white;
 }
 .header{
     display: grid;
@@ -50,7 +51,7 @@ body{
  	height: 40px;
     padding: 0 46px 0 10px;
 	border-color: rgb(223, 0, 167);
-     border-radius: 35px; 
+    border-radius: 35px; 
     border-style: solid;
 	border-width: px;
     color: #333;
@@ -70,55 +71,33 @@ body{
 
 /*TERMINA BARRA DE BÚSQUEDA*/
 
-.todo{
+.secciones{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 225px 225px 225px;
     background-color: grey;
     gap: 20px;
-}
-.columna1{
-    border: 1px solid white;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-.columna2{
-    border: 1px solid white;
-    margin-top: 20px;
-}
-.columna3{
-    margin-top: 20px;
-    border: 1px solid white;
-}
-
-.columna4{
-    border: 1px solid white;
-    margin-top: 20px;
-}
-
-.columna5{
-    border: 1px solid white;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-.fila1{
-    border: 1px solid white;
-    margin-left: 20px;
-}
-
-.fila2{
-    border: 1px solid white;
-    margin-top: 20px;
-}
-
-.fila3{
-    border: 1px solid white;
-    margin-top: 20px;
 }
 
 img{
     height: 178px;
     width: 240px;
 }
-
+p{
+    text-align: center;
+    position: relative;
+    bottom: 8px;
+    color: rgb(70, 66, 66);
+}
+.columna1{
+    margin-left: 20px;
+}
+.columna5{
+    margin-right: 20px;
+}
+.fila1{
+    margin-top: 20px;
+}
+.fila3{
+    margin-bottom: 20px;
+}
