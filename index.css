@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(22, 22, 22, 0.801);
+    background-color: white;
 }
 .container{
     margin: auto;
@@ -13,17 +13,7 @@ body{
     display: grid;
     background-color: rgba(22, 22, 22, 0.747);
     height: 180px;
-    grid-template-columns: 400px 800px;
-}
-.nav{
-    text-align: right;
-    margin-top: 80px;
-    word-spacing: 15px;
-    font-size: 20px;
-}
-a{
-    text-decoration: none;
-    color: white;
+    grid-template-columns: 1fr 3fr;
 }
 .logo{
     border-radius: 50%;
@@ -32,7 +22,55 @@ a{
     margin-left: 25px;
     margin-top: 15px;
 }
-.albums{
+.nav{
+    text-align: right;
+    margin-top: 80px;
+    word-spacing: 15px;
+    width: 300px;
+}
+
+/*BARRA DE BUSQUEDA*/
+
+.BarraDeBúsqueda {
+	height: auto;
+	width: auto;
+	background: transparent;
+    margin: 0;
+    position: absolute;
+    right: 150px;
+    top: 80px;
+}
+.buscar {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.b {
+	box-sizing: content-box;
+ 	height: 40px;
+    padding: 0 46px 0 10px;
+	border-color: rgb(223, 0, 167);
+     border-radius: 35px; 
+    border-style: solid;
+	border-width: px;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+	font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+.icons{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 38px;
+    bottom: 38px;
+}
+
+/*TERMINA BARRA DE BÚSQUEDA*/
+
+.todo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 200px;
@@ -40,29 +78,47 @@ a{
     gap: 20px;
 }
 .columna1{
-    margin-left: 20px;
+    border: 1px solid white;
     margin-top: 20px;
-    display: grid;
-    border: 1px solid black;
+    margin-left: 20px;
 }
 .columna2{
+    border: 1px solid white;
     margin-top: 20px;
-    border: 1px solid black;
 }
 .columna3{
     margin-top: 20px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
-.columna4 {
+
+.columna4{
+    border: 1px solid white;
     margin-top: 20px;
-    border: 1px solid black;
 }
+
 .columna5{
+    border: 1px solid white;
     margin-top: 20px;
     margin-right: 20px;
-    border: 1px solid black;
 }
-.fila{
-    display: grid;
-    border: 1px solid black;
+
+.fila1{
+    border: 1px solid white;
+    margin-left: 20px;
 }
+
+.fila2{
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+.fila3{
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+img{
+    height: 178px;
+    width: 240px;
+}
+
