@@ -1,0 +1,83 @@
+body{
+    background-image: url(../images/bg.degra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoartist{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: grid;
+    margin: auto;
+    width: 200px; height: 200px;
+    margin-top: 50px;
+}
+
+.romeo{
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+}
+
+.top5{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    overflow : auto; 
+}
+img{
+    margin: auto;
+    width: 230px; height: 230px;
+    
+}
+
+h2{
+    text-align: left;
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    
+}
+.titulo{
+    background-color: gray;
+    border: 1px solid greenyellow;
+    
+}
+.carrusel{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;  
+}
+ 
+.carrusel li{
+    list-style: none;
+    width: 100%;
+}
+
+.carrusel ul{
+   display: flex;
+   padding: 0%;
+   width: 400%;
+   animation: cambio 15s infinite;
+   animation-direction: alternate;
+}
+.carrusel img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
