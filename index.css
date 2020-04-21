@@ -12,7 +12,7 @@ body{
 }
 .header{
     display: grid;
-    background-color: rgba(22, 22, 22, 0.747);
+    background-color: rgba(15, 15, 15, 0.781);
     height: 180px;
     grid-template-columns: 1fr 3fr;
 }
@@ -74,14 +74,17 @@ body{
 .secciones{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 225px 225px 225px;
-    background-color: grey;
+    grid-template-rows: 270px 270px 270px;
+    background-color: rgb(109, 107, 107);
     gap: 20px;
+    position: relative;
+    bottom: 40px;
 }
 
 img{
     height: 178px;
     width: 240px;
+    border: 1px solid white;
 }
 p{
     text-align: center;
@@ -96,8 +99,29 @@ p{
     margin-right: 20px;
 }
 .fila1{
-    margin-top: 20px;
+    margin-top: 60px;
+}
+.fila2{
+    margin-top: 60px;
 }
 .fila3{
-    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.titulo{
+    background-color:  rgba(22, 22, 22, 0.747);
+    position: relative;
+    top: 60px;
+}
+.artistas{
+    color: white;
+    top: 30px;
+    left: 30px;
+    font-size: 18px;
+    margin-left: 90px;
+}
+.canciones{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin-left: 90px;
 }
