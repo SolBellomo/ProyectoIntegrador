@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    padding: 20px;
+}
+header{
+    text-align: center;
+}
+img{
+    width: 200px;
+    border-radius: 50%;
+}
+a{
+color: rgb(46, 46, 46);
+}
+.top5{
+    display: grid;
+    padding: 10px;
+}
+.albums{
+    display: grid;
+    padding: 10px;
+}
+.otros{
+    display: grid;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    background-color: rgba(241, 32, 189, 0.4);
+    height: 30px;
+}
