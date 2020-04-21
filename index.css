@@ -86,11 +86,13 @@ img{
     width: 240px;
     border: 1px solid white;
 }
-p{
+a{
     text-align: center;
     position: relative;
-    bottom: 8px;
+    top: 10px;
+    left: 65px;
     color: rgb(70, 66, 66);
+    padding: 20px;
 }
 .columna1{
     margin-left: 20px;
