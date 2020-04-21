@@ -83,10 +83,11 @@ img{
     height: 178px;
     width: 240px;
 }
-p{
-    text-align: center;
+a{
+    text-align: left;
     position: relative;
-    bottom: 8px;
+    left: 10px;
+    bottom: 4px;
     color: rgb(70, 66, 66);
 }
 .columna1{
