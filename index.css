@@ -4,30 +4,36 @@
 body{
     background-color: white;
 }
+
 .container{
     margin: auto;
     gap: 20px;
     display: grid;
     border: 8px solid white;
+    text-align: center;
 }
+
 .header{
     display: grid;
-    background-color: rgba(22, 22, 22, 0.747);
+    background-color: rgba(1, 8, 22, 0.815);
     height: 180px;
     grid-template-columns: 1fr 3fr;
 }
+
 .logo{
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-left: 25px;
     margin-top: 15px;
+    position: relative;
+    right: 60px;
 }
+
 .nav{
     text-align: right;
     margin-top: 80px;
     word-spacing: 15px;
-    width: 300px;
+    width: 400px;
 }
 
 /*BARRA DE BUSQUEDA*/
@@ -41,6 +47,7 @@ body{
     right: 150px;
     top: 80px;
 }
+
 .buscar {
 	padding: 0 66px 0 0; /* Right padding for submit button width */
 	overflow: hidden;
@@ -50,10 +57,9 @@ body{
 	box-sizing: content-box;
  	height: 40px;
     padding: 0 46px 0 10px;
-	border-color: rgb(223, 0, 167);
+	border-color: rgb(1, 1, 24);
     border-radius: 35px; 
     border-style: solid;
-	border-width: px;
     color: #333;
     font-family: 'Helvetica', sans-serif;
 	font-size: 15px;
@@ -61,6 +67,7 @@ body{
     -moz-appearance: none;
     width: 100%;
 }
+
 .icons{
     color: white;
     font-size: 30px;
@@ -69,27 +76,49 @@ body{
     bottom: 38px;
 }
 
+#i{
+    border: 2px solid rgb(1, 1, 24);
+    border-radius: 50%;
+}
+
+.lineas{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    bottom: 71px;
+    left: 85px;
+}
+
 /*TERMINA BARRA DE BÚSQUEDA*/
 
 .secciones{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 225px 225px 225px;
-    background-color: grey;
+    grid-template-rows: 270px 270px 270px;
+    background-image: url("imagenes/bg.degra.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     gap: 20px;
+    position: relative;
+    bottom: 40px;
 }
 
 img{
     height: 178px;
     width: 240px;
+    border: 1px solid white;
 }
 a{
     text-align: center;
     position: relative;
-    bottom: 4px;
-    left: 45px;
-    color: rgb(70, 66, 66);
+    top: 10px;
+    font-size: 17px;
+    color: white;
     padding: 20px;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 .columna1{
     margin-left: 20px;
@@ -98,8 +127,60 @@ a{
     margin-right: 20px;
 }
 .fila1{
-    margin-top: 20px;
+    margin-top: 60px;
+}
+.fila2{
+    margin-top: 60px;
 }
 .fila3{
-    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.titulo{
+    background-color:  rgba(22, 22, 22, 0.747);
+    position: relative;
+    top: 10px;
+}
+.artistas{
+    color: white;
+    left: 30px;
+    font-size: 18px;
+    margin-left: 90px;
+}
+.canciones{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin-left: 90px;
+}
+.carrusel{
+    margin: auto;
+    overflow: hidden;
+}
+ 
+.carrusel li{
+    list-style: none;
+}
+
+.carrusel ul{
+   display: flex;
+   padding: 0%;
+   animation: cambio 80s infinite;
+   animation-direction: alternate;
+}
+.carrusel img{
+    width: 100%;
+    width: 350px;
+}
+@keyframes cambio {
+    0% { margin-left: 0%;}
+    20% { margin-left: 0%;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
 }
