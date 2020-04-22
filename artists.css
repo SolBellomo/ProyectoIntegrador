@@ -8,14 +8,14 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 200px 50px 200px 200px;
+    grid-template-rows: 200px 50px 200px 60px;
     row-gap: 30px;
     padding: 20px;
 }
 header{
     text-align: center;
 }
-img{
+header img{
     width: 200px;
     border-radius: 50%;
 }
@@ -36,14 +36,31 @@ color:white;
 }
 iframe{
     width: 90%;
+    border-radius: 7%;
 }
 .albums{
     display: grid;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
     text-decoration: none;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: normal;
+    text-align: center;
+    color:whitesmoke ;
+}
+.albums img{
+width: 80%;
+position: relative;
+border-radius: 10%;
+}
+.albums button{
+    border: medium;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 100%;
+    background-color: rgba(241, 32, 189, 0.4);
 }
 .otros{
     display: grid;
