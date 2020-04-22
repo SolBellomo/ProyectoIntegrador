@@ -108,13 +108,15 @@ img{
     width: 240px;
     border: 1px solid white;
 }
+.artista{
+    border-radius: 50%;
+    width: 178px;
+}
 a{
-    text-align: center;
     position: relative;
     top: 10px;
     font-size: 17px;
     color: white;
-    padding: 20px;
     text-decoration: none;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
@@ -136,19 +138,26 @@ a{
     margin-top: 60px;
 }
 .titulo{
-    background-color:  rgba(22, 22, 22, 0.747);
+    background-color:  white;
     position: relative;
-    top: 10px;
+    top: 20px;
+    z-index: 20;
 }
 .artistas{
-    color: white;
+    color: grey;
     left: 30px;
     font-size: 18px;
     margin-left: 90px;
 }
+.titulo2{
+    background-color:  white;
+    position: relative;
+    top: 265px;
+    z-index: 20;
+}
 .canciones{
     position: relative;
-    color: white;
+    color: grey;
     font-size: 18px;
     margin-left: 90px;
 }
