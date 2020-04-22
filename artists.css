@@ -8,7 +8,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 50px 200px 200px;
     row-gap: 30px;
     padding: 20px;
 }
@@ -24,15 +24,34 @@ color:white;
 }
 .top5{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
     padding: 10px;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color:whitesmoke ;
+}
+iframe{
+    width: 90%;
 }
 .albums{
     display: grid;
     padding: 10px;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 .otros{
     display: grid;
     padding: 10px;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
 }
 h3{
     text-align: center;
