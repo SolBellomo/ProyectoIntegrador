@@ -1,8 +1,12 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url(imagenes/bg.degra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .container{
-    background-color: gray;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 30px;
@@ -16,7 +20,7 @@ img{
     border-radius: 50%;
 }
 a{
-color: rgb(27, 27, 27);
+color:white;
 }
 .top5{
     display: grid;
