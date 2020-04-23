@@ -97,7 +97,7 @@ body{
 
 .todo{
     display: grid;
-    grid-template-rows: 50px 270px 50px 270px 50px 270px;
+    grid-template-rows: 50px 270px 50px 270px 50px 300px;
     background-image: url("imagenes/bg.degra.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -107,37 +107,34 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
+    padding: 20px;
+}
+.seccion1 div img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    text-align: justify;
+    border: 2px solid white;
+}
+.seccion1 div a{
+    text-align: justify;
+    position: relative;
+    top: 15px;
 }
 .seccion2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
+    padding: 20px;
 }
 .seccion3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
-}
-
-.artista1{
-    border-radius: 50%;
-}
-
-.artista2{
-    border-radius: 50%;
-}
-
-.artista3{
-    border-radius: 50%;
-}
-.artista4{
-    border-radius: 50%;
-}
-
-.artista5{
-    border-radius: 50%;
+    padding: 20px;
 }
 
 .titulo{
@@ -168,52 +165,10 @@ a{
     font-style: normal;
     font-weight: 100;
 }
-<<<<<<< HEAD
-.columna1{
-    margin-left: 20px;
-}
-.columna5{
-    margin-right: 20px;
-}
-.fila1{
-    margin-top: 60px;
-}
-.fila2{
-    margin-top: 60px;
-}
-.fila3{
-    margin-top: 60px;
-}
-.titulo{
-    background-color:  white;
-    position: relative;
-    top: 20px;
-    z-index: 20;
-}
-.artistas{
-    color: grey;
-    left: 30px;
-    font-size: 18px;
-    margin-left: 90px;
-}
-.titulo2{
-    background-color:  white;
-    position: relative;
-    top: 265px;
-    z-index: 20;
-}
-.canciones{
-    position: relative;
-    color: grey;
-    font-size: 18px;
-    margin-left: 90px;
-}
-=======
 
 
 /* EMPIEZA CARRUSEL*/
 
->>>>>>> ccb9e6a282913c51df8dd3d1f3a30c0f05906204
 .carrusel{
     margin: auto;
     overflow: hidden;
