@@ -117,6 +117,9 @@ body{
     text-align: justify;
     border: 2px solid white;
 }
+.img-container{
+    text-align: center;
+}
 .seccion1 div a{
     text-align: justify;
     position: relative;
