@@ -5,6 +5,10 @@ body{
     background-color: white;
 }
 
+.logox{
+    border-radius: 90%;
+}
+
 .container{
     margin: auto;
     gap: 20px;
@@ -91,16 +95,64 @@ body{
 
 /*TERMINA BARRA DE BÚSQUEDA*/
 
-.secciones{
+.todo{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 270px 270px 270px;
+    grid-template-rows: 50px 270px 50px 270px 50px 270px;
     background-image: url("imagenes/bg.degra.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+.seccion1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
-    position: relative;
-    bottom: 40px;
+    margin-top: 20px;
+}
+.seccion2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+.seccion3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.artista1{
+    border-radius: 50%;
+}
+
+.artista2{
+    border-radius: 50%;
+}
+
+.artista3{
+    border-radius: 50%;
+}
+.artista4{
+    border-radius: 50%;
+}
+
+.artista5{
+    border-radius: 50%;
+}
+
+.titulo{
+    background-color: white;
+    margin-top: 20px;
+}
+
+.titulo2{
+    background-color: white;
+    margin-top: 20px;
+}
+
+.titulo3{
+    background-color: white;
+    margin-top: 20px;
 }
 
 img{
@@ -108,15 +160,7 @@ img{
     width: 240px;
     border: 1px solid white;
 }
-.artista{
-    border-radius: 50%;
-    width: 178px;
-    position: relative;
-    left: 15px;
-}
 a{
-    position: relative;
-    top: 10px;
     font-size: 17px;
     color: white;
     text-decoration: none;
@@ -124,46 +168,10 @@ a{
     font-style: normal;
     font-weight: 100;
 }
-.columna1{
-    margin-left: 20px;
-}
-.columna5{
-    margin-right: 20px;
-}
-.fila1{
-    margin-top: 60px;
-}
 
-.fila2{
-    margin-top: 60px;
-}
-.fila3{
-    margin-top: 60px;
-}
-.titulo{
-    background-color:  white;
-    position: relative;
-    top: 20px;
-    z-index: 20;
-}
-.artistas{
-    color: grey;
-    left: 30px;
-    font-size: 18px;
-    margin-left: 90px;
-}
-.titulo2{
-    background-color:  white;
-    position: relative;
-    top: 265px;
-    z-index: 20;
-}
-.canciones{
-    position: relative;
-    color: grey;
-    font-size: 18px;
-    margin-left: 90px;
-}
+
+/* EMPIEZA CARRUSEL*/
+
 .carrusel{
     margin: auto;
     overflow: hidden;
@@ -196,3 +204,5 @@ a{
     75% { margin-left: -300%;}
     100% { margin-left: -300%;}
 }
+
+/*TERMINA CARRUSEL*/
