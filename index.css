@@ -111,6 +111,8 @@ img{
 .artista{
     border-radius: 50%;
     width: 178px;
+    position: relative;
+    left: 15px;
 }
 a{
     position: relative;
@@ -131,6 +133,7 @@ a{
 .fila1{
     margin-top: 60px;
 }
+
 .fila2{
     margin-top: 60px;
 }
