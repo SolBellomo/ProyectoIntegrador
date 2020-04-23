@@ -8,12 +8,12 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 200px 50px 200px 60px;
-    row-gap: 30px;
+    grid-template-rows: 4fr 1fr 4fr 1fr;
     padding: 20px;
 }
 header{
     text-align: center;
+    height: 150px;
 }
 header img{
     width: 200px;
@@ -55,8 +55,17 @@ width: 80%;
 position: relative;
 border-radius: 10%;
 }
+.albums div a{
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color:whitesmoke;
+}
 .albums button{
-    border: medium;
+    position: relative;
+    top: 10px;
     text-align: center;
     color:whitesmoke;
     font-size: 100%;
