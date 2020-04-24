@@ -68,11 +68,14 @@ border-radius: 10%;
 .img-container{
     text-align: center;
 }
-.albums a{
+.albums div a{
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color:whitesmoke ;
+    background-color: transparent;
     text-align: center;
-    color:whitesmoke;
-    font-size: 100%;
-    background-color: rgba(241, 32, 189, 0.4);
 }
 .otros{
     display: grid;
@@ -84,5 +87,6 @@ border-radius: 10%;
     font-style: normal;
     font-weight: 100;
     color: white;
+    
 }
 
