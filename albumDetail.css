@@ -1,16 +1,18 @@
 body{
-    background-color: blueviolet;
+    
 }
 .header{
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 60px; 
+    background-color: rgba(2, 112, 114, 0.548);
+    
 }
 .section1{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px;
-    background-color: darkgoldenrod;
+    
 }
 .sectionSongs{
     display: grid;
@@ -18,16 +20,17 @@ body{
     grid-template-columns: 100%;
 }
 .title{
-    background-color: aqua;
+    
+    padding: 4px; 
 }
 .config{
-    background:red;
+    
 }
 .fotoAlbum{
-    background-image: url(albumDire.jpg);
+    padding: 5%;
 }
 .description{
-    background-color: darkgoldenrod;
+    
 }
 .Songs{
     background-color: darkolivegreen;
@@ -42,4 +45,15 @@ body{
 }
 .buscador{
     background-color: darkslategray;
+}
+.logo{
+    border-radius: 50%;
+    width: 30%;
+    height: 95%;   
+}
+.albumStraits{
+    height: 95%;
+    width: 95%;
+    border: solid 1px black; 
+    border-radius: 2%;   
 }
