@@ -2,25 +2,32 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(imagenes/bg.degra.jpg);
+    background-image: url(imagenes/back-puntitos.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .container{
     display: grid;
-    grid-template-rows: 200px 50px 200px 60px;
-    row-gap: 30px;
+    grid-template-rows: 4fr 1fr 4fr 1fr;
     padding: 20px;
+    color: white;
 }
 header{
     text-align: center;
+    height: 150px;
 }
 header img{
     width: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
 }
-a{
-color:white;
+.divisor{
+    text-align: center;
+    background-color: rgba(15, 199, 168, 0.904);
+    height: 60px;
+    color: white;
 }
 .top5{
     display: grid;
@@ -43,35 +50,43 @@ iframe{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px;
+}
+.albums img{
+width: 70%;
+position: relative;
+border-radius: 10%;
+}
+.albums div a{
     text-decoration: none;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: normal;
-    text-align: center;
     color:whitesmoke ;
-}
-.albums img{
-width: 80%;
-position: relative;
-border-radius: 10%;
-}
-.albums button{
-    border: medium;
+    background-color: transparent;
     text-align: center;
-    color:whitesmoke;
-    font-size: 100%;
-    background-color: rgba(241, 32, 189, 0.4);
+}
+.img-container{
+    text-align: center;
+}
+.albums div a{
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color:whitesmoke ;
+    background-color: transparent;
+    text-align: center;
 }
 .otros{
     display: grid;
     padding: 10px;
+}
+.otros a{
     text-decoration: none;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
+    color: white;
+    
 }
-h3{
-    text-align: center;
-    background-color: rgba(241, 32, 189, 0.4);
-    height: 30px;
-}
+
