@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(imagenes/bg.degra.jpg);
+    background-image: url(imagenes/back-puntitos.gif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -10,6 +10,7 @@ body{
     display: grid;
     grid-template-rows: 4fr 1fr 4fr 1fr;
     padding: 20px;
+    color: white;
 }
 header{
     text-align: center;
@@ -18,9 +19,15 @@ header{
 header img{
     width: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
 }
-a{
-color:white;
+.divisor{
+    text-align: center;
+    background-color: rgba(243, 66, 199,0.7);
+    height: 60px;
+    color: white;
 }
 .top5{
     display: grid;
@@ -43,15 +50,9 @@ iframe{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px;
-    text-decoration: none;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    color:whitesmoke ;
 }
 .albums img{
-width: 80%;
+width: 70%;
 position: relative;
 border-radius: 10%;
 }
@@ -60,27 +61,32 @@ border-radius: 10%;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: normal;
+    color:whitesmoke ;
+    background-color: transparent;
     text-align: center;
-    color:whitesmoke;
 }
-.albums button{
-    position: relative;
-    top: 10px;
+.img-container{
     text-align: center;
-    color:whitesmoke;
-    font-size: 100%;
-    background-color: rgba(241, 32, 189, 0.4);
+}
+.albums div a{
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color:whitesmoke ;
+    background-color: transparent;
+    text-align: center;
 }
 .otros{
     display: grid;
     padding: 10px;
+}
+.otros a{
     text-decoration: none;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
+    color: white;
+    
 }
-h3{
-    text-align: center;
-    background-color: rgba(241, 32, 189, 0.4);
-    height: 30px;
-}
+
