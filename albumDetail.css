@@ -1,0 +1,45 @@
+body{
+    background-color: blueviolet;
+}
+.header{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 60px; 
+}
+.section1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    background-color: darkgoldenrod;
+}
+.sectionSongs{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 100%;
+}
+.title{
+    background-color: aqua;
+}
+.config{
+    background:red;
+}
+.fotoAlbum{
+    background-image: url(albumDire.jpg);
+}
+.description{
+    background-color: darkgoldenrod;
+}
+.Songs{
+    background-color: darkolivegreen;
+}
+.barras{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+.reproduccion{
+    background-color: fuchsia;
+}
+.buscador{
+    background-color: darkslategray;
+}
