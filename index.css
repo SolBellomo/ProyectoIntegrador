@@ -176,6 +176,12 @@ nav {
     border-radius: 50%;
     text-align: justify;
 }
+<<<<<<< HEAD
+=======
+.img-container{
+    text-align: center;
+}
+>>>>>>> 1645e5366c4ac412e5d61c854498f5fdc1c2fa9e
 .seccion1 div a{
     text-align: justify;
     position: relative;
