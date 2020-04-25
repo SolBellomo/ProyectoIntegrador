@@ -42,16 +42,11 @@ body{
     margin-top: 80px;
     word-spacing: 15px;
     width: 400px;
+    overflow: hidden;
 }
-
 .topnav {
     overflow: hidden;
 }
-
-nav {
-    overflow: hidden;
-}
-
 .topnav a {
     float: left;
     display: block;
@@ -63,21 +58,13 @@ nav {
     letter-spacing: 1px;
     font-size: 17px;
   }
-
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
-
   .topnav a.icon {
     float: right;
     display: block;
   }
-
-
-
-/* Added with JS */
-
-
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -154,7 +141,7 @@ nav {
 
 .todo{
     display: grid;
-    grid-template-rows: 50px 290px 50px 290px 50px 290px;
+    grid-template-rows: 50px 350px 50px 350px 50px 350px;
     background-image: url("imagenes/bg.degra.jpg");
     background-repeat: no-repeat;
     background-size: 250%;
@@ -167,6 +154,8 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(34, 30, 30, 0.918);
 }
 
 .seccion1 div img{
@@ -176,12 +165,9 @@ nav {
     border-radius: 50%;
     text-align: justify;
 }
-<<<<<<< HEAD
-=======
 .img-container{
     text-align: center;
 }
->>>>>>> 1645e5366c4ac412e5d61c854498f5fdc1c2fa9e
 .seccion1 div a{
     text-align: justify;
     position: relative;
@@ -193,6 +179,8 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(34, 30, 30, 0.918);}
 }
 
 .seccion3{
@@ -201,16 +189,19 @@ nav {
     gap: 20px;
     padding: 20px;
     height: 300px;
+    border-bottom: 1px solid rgba(34, 30, 30, 0.918);}
 }
 
 .titulo{
-    margin-top: 0px;
     font-size: 17px;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 3px;
     font-weight: 500;
     margin-top: 20px;
+    text-align: left;
+    margin-left: 80px;
+    border-bottom: 1px solid grey;
 }
 
 .titulo2{
@@ -220,6 +211,10 @@ nav {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 3px;
     font-weight: 500;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 80px;
+    border-bottom: 1px solid grey;
 }
 
 .titulo3{
@@ -228,13 +223,15 @@ nav {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 3px;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 80px;
+    border-bottom: 1px solid grey;
 }
 
 img{
     height: 200px;
     width: 200px;
-    border: 1px solid white;
     object-fit: cover;
 }
 
@@ -248,9 +245,8 @@ img{
 .gradient{
     position: relative;
     opacity: 0.45;
-    bottom: 205px;
+    bottom: 204px;
 }
-
 a{
     font-size: 17px;
     color: rgb(255, 254, 254);
@@ -258,6 +254,11 @@ a{
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
+    position: relative;
+}
+.t{
+    position: relative;
+    bottom: 180px;
 }
 
 /*BARRA DEL COSTADO*/
@@ -299,4 +300,62 @@ a{
     font-size: 27px;
     color: rgba(6, 139, 141, 0.87);
     right: 32px;
+}
+
+/*ABAJO*/
+
+.nosotros{
+    height: 400px;
+    margin-right: 80px;
+    padding: 1rem;
+    background: linear-gradient(90deg,rgb(34, 71, 107), rgb(42, 105, 102));
+}
+
+/*MI PERFIL HTML*/
+
+.perfil{
+    display: grid;
+    grid-template-rows: 300px 600px;
+    background-image: url("imagenes/bg.degra.jpg");
+    background-repeat: no-repeat;
+    background-size: 250%;
+    margin-top: 180px;
+    margin-right: 80px;
+}
+.foto{
+    font-size: 200px;
+    color: rgb(19, 19, 19);
+    margin-top: 20px;
+}
+p{
+    font-size: 17px;
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+.fotos{
+    border-radius: 50%;
+    border-style: double;
+}
+.columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.c1{
+    padding: 1rem;
+    background: linear-gradient(90deg,rgba(34, 71, 107, 0.534), rgb(42, 105, 102));
+}
+
+.c2{
+    padding: 1rem;
+    background: linear-gradient(90deg,rgba(34, 71, 107, 0.534), rgb(42, 105, 102));
+}
+
+.c3{
+    padding: 1rem;
+    background: linear-gradient(90deg,rgba(34, 71, 107, 0.534), rgb(42, 105, 102));
 }
