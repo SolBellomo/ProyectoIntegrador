@@ -12,6 +12,89 @@ body{
     padding: 20px;
     color: white;
 }
+.header{
+    display: grid;
+    background-color: rgba(2, 112, 114, 0.548);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 180px;
+    grid-template-columns: 1fr 1fr 3fr;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.logo{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    position: relative;
+    right: 60px;
+}
+
+.nav{
+    text-align: right;
+    margin-top: 80px;
+    word-spacing: 15px;
+    width: 400px;
+}
+
+/*BARRA DE BUSQUEDA*/
+
+.BarraDeBúsqueda {
+	height: auto;
+	width: auto;
+	background: transparent;
+    margin: 0;
+    position: absolute;
+    right: 150px;
+    top: 80px;
+}
+
+.buscar {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.b {
+	box-sizing: content-box;
+ 	height: 40px;
+    padding: 0 46px 0 10px;
+	border-color: rgb(1, 1, 24);
+    border-radius: 35px; 
+    border-style: solid;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+	font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+}
+
+.icons{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 38px;
+    bottom: 38px;
+}
+
+#i{
+    border: 2px solid rgb(1, 1, 24);
+    border-radius: 50%;
+}
+
+.lineas{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    bottom: 71px;
+    left: 85px;
+}
 header{
     text-align: center;
     height: 150px;
