@@ -1,11 +1,15 @@
 body{
     
+    background-repeat: no-repeat;
+    background-size: cover;   
 }
 .header{
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 60px; 
+    grid-template-rows: 50px; 
     background-color: rgba(2, 112, 114, 0.548);
+    border-radius: 4px;
+    margin-bottom: 5px;
     
 }
 .section1{
@@ -20,20 +24,24 @@ body{
     grid-template-columns: 100%;
 }
 .title{
-    
-    padding: 4px; 
+    margin-left: 70%;
+    padding: 4px;
 }
 .config{
+    margin-left: 65%;
+    padding: 5px;
+    margin-top: 5px;
     
 }
 .fotoAlbum{
     padding: 5%;
 }
-.description{
-    
-}
 .Songs{
-    background-color: darkolivegreen;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25% 25% 25%;
+    grid-template-columns: 100%;
+    overflow: auto;
+    padding: 10px;
 }
 .barras{
     display: grid;
@@ -41,19 +49,50 @@ body{
     grid-template-rows: 50% 50%;
 }
 .reproduccion{
-    background-color: fuchsia;
+
 }
 .buscador{
     background-color: darkslategray;
 }
 .logo{
     border-radius: 50%;
-    width: 30%;
-    height: 95%;   
+    width: 50px;
+    height: 100%; 
+    padding: 1px;
+     
 }
 .albumStraits{
     height: 95%;
     width: 95%;
     border: solid 1px black; 
     border-radius: 2%;   
+}
+#textAlbum{
+    font-weight: 300;
+    font-size: 78%;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: blanchedalmond;
+    
+}
+.descripcion{
+    padding: 2px;
+}
+.cancion{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+}
+.far.fa-play-circle.play{
+    font-size: 45px;
+    
+}
+.fas.fa-sliders-h{
+    color: white;
+    font-size: 30px;
+
+}
+.audio{
+    width: 100%;
+
 }
