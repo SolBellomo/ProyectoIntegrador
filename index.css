@@ -15,7 +15,7 @@ body{
 
 .header{
     display: grid;
-    background: linear-gradient(90deg,rgba(0, 172, 163, 0.726), rgb(42, 105, 102));
+    background: linear-gradient(90deg,rgba(14, 117, 112, 0.726), rgb(42, 105, 102), rgb(1, 18, 65));
     background-repeat: no-repeat;
     background-size: 100%;
     height: 180px;
@@ -94,7 +94,7 @@ body{
     position: relative;
     left: 300px;
     top: 56px;
-    background-color: rgba(25, 111, 112, 0.918);
+    background-color: rgb(2, 19, 66);
   }
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: relative;}
@@ -365,8 +365,8 @@ p{
 .fotos{
     border-radius: 50%;
     border-style: double;
+    border-color: white;
 }
-
 .columnas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -378,7 +378,8 @@ p{
     display: grid;
     grid-template-rows: 50px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg,rgba(34, 71, 107, 0.534), rgb(42, 105, 102));
+    background-color: rgb(83, 79, 79);
+    border: 1px solid black;
 }
 
 .canciones{
@@ -504,7 +505,7 @@ audio{
         left: 10px;
         bottom: 40px;
     }
-    .seccion3{
+    .seccion3 img{
         position: relative;
         left: 10px;
     }
@@ -552,6 +553,64 @@ audio{
     }
 }
 
-@media(768px){
-
+@media(width: 768px){
+    .todo{
+        width: 1105px;
+        height: 1230px;
+    }
+    .logo{
+        position: fixed;
+        left: 20px;
+    }
+    .titulo{
+        position: relative;
+        top: 15px;
+    }
+    .seccion1{
+        gap: 10px;
+        position: relative;
+        right: 8px;
+    }
+    .titulo2{
+        position: relative;
+        top: 15px;
+    }
+    .seccion2{
+        position: relative;
+        right: 8px;
+        top: 15px;
+    }
+    .titulo3{
+        position: relative;
+        top: 30px;
+    }
+    
+    .seccion3{
+        height: 380px;
+        position: relative;
+        right: 8px;
+    }
+    .seccion3 div img{
+        position: relative;
+        top: 60px;
+    }
+    .seccion3 a{
+        position: relative;
+        top: 80px;
+    }
+    .nosotros{
+        width: 1105px;
+    }
+    .BarraDeBúsqueda{
+        position: fixed;
+        top: 20px;
+    }
+    .icons{
+        position: fixed;
+        top: 25px;
+    }
+    .lineas{
+        position: fixed;
+        top: 25px;
+    }
 }
