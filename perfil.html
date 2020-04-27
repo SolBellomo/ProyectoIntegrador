@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil</title>
+    <link class="logox" rel="icon" href="imagenes/J.png" type="image/png">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
@@ -19,17 +20,13 @@
                         <div class="buscar">
                             <input class="b" type="search" placeholder="search">
                         </div>
-                        <div class="icons">
-                            <i class="fas fa-user-circle" id="i"></i>
-                        </div>
-                        <div class="lineas">
-                            <i class="fas fa-sliders-h"></i>
-                        </div>
+                            <i class="fas fa-user-circle icons" id="i"></i>
                         <div class="topnav" id="myTopnav">
+                                    <a></a>
                                     <a href="index.html">INICIO</a>
                                     <a href="artists.html">ARTISTAS</a>
                                     <a href="playlist.html">PLAYLIST</a>
-                                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-sliders-h"></i></a>
+                                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-sliders-h lineas"></i></a>
                         </div> 
                     </div>
         </div>
@@ -39,16 +36,53 @@
                 <p>SOL BELLOMO</p>
             </div>
             <div class="columnas">
-                <div class="c1">
+                <div class="col1">
                     <a href="canciones.html">MIS CANCIONES</a>
-                    
-
+                    <div class="canciones">
+                        <audio src="audios/Slow Dancing In a Burning Room- John Mayer (With Lyrics) (192  kbps).mp3" class="audio" preload="none" controls></audio>
+                        <audio src="audios/New Light.mp3" class="audio" preload="none" controls></audio>
+                        <audio src="audios/Dire Straits - Sultans of Swing (Official Audio) (320  kbps) (convertmp3.me).mp3" class="audio" preload="none" controls></audio>
+                        <audio src="audios/Dire Straits - Down To The Waterline -- HQ Audio --.mp3" class="audio" preload="none" controls></audio>
+                        <audio src="audios/WaterOfLove.mp3" class="audio" preload="none" controls></audio>
+                        <audio src="audios/Your Body Is a Wonderland.mp3" class="audio" preload="none" controls></audio>
+                        <audio src="audios/New Light.mp3" class="audio" preload="none" controls></audio>
+                        <audio src="audios/New Light.mp3" class="audio" preload="none" controls></audio>
+                    </div>
                 </div>
-                <div class="c2">
+                <div class="col2">
                     <a href="playlists.html">MIS PLAYLISTS</a>
+                    <div class="playlists">
+                        <div class="p">
+                            <div class="foto">
+                                <img src="imagenes/AlbumDire.jpg" alt="">
+                            </div>
+                            <div class="nombrepl">
+                                <p>JOHN MAYER</p>
+                            </div>
+                        </div>
+                        <div class="p"></div>
+                        <div class="p"></div>
+                        <div class="p"></div>
+                        <div class="p"></div>
+                        <div class="p"></div>
+                        <div class="p"></div>
+                        <div class="p"></div>
+                    </div>
                 </div>
-                <div class= "c3">
+                <div class= "col3">
                     <a href="artists.html">ARTISTAS MÁS ESCUCHADOS</a>
+                    <div class="mase">
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                        <div class="me"></div>
+                    </div>
                 </div>
             </div>
 
@@ -59,6 +93,7 @@
             <i class="fas fa-redo-alt repetir"></i>
             <i class="fas fa-random aleatorio"></i>
             <i class="fas fa-volume-mute mute"></i>
+            <i class="fas fa-cog cog"></i>
         </div>
 </div>
 </body>
