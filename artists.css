@@ -202,7 +202,19 @@ header img{
 header h2{
     font-family: "Gill Sans", sans-serif;
 }
-.divisor{
+.divisor1{
+    text-align: center;
+    background-color: rgba(15, 199, 168, 0.904);
+    height: 60px;
+    color: white;
+}
+.divisor2{
+    text-align: center;
+    background-color: rgba(15, 199, 168, 0.904);
+    height: 60px;
+    color: white;
+}
+.divisor3{
     text-align: center;
     background-color: rgba(15, 199, 168, 0.904);
     height: 60px;
@@ -237,9 +249,9 @@ border-radius: 10%;
 }
 .albums div a{
     text-decoration: none;
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     color:whitesmoke ;
     background-color: transparent;
     text-align: center;
@@ -247,23 +259,51 @@ border-radius: 10%;
 .img-container{
     text-align: center;
 }
-.albums div a{
-    text-decoration: none;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color:whitesmoke ;
-    background-color: transparent;
-    text-align: center;
-}
+
 .otros{
     display: grid;
     padding: 10px;
 }
 .otros a{
     text-decoration: none;
-    font-family: proxima-nova, sans-serif;
+    font-family: "proxima-nova", sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: bold;
     color: white;  
+}
+
+/* Media Queries */
+/*Tablets*/
+
+@media(max-width: 768px){
+
+    .container{
+        width: 89%;
+        display: grid;
+        row-gap: 50px;     
+    }
+    .header{
+        width: 100%;
+    }
+    iframe{
+        position: relative;
+        bottom: 30px;
+    }
+    .divisor2{
+        position: relative;
+        top: 90px;
+    }
+    .albums{
+        position: relative;
+        top: 50px;
+    }
+    .divisor3{
+        position: relative;
+        top: 30px;
+    }
+}
+
+/*Mobile First*/
+@media(max-width: 480px){
+
 }
