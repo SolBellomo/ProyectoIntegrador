@@ -5,9 +5,9 @@ body{
 }
 .header{
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 50px; 
-    background-color: rgba(2, 112, 114, 0.548);
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 65px; 
+    background: linear-gradient(90deg,rgba(14, 117, 112, 0.726), rgb(42, 105, 102), rgb(1, 18, 65));
     border-radius: 4px;
     margin-bottom: 5px;
     
@@ -22,13 +22,13 @@ body{
     display: grid;
     grid-template-rows: 300px;
     grid-template-columns: 100%;
+    padding: 0px;
 }
 .title{
-    margin-left: 70%;
     padding: 4px;
 }
 .config{
-    margin-left: 65%;
+    margin-left: 35%;
     padding: 5px;
     margin-top: 5px;
     
@@ -38,33 +38,44 @@ body{
 }
 .Songs{
     display: grid;
-    grid-template-rows: 25% 25% 25% 25% 25% 25%;
+    grid-template-rows: 23% 23% 23% 23% 23% 23%;
     grid-template-columns: 100%;
     overflow: auto;
-    padding: 10px;
+    padding: 5px;
+    row-gap: 10px;
 }
 .barras{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-}
-.reproduccion{
+    grid-template-rows: 60px 60px;
+    margin-top: 5px;
 
 }
-.buscador{
-    background-color: darkslategray;
+.reproduccion{
+    display: grid;
+    grid-template-columns: 18% 18% 28% 18% 18%;
+    grid-template-rows: 100%;
+
+}
+.BarraDeBusqueda{
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    margin-top: 5px;
 }
 .logo{
+    
+    left: 20px;
     border-radius: 50%;
-    width: 50px;
+    width: 60px;
     height: 100%; 
     padding: 1px;
      
 }
 .albumStraits{
     height: 95%;
-    width: 95%;
-    border: solid 1px black; 
+    width: 100%; 
     border-radius: 2%;   
 }
 #textAlbum{
@@ -77,22 +88,160 @@ body{
 }
 .descripcion{
     padding: 2px;
+    display: grid;
+    grid-template-rows: 25% 20% 15% 30%;
+    grid-template-columns: 100%;
+    margin-top: 10px;
 }
 .cancion{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 65% 15%;
     grid-template-rows: 100%;
+    background-image: url(imagenes/bg.degra.jpg);
+    border-radius: 5px;
+    padding: 5px;
 }
-.far.fa-play-circle.play{
+.fas.fa-play{
     font-size: 45px;
-    
+    color: transparent;
+    color: gray;
+    color: rgba(34, 31, 31, 0.664);
+    position: absolute;
+    top: 7px;
+    left: 17px;
 }
 .fas.fa-sliders-h{
     color: white;
     font-size: 30px;
+    margin-top: 7px;
 
 }
 .audio{
     width: 100%;
+}
 
+.fas.fa-random.aleatorio{
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgba(2, 112, 114, 0.548);
+
+}
+.fas.fa-backward{
+    color: rgba(2, 112, 114, 0.548);
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.far.fa-play-circle.play{
+    color: rgba(2, 112, 114, 0.548);
+    font-size: 60px;
+    margin-left: 20px;    
+}
+.fas.fa-forward{
+    font-size: 40px;
+    margin-top: 9px;
+    margin-left: 9px;
+    color: rgba(2, 112, 114, 0.548);
+}
+.fas.fa-redo-alt.repetir{
+    font-size: 37px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgba(2, 112, 114, 0.548);
+}
+.icons{
+    text-align: center;
+    font-size: 42px;
+    margin-left: 16px;
+    margin-top: 6px;
+    color: white;
+}
+.buscar{
+    overflow: hidden;
+    padding: 20px;
+}
+#i{
+    height: 50%;
+    width: 80%;
+}
+.nombreCancion{
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 100%;
+}
+.albumito{
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+}
+.puntitos{
+    color: white;
+    font-size: 30px;
+    margin-top: 12px;
+    margin-left: 17px;
+}
+.Artista{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin-left: 10px;
+
+
+}
+.Nombre{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+#s{
+    font-weight: 500;
+    border-bottom: gray 1px solid;
+    font-size: 19px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#tituloAlbum{
+    margin-top: 3px;
+    text-decoration: underline rgba(2, 112, 114, 0.548) ;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#nombreDelArtista{
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#fecha{
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fas.fa-ellipsis-h{
+    font-size: 30px;
+    position: relative;
+    left: 80%;
+    top: 70%;
+}
+.b{
+    border-radius: 10px;
+    width: 165px;
+    position: relative;
+    left: -13px;
+    height: 27px;
+    bottom: 5px;
+}
+.musicaVivo{
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    grid-template-rows: 100%;
+    background: linear-gradient(90deg,rgba(14, 117, 112, 0.726), rgb(42, 105, 102), rgb(1, 18, 65));
+    position: relative;
+    top: 2px;
+}
+.fas.fa-star{
+    color: white;
+    font-size: 30px;
+    margin-top: 12px;
+    margin-left: 0px;
 }
