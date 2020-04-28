@@ -101,13 +101,19 @@ body{
     border-radius: 5px;
     padding: 5px;
 }
-.far.fa-play-circle.play{
+.fas.fa-play{
     font-size: 45px;
-    
+    color: transparent;
+    color: gray;
+    color: rgba(34, 31, 31, 0.664);
+    position: absolute;
+    top: 7px;
+    left: 17px;
 }
 .fas.fa-sliders-h{
     color: white;
     font-size: 30px;
+    margin-top: 7px;
 
 }
 .audio{
@@ -146,6 +152,10 @@ body{
 }
 .icons{
     text-align: center;
+    font-size: 42px;
+    margin-left: 16px;
+    margin-top: 6px;
+    color: white;
 }
 .buscar{
     overflow: hidden;
@@ -214,5 +224,24 @@ body{
     top: 70%;
 }
 .b{
-    border-radius: 5px;
+    border-radius: 10px;
+    width: 165px;
+    position: relative;
+    left: -13px;
+    height: 27px;
+    bottom: 5px;
+}
+.musicaVivo{
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    grid-template-rows: 100%;
+    background: linear-gradient(90deg,rgba(14, 117, 112, 0.726), rgb(42, 105, 102), rgb(1, 18, 65));
+    position: relative;
+    top: 2px;
+}
+.fas.fa-star{
+    color: white;
+    font-size: 30px;
+    margin-top: 12px;
+    margin-left: 0px;
 }
