@@ -13,30 +13,16 @@ body{
     border: 8px solid white;
     text-align: center;
 }
-
-.header{
+.col1{
     display: grid;
-    background: linear-gradient(90deg,rgba(2, 158, 137, 0.726), rgb(42, 105, 102), rgb(10, 59, 61));    
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 180px;
-    grid-template-columns: 1fr 3fr;
-    position: fixed; 
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 15;
+    grid-template-rows: 35px 500px;
+    padding: 1rem;
+    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    border-radius: 15px;
 }
-
-.logo{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-top: 15px;
-    position: relative;
-    right: 60px;
+.col1 a{
+    border-bottom: double;
 }
-
 .nav{
     text-align: right;
     margin-top: 80px;
@@ -211,39 +197,4 @@ body{
     position: fixed;
     right: 100px;
     top: 25px;
-}
-
-
-
-.grid.container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 90% 10%;
-}
-.songs{
-    background-color: violet;
-}
-.cuerpo{
-    display: grid;
-    grid-template-rows: 150% 40%;
-    margin-top: 180px;
-}
-#section{
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 20% 80%;
-}
-.playlists{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15%;
-}
-.unaCancion{
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 100%;
-}
-#imgPl{
-    height: 100%;
-    width: 100%;
 }

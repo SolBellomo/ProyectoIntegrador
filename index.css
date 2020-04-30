@@ -87,7 +87,6 @@ body{
     display: block;
     text-align: right;
     background-color: rgb(46, 136, 138);
-
 }
   
   /* FIN MENÚ DESPLEGABLE*/
@@ -169,23 +168,7 @@ body{
     position: relative;
     top: 10px;
 }
-.columna1{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
-.columna2{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
-.columna3{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
-.columna4{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
-.columna5{
+.columna{
     display: grid;
     grid-template-rows: 200px 50px;
 }
@@ -515,7 +498,6 @@ a{
     margin-top: 35px;
 }
 .canciones{
-    display: grid;
     gap: 10px;
     margin-top: 35px;
 }
@@ -632,7 +614,58 @@ audio{
     left: 15px;
     color: rgb(70, 70, 70);
 }
-
+/*EMPIEZA PÁGINA PLAYLISTS*/
+.cuerpo{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    margin-top: 70px;
+}
+.logoo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 80px;
+}
+.columnaa1{
+    display: grid;
+    grid-template-rows: 35px 490px;
+    padding: 1rem;
+    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    position: relative;
+    right: 8px;
+    bottom: 4px;
+}
+.columnaa1 .titulooo{
+    border-bottom: double;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    margin-left: 20px;
+}
+.columnaa2{
+    display: grid;
+    grid-template-rows: 35px 490px;
+    background: linear-gradient(90deg,rgba(26, 26, 26, 0.849), rgba(14, 14, 14, 0.836));
+    padding: 20px;
+    position: relative;
+    bottom: 5px;
+}
+.columnaa2 .titulocanciones{
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.cancioness{
+    margin-top: 20px;
+}
+.audiios .escuchando{
+    color: rgb(6, 148, 148);
+}
+.p .escuchando{
+    color: rgb(123, 211, 211);
+    position: relative;
+    bottom: 8px;
+}
 
 @media(width: 320px){
     .todo{
