@@ -1,5 +1,5 @@
 body{
-    
+    margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;   
 }
@@ -8,8 +8,9 @@ body{
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 65px; 
     background: linear-gradient(90deg,rgba(14, 117, 112, 0.726), rgb(42, 105, 102), rgb(1, 18, 65));
-    border-radius: 4px;
+    
     margin-bottom: 5px;
+    
     
 }
 .section1{
@@ -55,6 +56,8 @@ body{
     display: grid;
     grid-template-columns: 18% 18% 28% 18% 18%;
     grid-template-rows: 100%;
+    margin-top: 5px;
+    background-color: white;
 
 }
 .BarraDeBusqueda{
@@ -108,7 +111,7 @@ body{
     color: rgba(34, 31, 31, 0.664);
     position: absolute;
     top: 7px;
-    left: 17px;
+    left: 21px;
 }
 .fas.fa-sliders-h{
     color: white;
@@ -135,7 +138,7 @@ body{
 }
 .far.fa-play-circle.play{
     color: rgba(2, 112, 114, 0.548);
-    font-size: 60px;
+    font-size: 55px;
     margin-left: 20px;    
 }
 .fas.fa-forward{
@@ -196,6 +199,8 @@ body{
 }
 #s{
     font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
     border-bottom: gray 1px solid;
     font-size: 19px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -224,12 +229,17 @@ body{
     top: 70%;
 }
 .b{
-    border-radius: 10px;
+    
     width: 165px;
     position: relative;
     left: -13px;
     height: 27px;
     bottom: 5px;
+    border-color: rgb(1, 1, 24);
+    border-radius: 35px;
+    border-style: solid;
+    color: #333;
+    
 }
 .musicaVivo{
     display: grid;
@@ -244,4 +254,148 @@ body{
     font-size: 30px;
     margin-top: 12px;
     margin-left: 0px;
+}
+@media (min-width: 465px){
+    .header{
+        grid-template-rows: 125px;
+        grid-template-columns:20% 75% 5%;
+        
+
+    }
+    .logo{
+        padding: 0px;
+        width: 105px;
+        height: 105px;
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+    .cancion{
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-template-columns: 8% 82% 10%;
+    }
+    .b{
+        font-size: 15px;
+        top: 20px;
+        left: 161px;
+        width: 280px;
+        height: 35px;
+        padding: 6px
+    }
+    .config{
+        margin-left: -48%;
+        margin-top: 33px;
+    }
+    .icons{
+        margin-left: 0px;
+        margin-top: 33px;
+    }
+    .albumStraits{
+        height: 107%;
+    width: 75%;
+    border-radius: 2%;
+    position: relative;
+    left: 45px;
+    }
+    .section1{
+        grid-template-rows: 300px;
+        
+    }
+    .albumito{
+        width: 105%;
+    }
+    .musicaVivo{
+        grid-template-columns: 8% 82% 10%
+    }
+    .fas.fa-star{
+        margin-left: 0px;
+    }
+    .fas.fa-redo-alt.repetir{
+        margin-left: -70px;
+        margin-top: 15px;
+    }
+    .far.fa-play-circle.play{
+        margin-left: 65px;
+        font-size: 55px;
+        margin-top: 5px;
+    }
+    .fas.fas.fa-forward{
+        position: relative;
+        left: -40px;
+        margin-top: 15px;
+    }
+    .fas.fa-backward{
+        margin-left: 105px;
+        margin-top: 15px;
+    }
+    .fas.fa-random.aleatorio{
+        margin-left: 140px;
+        margin-top: 15px;
+    }
+}
+@media (min-width: 1024px){
+    .b{
+        left: 313px;
+    }
+    .albumStraits{
+        height: 221px;
+        width: 50%;
+        top: -79px;
+    }
+    .header{
+        display: grid;
+    background: linear-gradient(90deg,rgba(14, 117, 112, 0.726), rgb(42, 105, 102), rgb(1, 18, 65));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 120px;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
+    }
+    .section1{
+        margin-top: 191px;
+    }
+    .barras{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 180px;
+        display: grid;
+        position: fixed;
+        top: 80%;
+        right: 0;
+        left: 0;
+        z-index: 15;
+    }
+    .far.fa-play-circle.play{
+        margin-top: 0px;
+    }
+    .sectionSongs{
+        display: grid;
+    grid-template-rows: 265px;
+    grid-template-columns: 100%;
+    padding: 0px;
+    position: relative;
+    bottom: 125px;
+    }
+    .descripcion{
+        margin-top: -49px;
+        margin-left: -250px;
+    }
+    #s{
+        position: relative;
+        bottom: 120px;
+    }
+    .fas.fa-ellipsis-h{
+        left: 0%;
+        top: -24%;
+    }
+    .albumito{
+        width: 66%;
+    }
+
+
 }
