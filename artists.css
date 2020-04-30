@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    
+
 }
 .container{
     display: grid;
@@ -130,13 +130,15 @@ border-radius: 10%;
     font-family: "proxima-nova", sans-serif;
     font-style: normal;
     font-weight: bold;
-    color: white;  
+    color:whitesmoke ;
+    background-color: transparent;
+    text-align: center;
 }
 
 /* Media Queries */
 /*Tablets*/
 
-@media(max-width: 1024px){
+@media(max-width: 10240px){
     .container{
         width: 100%;
     }
@@ -146,7 +148,7 @@ border-radius: 10%;
 
     .container{
         width: 100%;
-        height: 2000px;
+        height: 3500px;
         display: grid;
         row-gap: 50px;    
      
@@ -160,9 +162,12 @@ border-radius: 10%;
         position: relative;
         left: 0px;
     }
+    .BarraDeBúsqueda{
+        width: 200px;
+    }
     .top5{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         justify-content: left;
     }
     iframe{
@@ -170,14 +175,15 @@ border-radius: 10%;
     }
     .divisor2{
         position: relative;
-        top: 270px;
+        top: 480px;
     }
     .albums{
         position: relative;
-        top: 250px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        top: 460px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         row-gap: 50px;
+        text-align: center;
     }
     .albums div{
         height: 240px;
@@ -189,24 +195,28 @@ border-radius: 10%;
     }
     .divisor3{
         position: relative;
-        top: 680px;
+        top: 1150px;
     }
     .otros{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 320px 320px 320px;
         position: relative;
-        top: 690px;
+        top: 1150px;
     }
-    .barracostado{
-        position: fixed;
-        bottom: 5px;
-    }
+
 }
 
 /*Mobile First*/
 @media(max-width: 425px){
     .container{
         width: 100%;
-        height: 2500px;
+        height: 3500px;
         grid-template-rows: 1fr 1fr 1fr;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
     }
     .top5{
         grid-template-columns: 1fr 1fr;
