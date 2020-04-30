@@ -15,7 +15,7 @@ body{
 
 .header{
     display: grid;
-    background: linear-gradient(90deg,rgba(87, 223, 205, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
+    background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     height: 120px;
     grid-template-columns: 1fr 3fr;
     position: fixed; 
@@ -50,7 +50,7 @@ body{
 }
 
 #i{
-    border: 2px solid rgb(1, 1, 24);
+	border: 1.5px solid rgb(34, 34, 34);
     border-radius: 50%;
 }
 .lineas{
@@ -112,7 +112,7 @@ body{
 	box-sizing: content-box;
  	height: 40px;
     padding: 0 46px 0 10px;
-	border-color: rgb(1, 1, 24);
+	border-color: rgb(34, 34, 34);
     border-radius: 35px; 
     border-style: solid;
     color: #333;
@@ -273,52 +273,85 @@ a{
     font-weight: 100;
 }
 
-/*BARRA DEL COSTADO*/
+/*BARRA FOOTER*/
 
 .barrapie{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    background: linear-gradient(90deg,rgba(2, 158, 137, 0.726), rgb(42, 105, 102), rgb(1, 63, 65));
+    grid-template-columns: 2fr 3fr;
+    background: linear-gradient(90deg, rgb(1, 63, 65), rgb(42, 105, 102),rgba(2, 158, 137, 0.726));
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100%;
-    height: 40px;
+    height: 46px;
     z-index: 15;
+}
+.iconoos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.cancionnn div h2{
+    color: white;
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+    margin-left: 30px;
+}
+.cancionnn div h3{
+    color: white;
+    position: relative;
+    bottom: 7px;
+    left: 10px;
+    margin-left: 30px;
+}
+.cancionnn div img{
+    position: relative;
+    top: 3px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.cancionnn div.otros{
+    border-left: 1px solid white;
+    position: relative;
+    top: 0;
+}
+.cancionnn div audio{
+    position: relative;
+    bottom: 15px;
 }
 .play{
     font-size: 33px;
     color: white;
     position: fixed;
-    bottom: 2px;
+    bottom: 7px;
 }
 
 .youtube{
     font-size: 25px;
     color: white;
     position: fixed;
-    bottom: 8px;
+    bottom: 10px;
 }
 
 .aleatorio{
     font-size: 20px;
     color: white;
     position: fixed;
-    bottom: 10px;
+    bottom: 12px;
 }
 .repetir{
     font-size: 25px;
     color: white;
     position: fixed;
-    bottom: 8px;
+    bottom: 10px;
 }
 
 .mute{
     font-size: 20px;
     color: white;
     position: fixed;
-    bottom: 10px;
+    bottom: 12px;
 }
 
 /*ABAJO*/
@@ -556,6 +589,9 @@ audio{
     color: white;
     font-size: 12px;
     color: rgb(170, 169, 169);
+}
+.p a{
+    border-bottom: none;
 }
 .foto img{
     height: 40px;
