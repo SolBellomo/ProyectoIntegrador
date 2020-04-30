@@ -613,7 +613,13 @@ audio{
     left: 15px;
     color: rgb(70, 70, 70);
 }
+
+
+
 /*EMPIEZA PÁGINA PLAYLISTS*/
+
+
+
 .cuerpo{
     display: grid;
     grid-template-columns: 2fr 6fr;
