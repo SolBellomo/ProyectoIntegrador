@@ -747,3 +747,83 @@ audio{
         top: 25px;
     }
 }
+
+@media(max-width:375px){
+    .header{
+        height: 200px;
+    }
+    .logo{
+        width: 160px;
+        height: 155px;
+        margin-top: 25px;
+        right: 45px;
+    }
+    .todo{
+        overflow: hidden;
+    }
+    .b{
+        height: 65px;
+        font-size: 35px;
+        margin-top: 50px;
+        position: relative;
+        right: 60px;
+        width: 73%;
+    }
+    #i{
+        position: relative;
+        top: -91px;
+        left: 8px;
+        font-size: 105px;
+    }
+    .fa-sliders-h:before{
+        position: relative;
+        font-size: 60px;
+        top: 45px
+    }
+    .todo{
+        margin-top: 200px;
+    }
+    .titulo{
+        font-size: 30px;
+        top: 25px;
+        margin-top: 7px;
+    }
+    .seccion1 div img{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: -35px;
+        right: -60px;
+    }
+    .seccion1{
+        left: 15px;
+        top: 40px;
+    }
+    .seccion1.a.artista3{
+
+    }
+    .seccion1 a{
+        top: 18px;
+        font-size: 29px;
+         left: -23px;
+    }
+    .titulo2{
+        font-size: 30px;
+        top: 25px;
+        margin-top: 7px;
+
+    }
+    .titulo3{
+        font-size: 30px;
+        top: 25px;
+        margin-top: 7px;
+    }
+    .seccion1{
+        gap: 40px;
+        
+    }
+    .seccion1 a.artista4{
+        display: none;
+    }
+
+}
