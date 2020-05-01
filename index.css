@@ -237,27 +237,24 @@ body{
     margin-left: 80px;
     border-bottom: 1px solid grey;
 }
-
 img{
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
-.img-container{
-    text-align: center;
-}
 .disco{
     font-size: 170px;
     position: relative;
     color: rgba(34, 31, 31, 0.664);
     bottom: 255px;
-    right: 20px;
 }
 .gradient{
     position: relative;
     opacity: 0.45;
     bottom: 200px;
+    width: 100%;
+    height: 200px;
 }
 a{
     font-size: 17px;
@@ -533,7 +530,6 @@ a{
 .audiios img{
     width: 40px;
     height: 40px;
-    position: relative;
 }
 
 .audiios h2{
@@ -690,8 +686,7 @@ audio{
 @media(max-width: 320px){
     .todo{
         width: 100%;
-        grid-template-rows: 70px 500px 70px 500px 70px 500px;
-        height: 1650px;
+        grid-template-rows: 70px 400px 70px 400px 70px 400px;
     }
     .seccion1{
         grid-template-columns: 1fr 1fr;
@@ -741,10 +736,26 @@ audio{
     .columna5{
         display: none;
     }
+    .col3{
+        height: 100%;
+    }
+    .col3 a{
+        font-size: 13px;
+    }
+    .me{
+        margin-left: 5px;
+    }
+    .me h2{
+        margin-left: 5px;
+    }
+    .me h3{
+        margin-left: 5px;
+    }
 
     /*PLAYLISTS*/
     .cuerpo{
         grid-template-columns: 1fr;
+        height: 840px;
     }
     .columnaa1{
         display: none;
@@ -821,37 +832,42 @@ audio{
         position: relative;
         top: 18px;
         font-size: 22px;
+        right: 30px;
     }
     .aleatorio{
         font-size: 12px;
         position: relative;
-        top: 20px;
-        right: 5px;
+        top: 18px;
+        right: 0px;
     }
     .youtube{
         font-size: 17px;
         position: relative;
         top: 20px;
-        right: 5px;
+        right: 20px;
     }
     .repetir{
         font-size: 17px;
         position: relative;
-        top: 20px;
-        left: 5px;
+        top: 21px;
+        right: 37px;
     }
     .mute{
         font-size: 12px;
         position: relative;
         top: 20px;
-        left: 10px;
+        right: 50px;
     }
 }
 
 @media(max-width: 768px){
     .todo{
         width: 1105px;
-        height: 1230px;
+        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    }
+    .perfil{
+        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+        border: 0;
     }
     .titulo{
         position: relative;
@@ -906,7 +922,7 @@ audio{
     }
     .disco{
         position: relative;
-        left: 2px;
+        right: 10px;
     }
     .deezer{
         position: relative;
@@ -919,6 +935,8 @@ audio{
     /*PLAYLISTS*/
     .cuerpo{
         grid-template-columns: 2fr 5fr;
+        width: 100%;
+        height: 100%;
     }
     .titulocanciones{
         font-size: 20px;
@@ -945,6 +963,9 @@ audio{
     .columnas{
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    }
+    .perfil{
+        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
     }
 }
 
@@ -981,25 +1002,34 @@ audio{
         display: none;
     }
     .col1{
-    height: 720px;
+    height: 600px;
+    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px ;
     }
-    .audiios{
-    height: 80px;
+    .col1 h2{
+        position: relative;
+        top: 10px;
     }
     .audiios img{
     position: relative;
     top: 10px;
     }
-    .otros{
-    row-gap: 20px;
-    }
     .otros h2{
-    height: 30px;
+        font-size: 13px;
+    }
+    .otros h3{
+        font-size: 12px;
+        position: relative;
+        top: 5px;
     }
 }
-@media(max-width: 376px){
+@media(max-width: 375px){
     .otros h2{
-        height: 30px;
+        font-size: 10px;
+        margin-left: 2px;
+    }
+    .otros h3{
+        font-size: 10px;
+        margin-left: 2px;
     }
 }
 
