@@ -169,6 +169,18 @@ body{
     display: grid;
     grid-template-rows: 200px 50px;
 }
+.columna3{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+.columna4{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+.columna5{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
 .seccion2{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -499,6 +511,10 @@ a{
 .canciones{
     gap: 10px;
     margin-top: 35px;
+    display: grid;
+    grid-template-rows: repeat (8, 15px);
+    gap: 10px;
+    margin-top: 35px;
 }
 .otros{
     display: grid;
@@ -670,7 +686,7 @@ audio{
     bottom: 8px;
 }
 
-@media(width: 320px){
+@media(max-width: 320px){
     .todo{
         width: 100%;
         grid-template-rows: 70px 500px 70px 500px 70px 500px;
@@ -782,81 +798,15 @@ audio{
         position: fixed;
         top: 25px;
     }
-}
-
-@media(max-width:375px){
-    .header{
-        height: 200px;
-    }
-    .logo{
-        width: 160px;
-        height: 155px;
-        margin-top: 25px;
-        right: 45px;
-    }
-    .todo{
-        overflow: hidden;
-    }
-    .b{
-        height: 65px;
-        font-size: 35px;
-        margin-top: 50px;
+    .disco{
         position: relative;
-        right: 60px;
-        width: 73%;
+        left: 2px;
     }
-    #i{
+    .deezer{
         position: relative;
-        top: -91px;
-        left: 8px;
-        font-size: 105px;
+        left: 220px;
     }
-    .fa-sliders-h:before{
-        position: relative;
-        font-size: 60px;
-        top: 45px
+    .barrapie{
+        height: 50px;
     }
-    .todo{
-        margin-top: 200px;
-    }
-    .titulo{
-        font-size: 30px;
-        top: 25px;
-        margin-top: 7px;
-    }
-    .seccion1 div img{
-        width: 300px;
-        height: 300px;
-        position: relative;
-        top: -35px;
-        right: -60px;
-    }
-    .seccion1{
-        left: 15px;
-        top: 40px;
-    }
-    .seccion1 a{
-        top: 18px;
-        font-size: 29px;
-         left: -23px;
-    }
-    .titulo2{
-        font-size: 30px;
-        top: 25px;
-        margin-top: 7px;
-
-    }
-    .titulo3{
-        font-size: 30px;
-        top: 25px;
-        margin-top: 7px;
-    }
-    .seccion1{
-        gap: 40px;
-        
-    }
-    .seccion1 a.artista4{
-        display: none;
-    }
-
 }
