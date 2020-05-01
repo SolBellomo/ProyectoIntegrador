@@ -656,11 +656,11 @@ audio{
     bottom: 4px;
 }
 .columnaa1 .titulooo{
-    border-bottom: double;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 600;
     margin-left: 20px;
+    font-size: 25px;
 }
 .columnaa2{
     display: grid;
@@ -670,9 +670,10 @@ audio{
     position: relative;
     bottom: 5px;
 }
-.columnaa2 .titulocanciones{
-    margin-left: 350px;
+.titulocanciones{
+    text-align: center;
     margin-top: 10px;
+    font-weight: 600;
 }
 .cancioness{
     margin-top: 20px;
@@ -739,6 +740,111 @@ audio{
     }
     .columna5{
         display: none;
+    }
+
+    /*PLAYLISTS*/
+    .cuerpo{
+        grid-template-columns: 1fr;
+    }
+    .columnaa1{
+        display: none;
+    }
+    .columnaa2{
+        width: 325px;
+        position: relative;
+        right: 8px;
+    }
+    .columnaa2 .titulocanciones{
+        font-size: 15px;
+    }
+    .audiios{
+        margin-left: 2px;
+    }
+    .audiios h2{
+        margin-left: 5px;
+        font-size: 12px;
+        position: relative;
+        top: 5px;
+    }
+    .audiios h3{
+        margin-left: 5px;
+    }
+    .logoo{
+        width: 60px;
+        height: 60px;
+        position: relative;
+        left: 45px;
+        top: 10px;
+    }
+    .BarraDeBúsquedax{
+        position: fixed;
+        right: 2px;
+        top: 45px;
+        width: 160px;
+    }
+    .b{
+        font-size: 10px;
+        height: 25px;
+        border-radius: 10px;
+    }
+    .lineass{
+        position: fixed;
+        right: 20px;
+        top: 18px;
+        font-size: 20px;
+    }
+    .iconss{
+        position: fixed;
+        top: 15px;
+        right: 55px;
+        font-size: 20px;
+    }
+    .cancionnn div img{
+        margin-left: 5px;
+    }
+    .cancionnn div h2{
+        margin-left: 0;
+        font-size: 10px;
+        width: 80px;
+    }
+    .cancionnn div h3{
+        margin-left: 0;
+        font-size: 8px;
+        position: relative;
+        top: 1px;
+    }
+    .cancionnn div audio{
+        position: relative;
+        left: 10px;
+    }
+    .play{
+        position: relative;
+        top: 18px;
+        font-size: 22px;
+    }
+    .aleatorio{
+        font-size: 12px;
+        position: relative;
+        top: 20px;
+        right: 5px;
+    }
+    .youtube{
+        font-size: 17px;
+        position: relative;
+        top: 20px;
+        right: 5px;
+    }
+    .repetir{
+        font-size: 17px;
+        position: relative;
+        top: 20px;
+        left: 5px;
+    }
+    .mute{
+        font-size: 12px;
+        position: relative;
+        top: 20px;
+        left: 10px;
     }
 }
 
@@ -808,5 +914,28 @@ audio{
     }
     .barrapie{
         height: 50px;
+    }
+
+    /*PLAYLISTS*/
+    .cuerpo{
+        grid-template-columns: 2fr 5fr;
+    }
+    .titulocanciones{
+        font-size: 20px;
+    }
+    .columnaa1 .titulooo{
+        font-size: 20px;
+    }
+    .columnaa1{
+        padding: 5px;
+    }
+    .p{
+        margin-left: unset;
+    }
+    .p h2{
+        font-size: 12px;
+        margin-left: 4px;
+        position: relative;
+        padding-top: 2px;
     }
 }
