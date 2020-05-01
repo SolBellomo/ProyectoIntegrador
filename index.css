@@ -542,7 +542,7 @@ audio{
     opacity: 0.8;
     text-align: left;
     position: relative;
-    top: 7px;
+    top: 15px;
 }
 .p{
     display: grid;
@@ -617,8 +617,6 @@ audio{
 
 
 /*EMPIEZA PÁGINA PLAYLISTS*/
-
-
 
 .cuerpo{
     display: grid;
