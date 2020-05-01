@@ -770,6 +770,7 @@ audio{
     }
     .audiios{
         margin-left: 2px;
+        height: 53.3px;
     }
     .audiios h2{
         margin-left: 5px;
@@ -970,6 +971,9 @@ audio{
 }
 
 @media(max-width: 840px){
+    .perfil{
+        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    }
     .foto{
         width: 200px;
     }
@@ -983,7 +987,15 @@ audio{
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     }
+    .audiiios img{
+        position: relative;
+        right: 40px;
+    }
     .otroos{
+        position: relative;
+        right: 40px;
+    }
+    .otroos h3{
         display: none;
     }
 }
@@ -992,9 +1004,7 @@ audio{
         display: none;
     }
     .iconoos{
-        width: 320px;
-        position: relative;
-        right: 60px;
+        width: 100%;
     }
 }
 @media(max-width: 440px){
@@ -1002,8 +1012,12 @@ audio{
         display: none;
     }
     .col1{
+<<<<<<< HEAD
     height: 600px;
     grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px ;
+=======
+    height: 780px;
+>>>>>>> 6d5c0f55d7691283643d5bff549e31eb17066ab7
     }
     .col1 h2{
         position: relative;
@@ -1021,6 +1035,7 @@ audio{
         position: relative;
         top: 5px;
     }
+<<<<<<< HEAD
 }
 @media(max-width: 375px){
     .otros h2{
@@ -1030,6 +1045,16 @@ audio{
     .otros h3{
         font-size: 10px;
         margin-left: 2px;
+=======
+    .morite{
+        display: none;
+    }
+    .iconoos{
+        grid-template-columns: 30px 30px 30px 30px 30px;
+        position: relative;
+        right: 10px;
+>>>>>>> 6d5c0f55d7691283643d5bff549e31eb17066ab7
     }
 }
+
 
