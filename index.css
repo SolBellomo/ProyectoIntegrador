@@ -938,7 +938,7 @@ audio{
         position: relative;
         padding-top: 2px;
     }
-<<<<<<< HEAD
+
 
 }
 @media(max-width: 1200px){
@@ -998,8 +998,8 @@ audio{
     }
 }
 @media(max-width: 376px){
+    .otros h2{
+        height: 30px;
+    }
+}
 
-}
-=======
-}
->>>>>>> 0e942083b06a8d3e86aeb9a11328c04161d64a84
