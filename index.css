@@ -154,16 +154,9 @@ body{
     margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
 }
-
 .seccion1 div img{
-    width: 200px;
-    height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    text-align: justify;
-}
-.seccion1 a{
-    text-align: center;
 }
 .columna{
     display: grid;
@@ -279,6 +272,10 @@ a{
     height: 46px;
     z-index: 15;
 }
+.barrapie img{
+    width: 40px;
+    height: 40px;
+}
 .iconoos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -356,7 +353,6 @@ a{
     margin-top: 20px;
     width: 100%;
 }
-
 .slogan{
     font-family: 'Spartan', sans-serif;
     color: white;
@@ -413,7 +409,7 @@ a{
     left: 300px;
     top: 56px;
     background-color: rgb(10, 59, 61);
-  }
+}
 .foto{
     font-size: 80px;
     color: rgba(255, 255, 255, 0.863);
@@ -833,31 +829,31 @@ audio{
         position: relative;
         top: 18px;
         font-size: 22px;
-        right: 30px;
+        right: 2px;
     }
     .aleatorio{
         font-size: 12px;
         position: relative;
         top: 18px;
-        right: 0px;
+        right: 5px;
     }
     .youtube{
         font-size: 17px;
         position: relative;
         top: 20px;
-        right: 20px;
+        right: 7px;
     }
     .repetir{
         font-size: 17px;
         position: relative;
         top: 21px;
-        right: 37px;
+        left: 4px;
     }
     .mute{
         font-size: 12px;
         position: relative;
         top: 20px;
-        right: 50px;
+        left: 8px;
     }
 }
 
@@ -1012,12 +1008,8 @@ audio{
         display: none;
     }
     .col1{
-<<<<<<< HEAD
     height: 600px;
     grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px ;
-=======
-    height: 780px;
->>>>>>> 6d5c0f55d7691283643d5bff549e31eb17066ab7
     }
     .col1 h2{
         position: relative;
@@ -1035,7 +1027,6 @@ audio{
         position: relative;
         top: 5px;
     }
-<<<<<<< HEAD
 }
 @media(max-width: 375px){
     .otros h2{
@@ -1045,15 +1036,6 @@ audio{
     .otros h3{
         font-size: 10px;
         margin-left: 2px;
-=======
-    .morite{
-        display: none;
-    }
-    .iconoos{
-        grid-template-columns: 30px 30px 30px 30px 30px;
-        position: relative;
-        right: 10px;
->>>>>>> 6d5c0f55d7691283643d5bff549e31eb17066ab7
     }
 }
 
