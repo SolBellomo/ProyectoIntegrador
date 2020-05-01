@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Album</title>
+    <link class="logox" rel="icon" href="imagenes/J.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="albumDetail.css">
-    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="albumDetail.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-   
-        <div class="header">
-            <div class="title">
-            <img src="Logo JASPO...png" alt="logo" class="logo">
-
+<div class="container">
+        <div class="header2">
+            <div class="logo">
+                <img src="imagenes/LogoJASPO.png" alt="Logo JASPO" class="logoo">
             </div>
-            <div class="BarraDeBusqueda">
-                <div class="buscar">
-                    <input class="b" type="search" placeholder="search">
+            <nav class="main nav">
+                <div class="BarraDeBúsquedax">
+                    <div class="buscar">
+                        <input class="b" type="search" placeholder="search">
+                    </div>
+                    <a href="perfil.html"><i class="fas fa-user-circle iconss" id="i"></i></a>
+                    <div class="topnav" id="myTopnav">
+                        <a></a>
+                        <a href="index.html">INICIO</a>
+                        <a href="artists.html">ARTISTAS</a>
+                        <a href="playlists.html">PLAYLIST</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-sliders-h lineass"></i></a>
+                    </div> 
                 </div>
-                <div class="icons">
-                    <i class="fas fa-user-circle" id="i"></i>
-                </div>               
-                </div>
-               
-            <div class="config">
-                <div class="topnav" id="myTopnav">
-                    <a></a>
-                    <a href="index.html">INICIO</a>
-                    <a href="artists.html">ARTISTAS</a>
-                    <a href="playlists.html">PLAYLIST</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-sliders-h lineas"></i></a>
-               </div>  
-
-            </div>
+            </nav>
         </div>
-
+        </div>
         <div class="section1">
             <div class="fotoAlbum">
                 <div>
                     <img src="imagenes/AlbumDire.jpg" alt="Album Dire Straits" class="albumStraits">
 
             </div>
-            
-           
-       
-
         </div>
         <div class="descripcion">
             <div id="tituloAlbum">DIRE STRAITS</div>
@@ -157,50 +150,42 @@
                     </div>
                 </div>
             </div>
-        <div class="barras">
-            <div class="musicaVivo">
-                <div class="play">
-                    <img src="imagenes/AlbumDire.jpg" alt="Portada" class="albumito">
-                    <i class="fas fa-play"></i>
+            <div class="barrapie">
+                <div class="cancionnn">
+                        <div class="audiios">
+                                <img src="imagenes/losdelpo.jpg" alt="Si La Vieras- Los Del Portezuelo">
+                                <div class="otros">
+                                    <h2>Si La Vieras</h2>
+                                    <h3>Los Del Portezuelo</h3>
+                                </div>
+                                <audio controls="controls">
+                                    <source src="audios/los-del-portezuelo-si-la-vieras.mp3" class="audio" preload="none" type="audio/mpeg"/>
+                                </audio>
+                        </div>
                 </div>
-                <div class="nombreCancion">
-                    <div class="Nombre">
-                        Sultans Of Swing
-                    </div>
-                    <div class="Artista">
-                        Dire Straits
-                    </div>
+                <div class="iconoos">
+                        <div class="ic"></div>
+                        <div></div>
+                        <div>
+                                <i class="fas fa-random aleatorio"></i>
+                        </div>
+                        <div>
+                                <a href="artists.html"><i class="fab fa-youtube youtube"></i></a>
+                        </div>
+                        <div>
+                                <i class="far fa-play-circle play"></i>
+                        </div>
+                        <div>
+                                <i class="fas fa-redo-alt repetir"></i>
+                        </div>
+                        <div>
+                                <i class="fas fa-volume-mute mute"></i>
+                        </div>
+                        <div></div>
                 </div>
-                <div class="destacar">
-                    <i class="fas fa-star"></i>
-                </div>
-
             </div>
-            <div class="reproduccion">
-                <div class="aleatorio">
-                    <i class="fas fa-random aleatorio" ></i>
-                </div>
-                <div class="atras">
-                    <i class="fas fa-backward"></i>
-                </div>
-                <div class="play">
-                    <i class="far fa-play-circle play" aria-hidden="true"></i>
-                </div>
-                <div class="adelanto">
-                    <i class="fas fa-forward"></i>
-                </div>
-                <div class="repito">
-                    <i class="fas fa-redo-alt repetir" aria-hidden="true"></i>
-                </div>
-
-            </div>
-
-            </div>
-
-
-        </div>
     
     
-    
+</div>   
 </body>
 </html>

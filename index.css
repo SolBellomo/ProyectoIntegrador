@@ -169,6 +169,18 @@ body{
     display: grid;
     grid-template-rows: 200px 50px;
 }
+.columna3{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+.columna4{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+.columna5{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
 .seccion2{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -499,6 +511,10 @@ a{
 .canciones{
     gap: 10px;
     margin-top: 35px;
+    display: grid;
+    grid-template-rows: repeat (8, 15px);
+    gap: 10px;
+    margin-top: 35px;
 }
 .otros{
     display: grid;
@@ -542,7 +558,7 @@ audio{
     opacity: 0.8;
     text-align: left;
     position: relative;
-    top: 7px;
+    top: 15px;
 }
 .p{
     display: grid;
@@ -613,7 +629,11 @@ audio{
     left: 15px;
     color: rgb(70, 70, 70);
 }
+
+
+
 /*EMPIEZA PÁGINA PLAYLISTS*/
+
 .cuerpo{
     display: grid;
     grid-template-columns: 2fr 6fr;
@@ -636,11 +656,11 @@ audio{
     bottom: 4px;
 }
 .columnaa1 .titulooo{
-    border-bottom: double;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 600;
     margin-left: 20px;
+    font-size: 25px;
 }
 .columnaa2{
     display: grid;
@@ -650,9 +670,10 @@ audio{
     position: relative;
     bottom: 5px;
 }
-.columnaa2 .titulocanciones{
-    margin-left: 350px;
+.titulocanciones{
+    text-align: center;
     margin-top: 10px;
+    font-weight: 600;
 }
 .cancioness{
     margin-top: 20px;
@@ -666,7 +687,7 @@ audio{
     bottom: 8px;
 }
 
-@media(width: 320px){
+@media(max-width: 320px){
     .todo{
         width: 100%;
         grid-template-rows: 70px 500px 70px 500px 70px 500px;
@@ -719,6 +740,111 @@ audio{
     }
     .columna5{
         display: none;
+    }
+
+    /*PLAYLISTS*/
+    .cuerpo{
+        grid-template-columns: 1fr;
+    }
+    .columnaa1{
+        display: none;
+    }
+    .columnaa2{
+        width: 325px;
+        position: relative;
+        right: 8px;
+    }
+    .columnaa2 .titulocanciones{
+        font-size: 15px;
+    }
+    .audiios{
+        margin-left: 2px;
+    }
+    .audiios h2{
+        margin-left: 5px;
+        font-size: 12px;
+        position: relative;
+        top: 5px;
+    }
+    .audiios h3{
+        margin-left: 5px;
+    }
+    .logoo{
+        width: 60px;
+        height: 60px;
+        position: relative;
+        left: 45px;
+        top: 10px;
+    }
+    .BarraDeBúsquedax{
+        position: fixed;
+        right: 2px;
+        top: 45px;
+        width: 160px;
+    }
+    .b{
+        font-size: 10px;
+        height: 25px;
+        border-radius: 10px;
+    }
+    .lineass{
+        position: fixed;
+        right: 20px;
+        top: 18px;
+        font-size: 20px;
+    }
+    .iconss{
+        position: fixed;
+        top: 15px;
+        right: 55px;
+        font-size: 20px;
+    }
+    .cancionnn div img{
+        margin-left: 5px;
+    }
+    .cancionnn div h2{
+        margin-left: 0;
+        font-size: 10px;
+        width: 80px;
+    }
+    .cancionnn div h3{
+        margin-left: 0;
+        font-size: 8px;
+        position: relative;
+        top: 1px;
+    }
+    .cancionnn div audio{
+        position: relative;
+        left: 10px;
+    }
+    .play{
+        position: relative;
+        top: 18px;
+        font-size: 22px;
+    }
+    .aleatorio{
+        font-size: 12px;
+        position: relative;
+        top: 20px;
+        right: 5px;
+    }
+    .youtube{
+        font-size: 17px;
+        position: relative;
+        top: 20px;
+        right: 5px;
+    }
+    .repetir{
+        font-size: 17px;
+        position: relative;
+        top: 20px;
+        left: 5px;
+    }
+    .mute{
+        font-size: 12px;
+        position: relative;
+        top: 20px;
+        left: 10px;
     }
 }
 
@@ -778,82 +904,41 @@ audio{
         position: fixed;
         top: 25px;
     }
-}
+    .disco{
+        position: relative;
+        left: 2px;
+    }
+    .deezer{
+        position: relative;
+        left: 220px;
+    }
+    .barrapie{
+        height: 50px;
+    }
 
-@media(max-width:375px){
-    .header{
-        height: 200px;
+    /*PLAYLISTS*/
+    .cuerpo{
+        grid-template-columns: 2fr 5fr;
     }
-    .logo{
-        width: 160px;
-        height: 155px;
-        margin-top: 25px;
-        right: 45px;
+    .titulocanciones{
+        font-size: 20px;
     }
-    .todo{
-        overflow: hidden;
+    .columnaa1 .titulooo{
+        font-size: 20px;
     }
-    .b{
-        height: 65px;
-        font-size: 35px;
-        margin-top: 50px;
+    .columnaa1{
+        padding: 5px;
+    }
+    .p{
+        margin-left: unset;
+    }
+    .p h2{
+        font-size: 12px;
+        margin-left: 4px;
         position: relative;
-        right: 60px;
-        width: 73%;
+        padding-top: 2px;
     }
-    #i{
-        position: relative;
-        top: -91px;
-        left: 8px;
-        font-size: 105px;
-    }
-    .fa-sliders-h:before{
-        position: relative;
-        font-size: 60px;
-        top: 45px
-    }
-    .todo{
-        margin-top: 200px;
-    }
-    .titulo{
-        font-size: 30px;
-        top: 25px;
-        margin-top: 7px;
-    }
-    .seccion1 div img{
-        width: 300px;
-        height: 300px;
-        position: relative;
-        top: -35px;
-        right: -60px;
-    }
-    .seccion1{
-        left: 15px;
-        top: 40px;
-    }
-    .seccion1 a{
-        top: 18px;
-        font-size: 29px;
-         left: -23px;
-    }
-    .titulo2{
-        font-size: 30px;
-        top: 25px;
-        margin-top: 7px;
-
-    }
-    .titulo3{
-        font-size: 30px;
-        top: 25px;
-        margin-top: 7px;
-    }
-    .seccion1{
-        gap: 40px;
-        
-    }
-    .seccion1 a.artista4{
-        display: none;
-    }
+<<<<<<< HEAD
 
 }
 @media(max-width: 1200px){
@@ -915,3 +1000,6 @@ audio{
 @media(max-width: 376px){
 
 }
+=======
+}
+>>>>>>> 0e942083b06a8d3e86aeb9a11328c04161d64a84
