@@ -1,9 +1,6 @@
 *{
     box-sizing: border-box;
 }
-body{
-
-}
 .container{
     display: grid;
     grid-template-rows: 130px 100px 60px 200px 60px 200px;
@@ -137,10 +134,15 @@ border-radius: 10%;
 
 /* Media Queries */
 /*Tablets*/
-
-@media(max-width: 10240px){
+@media(max-width: 1200px){
     .container{
         width: 100%;
+    }
+}
+@media(max-width: 1024px){
+    .container{
+        width: 1070px;
+        
     }
 }
 
@@ -151,7 +153,6 @@ border-radius: 10%;
         height: 3500px;
         display: grid;
         row-gap: 50px;    
-     
     }
     .header{
         height: 115px;
@@ -202,6 +203,11 @@ border-radius: 10%;
         grid-template-rows: 320px 320px 320px;
         position: relative;
         top: 1150px;
+    }
+    .otros a{
+        text-align: center;
+        position: relative;
+        bottom: 80px;
     }
 
 }

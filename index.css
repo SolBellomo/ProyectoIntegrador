@@ -856,3 +856,62 @@ audio{
     }
 
 }
+@media(max-width: 1200px){
+    .columnas{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 840px){
+    .foto{
+        width: 200px;
+    }
+    .fotonombre{
+        width: 50px;
+    }
+    .BarraDeBúsquedax{
+        width: 130px;
+    }
+    .columnas{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    }
+    .otroos{
+        display: none;
+    }
+}
+@media(max-width: 530px){
+    .datos{
+        display: none;
+    }
+    .iconoos{
+        width: 320px;
+        position: relative;
+        right: 60px;
+    }
+}
+@media(max-width: 440px){
+    .fotonombre{
+        display: none;
+    }
+    .col1{
+    height: 720px;
+    }
+    .audiios{
+    height: 80px;
+    }
+    .audiios img{
+    position: relative;
+    top: 10px;
+    }
+    .otros{
+    row-gap: 20px;
+    }
+    .otros h2{
+    height: 30px;
+    }
+}
+@media(max-width: 376px){
+
+}
