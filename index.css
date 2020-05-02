@@ -679,7 +679,7 @@ audio{
     bottom: 8px;
 }
 
-@media(max-width: 320px){
+@media (max-width: 320px){
     .todo{
         width: 100%;
         grid-template-rows: 70px 400px 70px 400px 70px 400px;
@@ -747,7 +747,139 @@ audio{
     .me h3{
         margin-left: 5px;
     }
-
+    /*PAG PPAL*/
+        .header{
+            height: 190px;
+        }
+        .logo{
+            width: 170px;
+            height: 170px;
+            right: 30px;
+        }
+        .icons{
+            font-size: 80px;
+            top: 79px;
+        }
+        #ba{
+            width: 360px;
+            margin-right: 50px;
+            margin-top: 70px;
+            font-size: 30px;
+            height: 63px;
+            position: relative;
+            bottom: 19px;
+        }
+        #i{
+            position: relative;
+            top: -94px;
+            left: 0px;        
+        }
+        .todo{
+            margin-top: 188px;
+            height: 1672px;
+            background-repeat: no-repeat;
+            grid-template-rows: 50px 500px 50px 500px 50px 600px;
+        }
+        .lineas{
+            position: fixed;
+            top: 250px;
+            right: 60px;
+            font-size: 70px;
+        }
+        .titulo2{
+            top: 45px;
+        }
+        .seccion1 div a {
+            top: 160px;
+            right: 48px;
+            width: 101%;
+            font-size: 43px;
+            position: relative;
+        }
+        .titulo2{
+            top: 53px;
+        }
+        .gradient{
+            position: relative;
+            top: -200px;
+            left: 0px;
+        }
+        .seccion2 div img {
+            margin-left: 32px;
+            width: 379px;
+        }
+        .disco{
+            left: -41px;
+            top: -242px;
+            position: relative;
+            font-size: 200px;
+        }
+        .t{
+            position: relative;
+            bottom: -80px;
+            left: -42px;
+            font-size: 43px;
+        }
+        .seccion3 div img {
+            position: relative;
+            top: 60px;
+            height: 164%;
+            width: 77%;
+            margin-left: 24px;
+        }
+        .seccion3 div a {
+            position: relative;
+            left: -31px;
+            font-size: 33px;
+            top: 206px;
+        }
+        #barraa {
+            height: 150px;
+        }
+        #cancionnn img {
+            width: 125px;
+            height: 145px;
+        }
+        #cancionnn div h3 {
+            margin-left: 0;
+            font-size: 27px;
+            position: relative;
+            top: 33px
+        }
+        #cancionnn div h2 {
+            margin-left: 0;
+            font-size: 35px;
+            width: 192px;
+        }
+        .cancionnn div audio {
+            position: relative;
+            left: 10px;
+            height: 80px;
+            width: 58px
+        }
+        #aleatorio{
+            font-size: 60px;
+        }
+        #iconoos {
+            width: 520px;
+            margin-left: 92px;
+            margin-top: 24px;
+            column-gap: 23px;
+        }
+        #youtube{
+            font-size: 60px;
+        }
+        #play{
+            font-size: 80px;
+            top: 0px;
+        }
+        #repetir{
+            font-size: 60px;
+        }
+        #mute{
+            font-size: 60px;
+        }
+        
     /*PLAYLISTS*/
     .cuerpo{
         grid-template-columns: 1fr;
@@ -781,12 +913,12 @@ audio{
         width: 60px;
         height: 60px;
         position: relative;
-        left: 45px;
+        left: 0px;
         top: 10px;
     }
     .BarraDeBúsquedax{
         position: fixed;
-        right: 2px;
+        right: 10px;
         top: 45px;
         width: 160px;
     }
@@ -802,9 +934,6 @@ audio{
         font-size: 20px;
     }
     .iconss{
-        position: fixed;
-        top: 15px;
-        right: 55px;
         font-size: 20px;
     }
     .cancionnn div img{

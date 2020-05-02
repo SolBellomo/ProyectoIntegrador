@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-image: url(imagenes/bg.degra.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
 }
@@ -522,4 +523,41 @@ h3{
         left: 9px;
     }
 
+}
+@media(max-width:320px){
+    .b{
+        left: -11px;
+    }
+    .albumStraits{
+        height: 160px;
+        width: 165px;
+    }
+    .descripcion{
+        margin-left: 18px;
+    }
+    h3{
+        font-size: 9px;
+    }
+    .arriba{
+        margin-left: 4px;
+        margin-top: 9px;
+    }
+    .nombre{
+        margin-bottom: 4px;
+    }
+    .youtube{
+        font-size: 20px;
+    }
+    .aleatorio{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .repetir{
+        font-size: 18px;
+        margin-left: 5px;
+        margin-bottom: 2px;
+    }
+    .mute{
+        font-size: 18px;
+    }
 }
