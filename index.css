@@ -884,6 +884,7 @@ audio{
     .cuerpo{
         grid-template-columns: 1fr;
         height: 840px;
+        width: 100%;
     }
     .columnaa1{
         display: none;

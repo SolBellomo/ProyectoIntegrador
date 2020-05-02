@@ -449,7 +449,7 @@ h3{
         font-size: 15px;
         width: 85px;
     }
-    .fas.fa-sliders-h{
+    .lineass{
         right: -179px;
         position: absolute;
         top: 10px;
@@ -483,6 +483,7 @@ h3{
     .descripcion{
         margin-left: 33px;
         margin-top: 0px;
+        color: white;
     }
     #s{
         margin-top: 10px;
