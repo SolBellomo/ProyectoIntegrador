@@ -10,55 +10,33 @@
     <link rel="stylesheet" href="index.js">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 <div class="container">
-    <div class="header">
-        <div>
-            <img src="Logo JASPO...png" alt="logo" class="logo">
-        </div>
-        <nav class="main nav">
-                <div class="BarraDeBúsqueda">
-                    <div class="buscar">
-                        <input class="b" id="ba" type="search" placeholder="search">
-                    </div>
-                    <a href="perfil.html"><i class="fas fa-user-circle icons" id="i"></i></a>
-                    <div class="topnav" id="myTopnav">
-                        <a></a>
-                        <a href="index.html">INICIO</a>
-                        <a href="artists.html">ARTISTAS</a>
-                        <a href="playlists.html">PLAYLIST</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-sliders-h lineas"></i></a>
-                   </div>  
+        <header class="header">
+                <div>
+                        <img src="Logo JASPO...png" alt="logo" class="logo">
                 </div>
-        </nav>
-    </div>
-        <div class="todo">
+                <nav>
+                        <section class="BarraDeBúsqueda">
+                                <form action="resultados.html" method="GET" class="buscar">
+                                        <input class= "b" id= "ba" type="text" name="search" placeholder = "Search">
+                                        <i class="fas fa-search"><button type="submit">Buscar</button></i>
+                                </form>
+                                <a href="perfil.html"><i class="fas fa-user-circle icons" id="i"></i></a>
+                                <div class="topnav" id="myTopnav">
+                                        <a></a>
+                                        <a href="index.html">INICIO</a>
+                                        <a href="artists.html">ARTISTAS</a>
+                                        <a href="playlists.html">PLAYLIST</a>
+                                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-sliders-h lineas"></i></a>
+                                </div>  
+                        </section>
+                </nav>
+        </header>
+        <main class="todo">
                 <a href="artists.html" class="titulo">ARTISTAS</a>
                 <div class="seccion1">
-                        <div class="columna">
-                                <div class="img-container">
-                                        <img src="imagenes/johnmayer.jpg" alt="John Mayer">
-                                </div>
-                                <a href="artists.html" class="artista">John Mayer</a>
-                        </div>
-                        <div class="columna">
-                                <img src="imagenes/jasonmraz.jpg" alt="Jason Mraz">
-                                <a href="artists.html" class="artista">Jason Mraz</a>
-                        </div>
-                        <div class="columna3">
-                                <img src="imagenes/edsheeran.png" alt="Ed Sheeran">
-                                <a href="artists.html" class="artista"><br>Ed Sheeran</a>
-                        </div>
-                        <div class="columna4">
-                                <img src="imagenes/148344-600-338.jpg" alt="Imagine Dragons">
-                                <a href="artists.html" class="artista">Imagine Dragons</a>
-                        </div>
-                        <div class="columna5">
-                                <img src="imagenes/TaylorSwift2.jpg" alt="Taylor Swift">
-                                <a href="artists.html" class="artista">Taylor Swift</a>
-                        </div>
                 </div>
 
                 <a href="albumDetail.html" class="titulo2">ALBUMS</a>
@@ -112,8 +90,8 @@
                                 <a href="perfil.html">Water Of Love<br>Dire Staits</a>
                         </div>
                 </div>
-        </div>
-        <div class="barrapie" id="barraa">
+        </main>
+        <footer class="barraa">
                 <div class="cancionnn" id="cancionnn">
                         <div class="audiios">
                                 <img src="imagenes/losdelpo.jpg" alt="Si La Vieras- Los Del Portezuelo">
@@ -146,7 +124,7 @@
                         </div>
                         <div></div>
                 </div>
-        </div>
+        </footer>
     <div class="nosotros">
         <div class="slogan">LO QUERÉS, LO JASPEÁS, LO ESCUCHÁS</div>
     </div> 
@@ -154,5 +132,6 @@
         <img src="imagenes/deezern.png" alt="Deezer">
     </div>   
 </div>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
