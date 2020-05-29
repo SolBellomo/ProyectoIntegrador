@@ -18,10 +18,11 @@
                         <img src="Logo JASPO...png" alt="logo" class="logo">
                 </div>
                 <nav>
-                        <div class="BarraDeBúsqueda">
-                                <div class="buscar">
-                                        <input class="b" id="ba" type="search" placeholder="search">
-                                </div>
+                        <section class="BarraDeBúsqueda">
+                                <form action="resultados.html" method="GET" class="buscar">
+                                        <input class= "b" id= "ba" type="text" name="search" placeholder = "Search">
+                                        <i class="fas fa-search"><button type="submit">Buscar</button></i>
+                                </form>
                                 <a href="perfil.html"><i class="fas fa-user-circle icons" id="i"></i></a>
                                 <div class="topnav" id="myTopnav">
                                         <a></a>
@@ -30,34 +31,12 @@
                                         <a href="playlists.html">PLAYLIST</a>
                                         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-sliders-h lineas"></i></a>
                                 </div>  
-                        </div>
+                        </section>
                 </nav>
         </header>
         <main class="todo">
                 <a href="artists.html" class="titulo">ARTISTAS</a>
                 <div class="seccion1">
-                        <div class="columna">
-                                <div class="img-container">
-                                        <img src="imagenes/johnmayer.jpg" alt="John Mayer">
-                                </div>
-                                <a href="artists.html" class="artista1">John Mayer</a>
-                        </div>
-                        <div class="columna">
-                                <img src="imagenes/jasonmraz.jpg" alt="Jason Mraz">
-                                <a href="artists.html" class="artista2">Jason Mraz</a>
-                        </div>
-                        <div class="columna3">
-                                <img src="imagenes/edsheeran.png" alt="Ed Sheeran">
-                                <a href="artists.html" class="artista3"><br>Ed Sheeran</a>
-                        </div>
-                        <div class="columna4">
-                                <img src="imagenes/148344-600-338.jpg" alt="Imagine Dragons">
-                                <a href="artists.html" class="artista4">Imagine Dragons</a>
-                        </div>
-                        <div class="columna5">
-                                <img src="imagenes/TaylorSwift2.jpg" alt="Taylor Swift">
-                                <a href="artists.html" class="artista5">Taylor Swift</a>
-                        </div>
                 </div>
 
                 <a href="albumDetail.html" class="titulo2">ALBUMS</a>

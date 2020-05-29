@@ -10,21 +10,32 @@ function myFunction() {
 //CHART
 
 let proxy = 'https://cors-anywhere.herokuapp.com/'
-let endpoint = 'https://api.deezer.com/chart/0'
+let url = proxy + 'https://api.deezer.com/chart/0/artists'
 
-fetch (proxy+endpoint) 
-.then(function(dataJson){
+fetch (url) 
+  .then(function(dataJson){
   return dataJson.json()
-})
-.then(function(resultado){
-  let charts = document.querySelector('.audiios');
+  })
+  .then(function(resultado){
+    console.log(resultado);
+    let artistaArray = resultado.data; 
+    let charts = document.querySelector('.seccion1');
+    let divColumna = '';
 
-  for(let i=0; i<8; i++){  
-    charts.img.innerHTML += '<img src="' + data[i].picture + '">'
-    charts.innerHTML += '<audio class="audiios" src="' + charts.tracks.link[i].preview + '" controls>' + '</audio>'
-    return console.log(resultado);
+  for(let i=0; i<5; i++){ 
+
+    divColumna += '<div class="columna">';
+    divColumna += '      <div class="img-container">';
+    divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
+    divColumna += '      </div>';
+    divColumna += '        <a href="artists.html?id=' + artistaArray[i].id + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
+    divColumna += '    </div>';
   }
+  charts.innerHTML = divColumna;  
 })
 .catch(function(error){
   return console.log(error);
 })
+
+
+
