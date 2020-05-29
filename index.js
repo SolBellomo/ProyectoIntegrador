@@ -17,7 +17,6 @@ fetch (proxy+endpoint)
   return dataJson.json()
 })
 .then(function(resultado){
-  let radio = resultado.playlists;
   let charts = document.querySelector('.audiios');
 
   for(let i=0; i<8; i++){  

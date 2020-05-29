@@ -279,7 +279,7 @@ a{
 
 /*BARRA FOOTER*/
 
-.barrapie{
+footer{
     display: grid;
     grid-template-columns: 2fr 3fr;
     background: linear-gradient(90deg, rgb(1, 63, 65), rgb(42, 105, 102),rgba(2, 158, 137, 0.726));
@@ -291,7 +291,7 @@ a{
     height: 46px;
     z-index: 15;
 }
-.barrapie img{
+footer img{
     width: 40px;
     height: 40px;
 }
@@ -391,13 +391,6 @@ a{
 
 /*MI PERFIL HTML*/
 
-.perfil{
-    background-image: url("imagenes/bg.degra.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 87px;
-    margin-bottom: 40px;
-}
 .header2{
     grid-template-columns: 1fr 2fr;
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
@@ -477,61 +470,75 @@ a{
 .columnas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    gap: 8px;
+    margin-top: 87px;
 }
 .c{
     border: 1px solid black;
 }
 .col1{
     display: grid;
-    grid-template-rows: 35px 500px;
+    grid-template-rows: 45px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    border-radius: 15px;
+    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
 }
 .col1 a{
-    border-bottom: double;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 17px;
+    text-align: left;
+    margin-left: 20px;
 }
 .col2{
     display: grid;
-    grid-template-rows: 35px 500px;
+    grid-template-rows: 45px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    border-radius: 15px;
+    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
 }
 .col2 a{
-    border-bottom: double;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 17px;
+    text-align: left;
+    margin-left: 20px;
 }
 .col3{
     display: grid;
-    grid-template-rows: 35px 500px;
+    grid-template-rows: 45px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    border-radius: 15px;
+    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
 }
 .col3 a{
-    border-bottom: double;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 17px;
+    text-align: left;
+    margin-left: 20px;
 }
 .playlists{
     display: grid;
     grid-template-rows: repeat (8, 15px);
     gap: 10px;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .canciones{
     gap: 10px;
-    margin-top: 35px;
     display: grid;
     grid-template-rows: repeat (8, 15px);
     gap: 10px;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .otros{
     display: grid;
     grid-template-rows: 20px 20px;
     position: relative;
-    bottom: 10px;
+    bottom: 7px;
 }
 .audiios{
     display: grid;
@@ -581,14 +588,6 @@ audio{
     width: 40px;
     height: 40px;
 }
-.p h2{
-    text-align: left;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    color: white;
-    font-size: 15px;
-}
 .p h3{
     text-align: right;
     font-family: proxima-nova, sans-serif;
@@ -598,8 +597,15 @@ audio{
     font-size: 12px;
     color: rgb(170, 169, 169);
 }
-.p a{
-    border-bottom: none;
+.pp{
+    text-align: left;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    bottom: 17px;
 }
 .foto img{
     height: 40px;
@@ -609,7 +615,7 @@ audio{
     display: grid;
     grid-template-rows: repeat (8, 50px);
     gap: 10px;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .me{
     display: grid;
@@ -629,6 +635,8 @@ audio{
     font-weight: 100;
     color: white;
     font-size: 15px;
+    position: relative;
+    bottom: 10px;
 }
 .me a{
     border-bottom: unset;
@@ -695,6 +703,14 @@ audio{
     color: rgb(123, 211, 211);
     position: relative;
     bottom: 8px;
+}
+.p h2{
+    text-align: left;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    font-size: 15px;
 }
 
 @media (max-width: 320px){
@@ -851,7 +867,7 @@ audio{
             font-size: 33px;
             top: 206px;
         }
-        #barraa {
+        .barraa {
             height: 150px;
         }
         #cancionnn img {
@@ -1073,7 +1089,7 @@ audio{
         position: relative;
         left: 220px;
     }
-    .barrapie{
+    footer{
         height: 50px;
     }
 
@@ -1096,6 +1112,12 @@ audio{
         margin-left: unset;
     }
     .p h2{
+        font-size: 12px;
+        margin-left: 4px;
+        position: relative;
+        padding-top: 2px;
+    }
+    .pp{
         font-size: 12px;
         margin-left: 4px;
         position: relative;
