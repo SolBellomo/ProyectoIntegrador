@@ -156,6 +156,7 @@ body{
 .seccion1 div img{
     object-fit: cover;
     border-radius: 50%;
+    height: 240px;
 }
 .columna{
     display: grid;
@@ -175,23 +176,7 @@ body{
 }
 .artista1{
     position: relative;
-    top: 40px;
-}
-.artista2{
-    position: relative;
-    top: 40px;
-}
-.artista3{
-    position: relative;
-    top: 25px;
-}
-.artista4{
-    position: relative;
-    top: 40px;
-}
-.artista5{
-    position: relative;
-    top: 43px;
+    top: 60px;
 }
 .seccion2{
     display: grid;

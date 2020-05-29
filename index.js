@@ -7,7 +7,7 @@ function myFunction() {
   }
 }
 
-//CHART
+//ARTIST
 
 let proxy = 'https://cors-anywhere.herokuapp.com/'
 let url = proxy + 'https://api.deezer.com/chart/0/artists'
@@ -37,5 +37,32 @@ fetch (url)
   return console.log(error);
 })
 
+let proxyy = 'https://cors-anywhere.herokuapp.com/'
+let album = proxyy + 'https://api.deezer.com/album' 
 
+fetch(album)
+  .then(function(dataJson){
+    return dataJson.json()
+  })
+  .then(function(results){
+    console.log(results);
+    let albumArray = results.data; 
+    let albuum = document.querySelector('.seccion2');
+    let seccion2div = '';
+
+    for(let i=0; i<5; i++){
+
+      seccion2div += '<div class="columna">';
+      seccion2div += '                                <img src="' + albumArray[i].picture + '" alt="' + albumArray[i].name + '">';
+      '<img src="imagenes/gradient.jpg" alt="" class="gradient">';
+      seccion2div += '                                <a href="artists.html" class="t">John Mayer</a>';
+      seccion2div += '                                <i class="fas fa-compact-disc disco"></i>';
+      seccion2div += '                        </div>';
+
+    }
+    albuum.innerHTML = seccion2div;
+  })
+  .catch(function(error){
+    return console.log(error);
+  })
 
