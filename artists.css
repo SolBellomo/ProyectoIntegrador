@@ -1,101 +1,62 @@
 *{
     box-sizing: border-box;
 }
-.container{
-    display: grid;
-    grid-template-rows: 130px 100px 60px 200px 60px 200px;
-    padding: 35px;
-    color: white;
+.containerr{
     margin: auto;
     gap: 20px;
     border: 8px solid white;
     text-align: center;
     width: 100%;
-    height: 1400px;
-    position: absolute;
-    left: 5px;
-    top: 120px;
-    background-image: url(imagenes/bg.degra.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 130px;
+    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
 }
-header{
+.nombre-artista{
     text-align: center;
-    height: 150px;
-    position: relative;
-    bottom: 20px;
+    height: 200px;
+    color: white; 
+    margin-top: 30px;
 }
-header img{
+.nombre-artista img{
     width: 200px;
     border-radius: 50%;
     object-fit: cover;
     height: 150px;
     width: 150px;
 }
-header h2{
+.nombre-artista h2{
     font-family: "Gill Sans", sans-serif;
 }
-.divisor1{
-    font-size: 20px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 30px;
-    border-bottom: 1px solid grey;
-}
-.divisor2{
-    color: white;
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 150px;
-    text-align: left;
-    margin-left: 30px;
-    border-bottom: 1px solid grey;
-    position: relative;
-    top: 120px;
-}
-.divisor3{
-    color: white;
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 150px;
-    text-align: left;
-    margin-left: 30px;
-    border-bottom: 1px solid grey;
-    position: relative;
-    top: 180px;
-}
-.top5{
+.cuerpooo{   
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 15px;
-    padding: 10px;
-    text-decoration: none;
-    font-family: "proxima-nova", sans-serif;
+    grid-template-rows: 350px 400px 430px;
+}
+.cancioness{
+    display: grid; 
+    grid-template-rows: 70px 55px 55px 55px 55px 55px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.titulo1{
+    font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: 100;
-    color: white;
+    font-weight: 600;
+    margin-left: 50px;
     font-size: 25px;
+    color: white;
+    text-align: left;
 }
-.top5audios{
+.audiiios{
     display: grid;
-    grid-template-rows: repeat (5, 50px);
+    grid-template-rows: repeat (5, 55px);
     grid-template-columns: 1fr 5fr 1fr;
-    height: 50px;
     border-bottom: 1px solid rgba(129, 129, 129, 0.685);
 }
-.top5audios img{
+.audiiios img{
     width: 50px;
     height: 50px;
 }
-.top5audios h2{
+
+.audiiios h2{
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
@@ -103,24 +64,37 @@ header h2{
     color: white;
     font-size: 15px;
 }
-.top5audios h3{
-    font-size: 15px;
+.audiiios h3{
+    font-size: 12px;
     color: white;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
     text-align: left;
+}
+.otrosss{
+    position: relative;
+    bottom: 10px; 
+}
+.divisor2{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 50px;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    margin-top: 50px;
+    height: 50px;
 }
 .albums{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px;
-    position: relative;
-    top: 120px;
 }
 .albums div div img{
-width: 70%;
+width: 85%;
 border-radius: 10%;
 }
 .albums div a{
@@ -131,31 +105,44 @@ border-radius: 10%;
     color:whitesmoke ;
     background-color: transparent;
     text-align: center;
+    position: relative;
+    top: 20px;
 }
 .img-container{
     text-align: center;
 }
-
+.divisor3{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 50px;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
 .otros{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 10px;
-    position: relative;
-    top: 180px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 20px;
 }
-.otros div .img-container{
-    width: 170px;
-    height: 170px;
+.otros img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 240px;
 }
 .otros a{
-    text-decoration: none;
-    font-family: "proxima-nova", sans-serif;
+    font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    color:whitesmoke ;
-    background-color: transparent;
-    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 20px;
 }
+
 
 /* Media Queries */
 /*Tablets*/

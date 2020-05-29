@@ -33,6 +33,7 @@ fetch (url)
   }
   charts.innerHTML = divColumna;  
 })
+
 .catch(function(error){
   return console.log(error);
 })
