@@ -26,13 +26,7 @@
 .nombre-artista h2{
     font-family: "Gill Sans", sans-serif;
 }
-.cuerpooo{   
-    display: grid;
-    grid-template-rows: 350px 400px 430px;
-}
 .cancioness{
-    display: grid; 
-    grid-template-rows: 70px 55px 55px 55px 55px 55px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -47,9 +41,10 @@
 }
 .audiiios{
     display: grid;
-    grid-template-rows: repeat (5, 55px);
     grid-template-columns: 1fr 5fr 1fr;
+    height: 50px;
     border-bottom: 1px solid rgba(129, 129, 129, 0.685);
+    margin-bottom: 5px;
 }
 .audiiios img{
     width: 50px;
@@ -60,9 +55,9 @@
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
 }
 .audiiios h3{
     font-size: 12px;
@@ -71,6 +66,8 @@
     font-style: normal;
     font-weight: 100;
     text-align: left;
+    position: relative;
+    bottom: 7px;
 }
 .otrosss{
     position: relative;
@@ -89,7 +86,7 @@
 }
 .albums{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     padding: 20px;
 }
@@ -119,6 +116,7 @@ border-radius: 10%;
     font-size: 25px;
     color: white;
     text-align: left;
+    margin-top: 70px;
 }
 .otros{
     display: grid;
@@ -126,6 +124,7 @@ border-radius: 10%;
     grid-template-rows: 1fr;
     gap: 10px;
     padding: 20px;
+    margin-bottom: 80px;
 }
 .otros img{
     object-fit: cover;

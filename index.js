@@ -25,7 +25,7 @@ fetch (url)
   for(let i=0; i<5; i++){ 
 
     divColumna += '<div class="columna">';
-    divColumna += '      <div class="img-container">';
+    divColumna += '      <div class="img-container">'; 
     divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
     divColumna += '      </div>';
     divColumna += '        <a href="artists.html?id=' + artistaArray[i].id + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
@@ -38,8 +38,11 @@ fetch (url)
   return console.log(error);
 })
 
+
+//ALBUMS 
+
 let proxyy = 'https://cors-anywhere.herokuapp.com/'
-let album = proxyy + 'https://api.deezer.com/album' 
+let album = proxyy + 'https://api.deezer.com/chart/0/albums' 
 
 fetch(album)
   .then(function(dataJson){
@@ -54,9 +57,9 @@ fetch(album)
     for(let i=0; i<5; i++){
 
       seccion2div += '<div class="columna">';
-      seccion2div += '                                <img src="' + albumArray[i].picture + '" alt="' + albumArray[i].name + '">';
+      seccion2div += '                                <img src="' + albumArray[i].cover + '" alt="' + albumArray[i].title + '">' +
       '<img src="imagenes/gradient.jpg" alt="" class="gradient">';
-      seccion2div += '                                <a href="artists.html" class="t">John Mayer</a>';
+      seccion2div += '                                <a href="artists.html" class="t"> ' + albumArray[i].title + '</a>';
       seccion2div += '                                <i class="fas fa-compact-disc disco"></i>';
       seccion2div += '                        </div>';
 
