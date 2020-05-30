@@ -87,7 +87,7 @@ body{
   
 .section1{
     display: grid;
-    grid-template-columns: 20% 20%;
+    grid-template-columns: 16% 84%;
     grid-template-rows: 200px;
     margin-top: 95px;
 }
@@ -176,7 +176,8 @@ h2{
 .albumStraits{
     height: 100%;
     width: 100%;
-    border-radius: 2%;   
+    border-radius: 2%;  
+     
 }
 #textAlbum{
     font-weight: 300;
@@ -197,7 +198,7 @@ h2{
 }
 .cancion{
     display: grid;
-    grid-template-columns: 20% 65% 15%;
+    grid-template-columns: 6% 91% 4%;
     grid-template-rows: 100%;
     background-image: url(imagenes/bg.degra.jpg);
     border-radius: 5px;
@@ -265,7 +266,7 @@ audio{
 #l{
     height: 42px;
     width: 54px;
-    margin-left: 55px;
+    
     padding: 2px;
     border-right: white 1px solid;
 }
@@ -351,18 +352,18 @@ h3{
     display: grid;
     grid-template-rows: 60% 40%;
     grid-template-columns: 100%;
-    margin-left: -170px;
+    
 }
 .albumito{
     height: 100%;
-    width: 35%;
+    width: 100%;
     border-radius: 2%;
 }
 .puntitos{
     color: white;
     font-size: 30px;
     margin-top: 12px;
-    margin-left: 100px;
+    
 }
 .Artista{
     font-family: 'Quicksand', sans-serif;
@@ -388,7 +389,7 @@ h3{
 
 }
 #tituloAlbum{
-    margin-top: 3px;
+    
     text-decoration: underline rgba(2, 112, 114, 0.548) ;
     font-size: 22px;
     font-weight: 500;
@@ -424,16 +425,13 @@ h3{
 }
 
 @media (max-width:768px){
-    .descripcion{
-        margin-top: 10px;
-        margin-left: -150px;
+
+    .section1{
+        grid-template-columns: 30% 70%;
     }
     
-    .nombreCancion{
-        margin-left: -100px;
-    }
-    .puntitos{
-        margin-left: 75px;
+    .cancion{
+        grid-template-columns: 10% 86% 4%;
     }
     h3{
         text-align: center;
@@ -442,6 +440,9 @@ h3{
 }
 
 @media (max-width:375px){
+    .section1{
+        grid-template-columns: 35% 65%;
+    }
     .topnav.responsive a {
         left: 356px;
     }
@@ -480,17 +481,13 @@ h3{
         position: relative;
         left: 10px;
     }
-    .descripcion{
-        margin-left: 33px;
-        margin-top: 0px;
-        color: white;
-    }
+    
     #s{
         margin-top: 10px;
         margin-bottom: 5px
     }
     .nombreCancion{
-        margin-left: -30px;
+        
         font-size: 15px;
         position: relative;
         bottom: 6px
@@ -498,11 +495,9 @@ h3{
     .Songs{
         height: 200px
     }
-    .albumito{
-        width: 60%;
-    }
+    
     .puntitos{
-        margin-left: 30px;
+        
         margin-top: 7px;
         font-size: 25px;
     }
@@ -514,14 +509,15 @@ h3{
         left: 5px;
         margin-top: 35px;
     }
-    .sectionSongs{
-        grid-template-rows: 200px;
-    }
+    
     #l{
         margin-left: 0px;
     }
     h3{
         left: 9px;
+    }
+    .sectionSongs{
+        grid-template-rows: 216px;
     }
 
 }
@@ -529,13 +525,13 @@ h3{
     .b{
         left: -11px;
     }
-    .albumStraits{
-        height: 160px;
-        width: 165px;
+    .sectionSongs{
+        grid-template-rows: 205px;
     }
-    .descripcion{
-        margin-left: 18px;
+    .cancion {
+        grid-template-columns: 14% 82% 4%;
     }
+    
     h3{
         font-size: 9px;
     }
