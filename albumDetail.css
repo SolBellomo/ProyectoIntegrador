@@ -1,5 +1,5 @@
 body{
-    margin: 0px;
+    
     background-image: url(imagenes/bg.degra.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
@@ -132,6 +132,30 @@ body{
     padding: 5px;
     row-gap: 10px;
 }
+.Songs::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.Songs::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.Songs::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.Songs::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.Songs::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    
+}
+
+.Songs::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
 .barras{
     display: grid;
     grid-template-columns: 100%;
@@ -198,7 +222,7 @@ h2{
 }
 .cancion{
     display: grid;
-    grid-template-columns: 6% 91% 4%;
+    grid-template-columns: 5% 91% 4%;
     grid-template-rows: 100%;
     background-image: url(imagenes/bg.degra.jpg);
     border-radius: 5px;
@@ -431,7 +455,7 @@ h3{
     }
     
     .cancion{
-        grid-template-columns: 10% 86% 4%;
+    grid-template-columns:15% 80% 4%;
     }
     h3{
         text-align: center;
