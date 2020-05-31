@@ -5,7 +5,7 @@
 }
 .main-nav1{
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 80% 20%;
 }
 .BarraDeBúsquedax1{
     display: grid;
