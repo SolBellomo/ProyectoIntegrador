@@ -516,6 +516,31 @@ audio{
     color: white;
     font-size: 12px;
     color: rgb(170, 169, 169);
+    margin-right: 8px;
+}
+.playlists::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.playlists::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.playlists::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.playlists::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.playlists::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    
+}
+
+.playlists::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
 .pp{
     text-align: left;
