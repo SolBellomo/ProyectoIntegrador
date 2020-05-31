@@ -1,12 +1,3 @@
-function myFunction() {
-  let x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
 //ARTIST
 
 let proxy = 'https://cors-anywhere.herokuapp.com/'
@@ -28,7 +19,7 @@ fetch (url)
     divColumna += '      <div class="img-container">'; 
     divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
     divColumna += '      </div>';
-    divColumna += '        <a href="artists.html?id=' + artistaArray[i].id + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
+    divColumna += '        <a href="artistsDetail.html?id=' + artistaArray[i].id + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
     divColumna += '    </div>';
   }
   charts.innerHTML = divColumna;  
@@ -59,7 +50,7 @@ fetch(album)
       seccion2div += '<div class="columna">';
       seccion2div += '                                <img src="' + albumArray[i].cover + '" alt="' + albumArray[i].title + '">' +
       '<img src="imagenes/gradient.jpg" alt="" class="gradient">';
-      seccion2div += '                                <a href="artists.html" class="t"> ' + albumArray[i].title + '</a>';
+      seccion2div += '                                <a href="artistsDetail.html" class="t"> ' + albumArray[i].title + '</a>';
       seccion2div += '                                <i class="fas fa-compact-disc disco"></i>';
       seccion2div += '                        </div>';
 
@@ -70,3 +61,12 @@ fetch(album)
     return console.log(error);
   })
 
+
+
+//EVENTOS
+
+let boton = document.querySelector('.buscar');
+  boton.onmouseover = function(){
+    boton.color = 'red'; 
+  }
+  

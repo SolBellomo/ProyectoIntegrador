@@ -447,7 +447,6 @@ footer img{
     grid-template-rows: repeat (8, 15px);
     gap: 10px;
     margin-top: 25px;
-    overflow: auto;
 }
 .canciones{
     gap: 10px;
@@ -568,8 +567,6 @@ audio{
     left: 15px;
     color: rgb(70, 70, 70);
 }
-
-
 
 /*EMPIEZA PÁGINA PLAYLISTS*/
 
@@ -882,12 +879,6 @@ audio{
         font-size: 10px;
         height: 25px;
         border-radius: 10px;
-    }
-    .lineass{
-        position: fixed;
-        right: 20px;
-        top: 18px;
-        font-size: 20px;
     }
     .iconss{
         font-size: 20px;

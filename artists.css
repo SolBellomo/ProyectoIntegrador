@@ -1,259 +1,73 @@
-*{
-    box-sizing: border-box;
+.logoo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 80px;
 }
-.containerr{
-    margin: auto;
-    gap: 20px;
-    border: 8px solid white;
-    text-align: center;
+header{
+    grid-template-columns: 1fr 2fr;
+    background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 90px;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.icons{
+    color: white;
+    font-size: 32px;
+    position: fixed;
+    right: 110px;
+    top: 35px;
+}
+
+#i{
+	border: 1.5px solid rgb(34, 34, 34);
+    border-radius: 50%;
+}
+
+.BarraDeBúsqueda{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.buscar {
+    width: 450px;
+    position: relative;
+    top: 30px;
+    left: 350px;
+}
+.menu{
+    position: relative;
+    left: 70px;
+    word-spacing: 40px;
+}
+.b {
+ 	height: 40px;
+    padding: 0 46px 0 10px;
+	border-color: rgb(34, 34, 34);
+    border-radius: 35px; 
+    border-style: solid;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+	font-size: 15px;
     width: 100%;
-    margin-top: 130px;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
 }
-.nombre-artista{
-    text-align: center;
-    height: 200px;
-    color: white; 
-    margin-top: 30px;
-}
-.nombre-artista img{
-    width: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    height: 150px;
-    width: 150px;
-}
-.nombre-artista h2{
-    font-family: "Gill Sans", sans-serif;
-}
-.cancioness{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.titulo1{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    margin-left: 50px;
-    font-size: 25px;
+.button{
+    background: transparent;
+    border-color: transparent;
     color: white;
-    text-align: left;
+    position: relative;
+    left: 250px;
+    bottom: 38px;
+    font-size: 30px;
 }
-.audiiios{
+.todo-albums{
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    height: 50px;
-    border-bottom: 1px solid rgba(129, 129, 129, 0.685);
-    margin-bottom: 5px;
-}
-.audiiios img{
-    width: 50px;
-    height: 50px;
-}
-
-.audiiios h2{
-    text-align: left;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    color: white;
-    font-size: 17px;
-}
-.audiiios h3{
-    font-size: 12px;
-    color: white;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    text-align: left;
-    position: relative;
-    bottom: 7px;
-}
-.otrosss{
-    position: relative;
-    bottom: 10px; 
-}
-.divisor2{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    margin-left: 50px;
-    font-size: 25px;
-    color: white;
-    text-align: left;
-    margin-top: 50px;
-    height: 50px;
-}
-.albums{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    padding: 20px;
-}
-.albums div div img{
-width: 85%;
-border-radius: 10%;
-}
-.albums div a{
-    text-decoration: none;
-    font-family: "proxima-nova", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    color:whitesmoke ;
-    background-color: transparent;
-    text-align: center;
-    position: relative;
-    top: 20px;
-}
-.img-container{
-    text-align: center;
-}
-.divisor3{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    margin-left: 50px;
-    font-size: 25px;
-    color: white;
-    text-align: left;
-    margin-top: 70px;
-}
-.otros{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    gap: 10px;
-    padding: 20px;
-    margin-bottom: 80px;
-}
-.otros img{
-    object-fit: cover;
-    border-radius: 50%;
-    height: 240px;
-}
-.otros a{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    color: white;
-    text-align: left;
-    position: relative;
-    top: 20px;
-}
-
-
-/* Media Queries */
-/*Tablets*/
-@media(max-width: 1200px){
-    .container{
-        width: 100%;
-    }
-}
-@media(max-width: 1024px){
-    .container{
-        width: 1070px; 
-    }
-}
-
-@media(max-width: 768px){
-    body{
-        background: linear-gradient(90deg,rgba(1, 5, 8, 0.534), rgb(25, 30, 44));
-        background-size: 250%;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-    .container{
-        width: 100%;
-        height: 3500px;
-        display: grid;
-        row-gap: 50px;  
-        position: relative;
-        top: 85px; 
-        background: none; 
-        border: none;
-    }
-    .header{
-        height: 95px;
-    }
-    .logo{
-        width: 90px;
-        height: 85px;
-        position: relative;
-        left: 0px;
-    }
-    .BarraDeBúsqueda{
-        width: 200px;
-    }
-    .top5{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-content: left;
-    }
-    iframe{
-        width: 60%;
-    }
-    .divisor2{
-        position: relative;
-        top: 520px;
-    }
-    .albums{
-        position: relative;
-        top: 500px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 50px;
-        text-align: center;
-    }
-    .albums div{
-        height: 240px;
-    }
-    .img-container{
-        object-fit: cover;
-        width: 200px;
-        height: 300px;
-    }
-    .divisor3{
-        position: relative;
-        top: 1170px;
-    }
-    .otros{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 320px 320px 320px;
-        position: relative;
-        top: 1150px;
-    }
-    .otros a{
-        justify-content: center;
-        position: relative;
-        right: 15px;
-    }
-    .barrapie .cancionnn .audiios{
-        position: relative;
-        left: 1px;
-    }
-
-}
-
-/*Mobile*/
-@media(max-width: 425px){
-    
-    .container{
-        width: 100%;
-        height: 3500px;
-    }
-    .top5{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    .divisor2{
-        position: relative;
-        top: 500px;
-    }
-    .albums{
-        position: relative;
-        top: 500px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }

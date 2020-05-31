@@ -51,7 +51,7 @@ fetch(url)
         divColumna += '                              <div class="img-container">';
         divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
         divColumna += '      </div>';
-        divColumna += '        <a href="artists.html?id=' + artistaArray[i].id + '"' + '>' + artistaArray[i].name + '</a>';
+        divColumna += '        <a href="artistsDetail.html?id=' + artistaArray[i].id + '"' + '>' + artistaArray[i].name + '</a>';
         divColumna += '    </div>';
       }
       charts.innerHTML = divColumna;  
@@ -83,7 +83,7 @@ fetch(url)
         divAlbum += '                              <div class="img-container">';
         divAlbum += '        <img src="' +  albumdetail[i].cover + '" alt="' + albumdetail[i].title + '">';
         divAlbum += '      </div>';
-        divAlbum += '        <a href="artists.html?id=' + albumdetail[i].id + '"' + '>' + albumdetail[i].title + '</a>';
+        divAlbum += '        <a href="artistsDetail.html?id=' + albumdetail[i].id + '"' + '>' + albumdetail[i].title + '</a>';
         divAlbum += '    </div>';
       }
       album.innerHTML = divAlbum;  
