@@ -605,6 +605,9 @@ audio{
     position: relative;
     left: 80px;
 }
+.logo1{
+    margin-top: 5px;
+}
 .columnaa1{
     display: grid;
     grid-template-rows: 35px 490px;

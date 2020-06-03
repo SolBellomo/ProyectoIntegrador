@@ -1,11 +1,11 @@
 body{
-    margin: 0px;
+    
     background-image: url(imagenes/bg.degra.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
 }
 .header2{
-    grid-template-columns: 1fr 2fr;
+    
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     background-repeat: no-repeat;
     background-size: 100%;
@@ -16,74 +16,13 @@ body{
     left: 0;
     z-index: 9;
 }
-.logoo{
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    left: 80px;
-}
-.BarraDeBúsquedax {
-	height: auto;
-	width: auto;
-	background: transparent;
-    margin: 0;
-    position: absolute;
-    right: 200px;
-    top: 20px;
-}
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-    position: relative;
-    left: 300px;
-    top: -1px;
-    background-color: rgb(10, 59, 61);
-}
-.buscar {
-	padding: 0 66px 0 0; /* Right padding for submit button width */
-	overflow: hidden;
-}
-.b {
-	box-sizing: content-box;
- 	height: 40px;
-    padding: 0 46px 0 10px;
-	border-color: rgb(34, 34, 34);
-    border-radius: 35px; 
-    border-style: solid;
-    color: #333;
-    font-family: 'Helvetica', sans-serif;
-	font-size: 15px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 100%;
-}
-.topnav a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    font-size: 17px;
-    width: 145px;
-}
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-}
-  .topnav a.icon {
-    float: right;
-    display: block;
-}
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-    background-color: rgb(46, 136, 138);
-}
+
+
+
+
+
+
+
   
 .section1{
     display: grid;
@@ -92,20 +31,7 @@ body{
     margin-top: 95px;
 }
 
-.lineass{
-    font-size: 30px;
-    color: white;
-    position: fixed;
-    top: 27px;
-    right: 45px;
-}
-.iconss{
-    color: white;
-    font-size: 30px;
-    position: fixed;
-    right: 100px;
-    top: 25px;
-}
+
 .sectionSongs{
     display: grid;
     grid-template-rows: 300px;
@@ -115,12 +41,7 @@ body{
 .title{
     padding: 4px;
 }
-.config{
-    margin-left: 35%;
-    padding: 5px;
-    margin-top: 5px;
-    
-}
+
 .fotoAlbum{
     padding: 5%;
 }
@@ -132,42 +53,32 @@ body{
     padding: 5px;
     row-gap: 10px;
 }
-.barras{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 60px 60px;
-    margin-top: 5px;
-
+.Songs::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
-.reproduccion{
-    display: grid;
-    grid-template-columns: 18% 18% 28% 18% 18%;
-    grid-template-rows: 100%;
-    margin-top: 5px;
-    background: linear-gradient(90deg,rgba(2, 158, 137, 0.726), rgb(42, 105, 102), rgb(1, 63, 65));
-    background-repeat: no-repeat;
-    background-size: 100%;
-
+.Songs::-webkit-scrollbar:vertical {
+    width:10px;
 }
-.BarraDeBusqueda{
 
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 100%;
-    margin-top: 5px;
+.Songs::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.Songs::-webkit-scrollbar:horizontal {
+    height: 10px;
 }
-.logo{
+
+.Songs::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
     
-    left: 20px;
-    border-radius: 50%;
-    width: 60px;
-    height: 100%; 
-    padding: 1px;
-     
 }
-img{
-    height: 0px;
-    width: 0px;
+
+.Songs::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+.container1{
+    text-align: center;
 }
 h2{
     position: relative;
@@ -196,34 +107,8 @@ h2{
     
     color: white;
 }
-.cancion{
-    display: grid;
-    grid-template-columns: 6% 91% 4%;
-    grid-template-rows: 100%;
-    background-image: url(imagenes/bg.degra.jpg);
-    border-radius: 5px;
-    padding: 5px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.fas.fa-play{
-    font-size: 45px;
-    color: transparent;
-    color: gray;
-    color: rgba(34, 31, 31, 0.664);
-    position: absolute;
-    top: 7px;
-    left: 21px;
-}
-.fas.fa-sliders-h{
-    color: white;
-    font-size: 30px;
-    margin-top: 7px;
 
-}
-.audio{
-    width: 100%;
-}
+
 
 .footer{
     display: grid;
@@ -280,50 +165,9 @@ h3{
     font-weight: 100;
     text-align: left;
 }
-.arriba{
-    position: relative;
-    bottom: 5px;
 
-}
-.play{
-    font-size: 33px;
-    color: white;
-    position: relative;
-    top: 7px;
-}
 
-.youtube{
-    font-size: 25px;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-}
 
-.aleatorio{
-    font-size: 20px;
-    color: white;
-    position: fixed;
-    bottom: 12px;
-}
-.repetir{
-    font-size: 25px;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-}
-
-.mute{
-    font-size: 20px;
-    color: white;
-    position: fixed;
-    bottom: 12px;
-}
-.b{
-    left: 0px;
-    top: -10px;
-    width: 90%; 
-    height: 20px;
-}
 #d{
     width: 130px;
     height: 75px;
@@ -344,40 +188,11 @@ h3{
     padding: 20px;
 }
 #i{
-    height: 50%;
-    width: 5%;
+    
     margin-top: 10px;
 }
-.nombreCancion{
-    display: grid;
-    grid-template-rows: 60% 40%;
-    grid-template-columns: 100%;
-    
-}
-.albumito{
-    height: 100%;
-    width: 100%;
-    border-radius: 2%;
-}
-.puntitos{
-    color: white;
-    font-size: 30px;
-    margin-top: 12px;
-    
-}
-.Artista{
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    margin-left: 10px;
 
 
-}
-.Nombre{
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 7px;
-    margin-left: 10px;
-}
 #s{
     font-weight: 500;
     margin-left: 10px;
@@ -423,6 +238,48 @@ h3{
     color: #333;
     
 }
+.audiios {
+    display: grid;
+    grid-template-rows: repeat (8, 50px);
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 50px;
+    margin-left: 20px;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.685);
+}
+audio {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+    text-align: left;
+    position: relative;
+    top: 15px;
+}
+.otros {
+    display: grid;
+    grid-template-rows: 20px 20px;
+    position: relative;
+    bottom: 7px;
+}
+.audiios img {
+    width: 40px;
+    height: 40px;
+}
+.audiios h2 {
+    text-align: left;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    font-size: 15px;
+}
+.audiios h3 {
+    font-size: 12px;
+    color: white;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: left;
+}
 
 @media (max-width:768px){
 
@@ -430,9 +287,7 @@ h3{
         grid-template-columns: 30% 70%;
     }
     
-    .cancion{
-        grid-template-columns: 10% 86% 4%;
-    }
+
     h3{
         text-align: center;
     }
@@ -457,50 +312,23 @@ h3{
     }
     #i{
         position: absolute;
-        right: -113px;
+    
         top: 7px;
     }
-    .buscar{
-        padding: 11px;
-        position: relative;
-        left: 120px;
-        top: 18px
-    }
-    .b{
-        width: 80px;
-        position: relative;
-        left: 9px;
-        height: 25px;
-        top: -11px;
-        bottom: 5px;
-    }
-    .logoo{
-        width: 70px;
-        height: 70px;
-        top: 10px;
-        position: relative;
-        left: 10px;
-    }
+    
+    
+   
     
     #s{
         margin-top: 10px;
         margin-bottom: 5px
     }
-    .nombreCancion{
-        
-        font-size: 15px;
-        position: relative;
-        bottom: 6px
-    }
+    
     .Songs{
         height: 200px
     }
     
-    .puntitos{
-        
-        margin-top: 7px;
-        font-size: 25px;
-    }
+    
     #d{
         width: 80px;
         height: 47px;
@@ -528,33 +356,10 @@ h3{
     .sectionSongs{
         grid-template-rows: 205px;
     }
-    .cancion {
-        grid-template-columns: 14% 82% 4%;
-    }
+    
     
     h3{
         font-size: 9px;
     }
-    .arriba{
-        margin-left: 4px;
-        margin-top: 9px;
-    }
-    .nombre{
-        margin-bottom: 4px;
-    }
-    .youtube{
-        font-size: 20px;
-    }
-    .aleatorio{
-        font-size: 18px;
-        margin-left: 5px;
-    }
-    .repetir{
-        font-size: 18px;
-        margin-left: 5px;
-        margin-bottom: 2px;
-    }
-    .mute{
-        font-size: 18px;
-    }
+   
 }
