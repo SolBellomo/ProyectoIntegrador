@@ -70,3 +70,35 @@ let boton = document.querySelector('.buscar');
     boton.color = 'red'; 
   }
   
+
+
+//BARRA DE BÚSQUEDA
+
+let results = document.querySelector('.buscar');
+
+let queryString = location.search; //el primer atributo me permite bajar los datos de la url
+let queryStringObj = new URLSearchParams(queryString); //para usar la API
+
+let resultadosFormulario = queryStringObj.get('search');
+console.log(resultadosFormulario)
+
+let urlDeezer = '//Insertar url//';
+let urll = urlDeezer + resultadosFormulario;
+console.log(urll)
+
+fetch(urll)
+    .then(function(ResponseJson){
+        return ResponseJson.json();
+    })
+    .then(function(busqueda){
+        let results = document.querySelector('.buscar');
+        let resultados = busqueda.data;
+
+        resultados.forEach(function(resultado){
+            results.innerHTML += '<h1>' + resultado.title + '</h1>' + '<img src="' + resultado.images.original.url + '">';
+        })
+        console.log(resultados)
+    })
+    .catch(function(error){
+        console.log(error)
+    })
