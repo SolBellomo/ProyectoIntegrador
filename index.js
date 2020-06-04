@@ -50,7 +50,7 @@ fetch(album)
       seccion2div += '<div class="columna">';
       seccion2div += '                                <img src="' + albumArray[i].cover + '" alt="' + albumArray[i].title + '">' +
       '<img src="imagenes/gradient.jpg" alt="" class="gradient">';
-      seccion2div += '                                <a href="artistsDetail.html" class="t"> ' + albumArray[i].title + '</a>';
+      seccion2div += '                                <a href="albumDetail.html?id=' + albumArray[i].id + '"' + ' class="t"> ' + albumArray[i].title + '</a>';
       seccion2div += '                                <i class="fas fa-compact-disc disco"></i>';
       seccion2div += '                        </div>';
 
