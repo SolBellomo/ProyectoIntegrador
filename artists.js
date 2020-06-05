@@ -9,14 +9,14 @@ fetch (url)
   .then(function(resultado){
     console.log(resultado);
     let artistaArray = resultado.data; 
-    let charts = document.querySelector('.seccion1');
+    let charts = document.querySelector('.todo-albums');
     let divColumna = '';
 
-  for(let i=0; i<10; i++){ 
+  for(let i=0; i<artistaArray.length; i++){ 
 
     divColumna += '<div class="columna">';
     divColumna += '      <div class="img-container">'; 
-    divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
+    divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '" class= "img">';
     divColumna += '      </div>';
     divColumna += '        <a href="artistsDetail.html?id=' + artistaArray[i].id + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
     divColumna += '    </div>';

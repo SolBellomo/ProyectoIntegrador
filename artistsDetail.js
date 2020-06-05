@@ -14,7 +14,6 @@ fetch(url)
         return response.json();
     })
     .then(function(resultado){
-
             console.log(resultado)
             let profile = resultado.data;
             let avatar = document.querySelector('.avatar');
@@ -33,7 +32,7 @@ fetch(url)
 //ARTISTAS RECOMENDADOS 
 
     let proxy2 = 'https://cors-anywhere.herokuapp.com/'
-    let url2 = proxy2 + 'https://api.deezer.com/chart/0/artists'
+    let url2 = proxy2 + 'https://api.deezer.com/artist/27/related'
     
     fetch (url2) 
       .then(function(dataJson){

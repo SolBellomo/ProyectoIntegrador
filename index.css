@@ -1,14 +1,11 @@
 *{
     box-sizing: border-box;
 }
-
-body{
-    background-color: white;
-}
 .container{
     margin: auto;
     text-align: center;
     border-top: 1px solid white;
+    background-color: white;
 }
 .header{
     display: grid;
@@ -45,7 +42,7 @@ body{
 
 /*BARRA DE BUSQUEDA*/
 
-.BarraDeBúsqueda{
+.BarraDeBusqueda{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -84,24 +81,11 @@ body{
 
 .todo{
     display: grid;
-    grid-template-rows: 50px 350px 50px 350px 50px 350px;
+    grid-template-rows: 50px 400px 50px 400px 50px 345px 50px 400px;
     background-image: url("imagenes/bg.degra.jpg");
     background-repeat: no-repeat;
     background-size: 250%;
     margin-top: 120px;
-    height: 1150px;
-}
-
-.titulo{
-    font-size: 17px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 80px;
-    border-bottom: 1px solid grey;
 }
 
 .seccion1{
@@ -117,25 +101,9 @@ body{
     border-radius: 50%;
     height: 240px;
 }
-.columna{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
-.columna3{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
-.columna4{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
-.columna5{
-    display: grid;
-    grid-template-rows: 200px 50px;
-}
 .artista1{
     position: relative;
-    top: 60px;
+    top: 35px;
 }
 .seccion2{
     display: grid;
@@ -145,46 +113,51 @@ body{
     margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
 }
-.seccion2 a{
-    text-align: center;
+.seccion2 img{
+    border-radius: 10%;
+    height: 240px;
+}
+.t-albums{
+    position: relative;
+    top: 35px;
 }
 .seccion3 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 20px;
-    height: 300px;
+    margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
 }
-
+.seccion3 img{
+    height: 240px;
+}
+.tracks{
+    position: relative;
+    top: 35px;
+}
+.seccion4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;    
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(34, 30, 30, 0.918);
+}
+.seccion4 img{
+    height: 240px;
+}
+.genres{
+    position: relative;
+    bottom: 140px;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
 .titulo{
     font-size: 17px;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 80px;
-    border-bottom: 1px solid grey;
-}
-
-.titulo2{
-    color: white;
-    margin-top: 15px;
-    font-size: 17px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 80px;
-    border-bottom: 1px solid grey;
-}
-
-.titulo3{
-    color: white;
-    font-size: 17px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 3px;
     font-weight: 500;
@@ -197,20 +170,6 @@ img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.disco{
-    font-size: 170px;
-    position: relative;
-    color: rgba(34, 31, 31, 0.664);
-    bottom: 255px;
-}
-.gradient{
-    position: relative;
-    opacity: 0.30;
-    bottom: 200px;
-    width: 100%;
-    height: 200px;
 }
 a{
     font-size: 17px;
@@ -691,25 +650,11 @@ audio{
     .seccion2 div a{
         font-size: 30px;
     }
-    .gradient{
-        position: relative;
-        left: 46px;
-        bottom: 304px;
-    }
     .titulo3{
         font-size: 30px;
     }
     .seccion3{
         grid-template-columns: 1fr 1fr;
-    }
-    .columna3{
-        display: none;
-    }
-    .columna4{
-        display: none;
-    }
-    .columna5{
-        display: none;
     }
     .col3{
         height: 100%;
@@ -778,20 +723,9 @@ audio{
         .titulo2{
             top: 53px;
         }
-        .gradient{
-            position: relative;
-            top: -200px;
-            left: 0px;
-        }
         .seccion2 div img {
             margin-left: 32px;
             width: 379px;
-        }
-        .disco{
-            left: -41px;
-            top: -242px;
-            position: relative;
-            font-size: 200px;
         }
         .t{
             position: relative;
@@ -1019,10 +953,6 @@ audio{
     .lineas{
         position: fixed;
         top: 25px;
-    }
-    .disco{
-        position: relative;
-        right: 10px;
     }
     .deezer{
         position: relative;
