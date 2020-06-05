@@ -1,16 +1,24 @@
 *{
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 body{
     background-color: white;
 }
 
+=======
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 .container{
     margin: auto;
     gap: 20px;
     border: 8px solid white;
     text-align: center;
+<<<<<<< HEAD
+=======
+    border-top: 1px solid white;
+    background-color: white;
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 }
 .header{
     display: grid;
@@ -92,6 +100,7 @@ body{
 
 /*BARRA DE BUSQUEDA*/
 
+<<<<<<< HEAD
 .BarraDeBúsqueda {
 	height: auto;
 	width: auto;
@@ -100,6 +109,11 @@ body{
     position: absolute;
     right: 150px;
     top: 40px;
+=======
+.BarraDeBusqueda{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 }
 
 .buscar {
@@ -126,24 +140,11 @@ body{
 
 .todo{
     display: grid;
-    grid-template-rows: 50px 350px 50px 350px 50px 350px;
+    grid-template-rows: 50px 400px 50px 400px 50px 345px 50px 400px;
     background-image: url("imagenes/bg.degra.jpg");
     background-repeat: no-repeat;
     background-size: 250%;
     margin-top: 120px;
-    height: 1150px;
-}
-
-.titulo{
-    font-size: 17px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 80px;
-    border-bottom: 1px solid grey;
 }
 
 .seccion1{
@@ -158,6 +159,7 @@ body{
     object-fit: cover;
     border-radius: 50%;
 }
+<<<<<<< HEAD
 .columna{
     display: grid;
     grid-template-rows: 200px 50px;
@@ -173,6 +175,11 @@ body{
 .columna5{
     display: grid;
     grid-template-rows: 200px 50px;
+=======
+.artista1{
+    position: relative;
+    top: 35px;
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 }
 .seccion2{
     display: grid;
@@ -182,46 +189,51 @@ body{
     margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
 }
-.seccion2 a{
-    text-align: center;
+.seccion2 img{
+    border-radius: 10%;
+    height: 240px;
+}
+.t-albums{
+    position: relative;
+    top: 35px;
 }
 .seccion3 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 20px;
-    height: 300px;
+    margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
 }
-
+.seccion3 img{
+    height: 240px;
+}
+.tracks{
+    position: relative;
+    top: 35px;
+}
+.seccion4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;    
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(34, 30, 30, 0.918);
+}
+.seccion4 img{
+    height: 240px;
+}
+.genres{
+    position: relative;
+    bottom: 140px;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
 .titulo{
     font-size: 17px;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 80px;
-    border-bottom: 1px solid grey;
-}
-
-.titulo2{
-    color: white;
-    margin-top: 15px;
-    font-size: 17px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 80px;
-    border-bottom: 1px solid grey;
-}
-
-.titulo3{
-    color: white;
-    font-size: 17px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 3px;
     font-weight: 500;
@@ -235,6 +247,7 @@ img{
     width: 100%;
     object-fit: cover;
 }
+<<<<<<< HEAD
 
 .disco{
     font-size: 170px;
@@ -249,6 +262,8 @@ img{
     width: 100%;
     height: 200px;
 }
+=======
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 a{
     font-size: 17px;
     color: rgb(255, 254, 254);
@@ -507,7 +522,7 @@ a{
     display: grid;
     grid-template-rows: repeat (8, 15px);
     gap: 10px;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .otros{
     display: grid;
@@ -580,8 +595,33 @@ audio{
     font-size: 12px;
     color: rgb(170, 169, 169);
 }
-.p a{
-    border-bottom: none;
+.playlists::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.playlists::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+.playlists::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+.playlists::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    
+}
+.playlists::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+.pp{
+    text-align: left;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    bottom: 17px;
 }
 .foto img{
     height: 40px;
@@ -653,6 +693,7 @@ audio{
     font-weight: 600;
     margin-left: 20px;
     font-size: 25px;
+    margin-top: 10px;
 }
 .columnaa2{
     display: grid;
@@ -739,25 +780,11 @@ audio{
     .seccion2 div a{
         font-size: 30px;
     }
-    .gradient{
-        position: relative;
-        left: 46px;
-        bottom: 304px;
-    }
     .titulo3{
         font-size: 30px;
     }
     .seccion3{
         grid-template-columns: 1fr 1fr;
-    }
-    .columna3{
-        display: none;
-    }
-    .columna4{
-        display: none;
-    }
-    .columna5{
-        display: none;
     }
     .col3{
         height: 100%;
@@ -826,20 +853,9 @@ audio{
         .titulo2{
             top: 53px;
         }
-        .gradient{
-            position: relative;
-            top: -200px;
-            left: 0px;
-        }
         .seccion2 div img {
             margin-left: 32px;
             width: 379px;
-        }
-        .disco{
-            left: -41px;
-            top: -242px;
-            position: relative;
-            font-size: 200px;
         }
         .t{
             position: relative;
@@ -1073,10 +1089,6 @@ audio{
     .lineas{
         position: fixed;
         top: 25px;
-    }
-    .disco{
-        position: relative;
-        right: 10px;
     }
     .deezer{
         position: relative;
