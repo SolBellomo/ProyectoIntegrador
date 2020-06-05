@@ -36,7 +36,6 @@
     right: 100px;
     top: 46px;
 }
-
 #i{
 	border: 1.5px solid rgb(34, 34, 34);
     border-radius: 50%;
@@ -44,13 +43,9 @@
 /*BARRA DE BUSQUEDA*/
 
 .BarraDeBusqueda {
-	height: auto;
-	width: auto;
-	background: transparent;
-    margin: 0;
-    position: absolute;
-    right: 150px;
-    top: 20px;
+    position: relative; 
+    left: 200px;
+    top: 40px;
 }
 .buscar {
 	padding: 0 66px 0 0; /* Right padding for submit button width */
@@ -58,18 +53,12 @@
 }
 
 .b {
-	box-sizing: content-box;
- 	height: 40px;
+ 	height: 35px;
     padding: 0 46px 0 10px;
 	border-color: rgb(34, 34, 34);
-    border-radius: 35px; 
-    border-style: solid;
+    border-radius: 35px;
     color: #333;
-    font-family: 'Helvetica', sans-serif;
 	font-size: 15px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 100%;
 }
 
 /*TERMINA BARRA DE BÚSQUEDA*/
@@ -125,7 +114,8 @@
 }
 .seccion3 img{
     height: 240px;
-}.tracks{
+}
+.tracks{
     position: relative;
     top: 35px;
 }
