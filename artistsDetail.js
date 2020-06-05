@@ -15,7 +15,6 @@ fetch(url)
     })
     .then(function(resultado){
             console.log(resultado)
-            let profile = resultado.data;
             let avatar = document.querySelector('.avatar');
             avatar.src = resultado.picture_medium; 
 
