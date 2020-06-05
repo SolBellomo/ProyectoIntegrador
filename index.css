@@ -29,11 +29,15 @@
     position: relative;
     right: 60px;
 }
+.header-items{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
 .icons{
     color: white;
     font-size: 30px;
     position: fixed;
-    right: 100px;
+
     top: 46px;
 }
 #i{
@@ -938,10 +942,7 @@ audio{
         position: fixed;
         top: 20px;
     }
-    .icons{
-        position: fixed;
-        top: 25px;
-    }
+    
     .lineas{
         position: fixed;
         top: 25px;
