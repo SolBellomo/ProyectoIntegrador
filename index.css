@@ -1,11 +1,24 @@
 *{
     box-sizing: border-box;
 }
+<<<<<<< HEAD
+
+body{
+    background-color: white;
+}
+
+=======
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 .container{
     margin: auto;
+    gap: 20px;
+    border: 8px solid white;
     text-align: center;
+<<<<<<< HEAD
+=======
     border-top: 1px solid white;
     background-color: white;
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 }
 .header{
     display: grid;
@@ -18,6 +31,7 @@
     left: 0;
     z-index: 15;
 }
+
 .logo{
     border-radius: 50%;
     width: 110px;
@@ -27,37 +41,88 @@
     right: 60px;
 }
 
+.nav{
+    text-align: right;
+    margin-top: 80px;
+    word-spacing: 15px;
+    overflow: hidden;
+}
+
 .icons{
     color: white;
-    font-size: 32px;
+    font-size: 30px;
     position: fixed;
-    right: 110px;
-    top: 35px;
+    right: 100px;
+    top: 46px;
 }
 
 #i{
 	border: 1.5px solid rgb(34, 34, 34);
     border-radius: 50%;
 }
+.lineas{
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top: 48px;
+    right: 45px;
+}
+
+/* MENU DESPLEGABLE*/ 
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 17px;
+    width: 145px;
+}
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+}
+  .topnav a.icon {
+    float: right;
+    display: block;
+}
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    background-color: rgb(46, 136, 138);
+}
+  
+  /* FIN MENÚ DESPLEGABLE*/
 
 /*BARRA DE BUSQUEDA*/
 
+<<<<<<< HEAD
+.BarraDeBúsqueda {
+	height: auto;
+	width: auto;
+	background: transparent;
+    margin: 0;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+=======
 .BarraDeBusqueda{
     display: grid;
     grid-template-rows: 1fr 1fr;
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 }
+
 .buscar {
-    width: 450px;
-    position: relative;
-    top: 30px;
-    left: 350px;
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
 }
-.menu{
-    position: relative;
-    left: 70px;
-    word-spacing: 40px;
-}
+
 .b {
+	box-sizing: content-box;
  	height: 40px;
     padding: 0 46px 0 10px;
 	border-color: rgb(34, 34, 34);
@@ -66,17 +131,11 @@
     color: #333;
     font-family: 'Helvetica', sans-serif;
 	font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 100%;
 }
-.button{
-    background: transparent;
-    border-color: transparent;
-    color: white;
-    position: relative;
-    left: 250px;
-    bottom: 38px;
-    font-size: 30px;
-}
+
 /*TERMINA BARRA DE BÚSQUEDA*/
 
 .todo{
@@ -99,11 +158,28 @@
 .seccion1 div img{
     object-fit: cover;
     border-radius: 50%;
-    height: 240px;
 }
+<<<<<<< HEAD
+.columna{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+.columna3{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+.columna4{
+    display: grid;
+    grid-template-rows: 200px 50px;
+}
+.columna5{
+    display: grid;
+    grid-template-rows: 200px 50px;
+=======
 .artista1{
     position: relative;
     top: 35px;
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 }
 .seccion2{
     display: grid;
@@ -171,6 +247,23 @@ img{
     width: 100%;
     object-fit: cover;
 }
+<<<<<<< HEAD
+
+.disco{
+    font-size: 170px;
+    position: relative;
+    color: rgba(34, 31, 31, 0.664);
+    bottom: 255px;
+}
+.gradient{
+    position: relative;
+    opacity: 0.45;
+    bottom: 200px;
+    width: 100%;
+    height: 200px;
+}
+=======
+>>>>>>> f1b57ea6dd339a62f72c5999a79e366951f58905
 a{
     font-size: 17px;
     color: rgb(255, 254, 254);
@@ -182,7 +275,7 @@ a{
 
 /*BARRA FOOTER*/
 
-footer{
+.barrapie{
     display: grid;
     grid-template-columns: 2fr 3fr;
     background: linear-gradient(90deg, rgba(2, 39, 201, 0.726),rgb(63, 153, 255));
@@ -194,7 +287,7 @@ footer{
     height: 46px;
     z-index: 15;
 }
-footer img{
+.barrapie img{
     width: 40px;
     height: 40px;
 }
@@ -294,6 +387,14 @@ footer img{
 
 /*MI PERFIL HTML*/
 
+.perfil{
+    background-image: url("imagenes/bg.degra.jpg");
+    background-repeat: no-repeat;
+    background-size: 250%;
+    margin-top: 80px;
+    border: 1px solid black;
+    margin-bottom: 40px;
+}
 .header2{
     grid-template-columns: 1fr 2fr;
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
@@ -304,8 +405,24 @@ footer img{
     right: 0;
     left: 0;
     z-index: 9;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+}
+.BarraDeBúsquedax {
+	height: auto;
+	width: auto;
+	background: transparent;
+    margin: 0;
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    position: relative;
+    left: 300px;
+    top: 56px;
+    background-color: rgb(10, 59, 61);
 }
 .foto{
     font-size: 80px;
@@ -338,6 +455,13 @@ footer img{
     font-weight: 100;
     text-align: left;
 }
+.lineass{
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top: 27px;
+    right: 45px;
+}
 .iconss{
     color: white;
     font-size: 30px;
@@ -349,65 +473,51 @@ footer img{
 .columnas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
-    margin-top: 87px;
+    gap: 20px;
+    padding: 20px;
 }
 .c{
     border: 1px solid black;
 }
 .col1{
     display: grid;
-    grid-template-rows: 45px 500px;
+    grid-template-rows: 35px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
+    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    border-radius: 15px;
 }
 .col1 a{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    margin-top: 17px;
-    text-align: left;
-    margin-left: 20px;
+    border-bottom: double;
 }
 .col2{
     display: grid;
-    grid-template-rows: 45px 500px;
+    grid-template-rows: 35px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
+    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    border-radius: 15px;
 }
 .col2 a{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    margin-top: 17px;
-    text-align: left;
-    margin-left: 20px;
+    border-bottom: double;
 }
 .col3{
     display: grid;
-    grid-template-rows: 45px 500px;
+    grid-template-rows: 35px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
+    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    border-radius: 15px;
 }
 .col3 a{
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    margin-top: 17px;
-    text-align: left;
-    margin-left: 20px;
+    border-bottom: double;
 }
 .playlists{
     display: grid;
     grid-template-rows: repeat (8, 15px);
     gap: 10px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 .canciones{
     gap: 10px;
+    margin-top: 35px;
     display: grid;
     grid-template-rows: repeat (8, 15px);
     gap: 10px;
@@ -417,7 +527,7 @@ footer img{
     display: grid;
     grid-template-rows: 20px 20px;
     position: relative;
-    bottom: 7px;
+    bottom: 10px;
 }
 .audiios{
     display: grid;
@@ -467,6 +577,14 @@ audio{
     width: 40px;
     height: 40px;
 }
+.p h2{
+    text-align: left;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
+    font-size: 15px;
+}
 .p h3{
     text-align: right;
     font-family: proxima-nova, sans-serif;
@@ -475,10 +593,6 @@ audio{
     color: white;
     font-size: 12px;
     color: rgb(170, 169, 169);
-    margin-right: 8px;
-}
-.playlists::-webkit-scrollbar {
-    -webkit-appearance: none;
 }
 .playlists::-webkit-scrollbar:vertical {
     width:10px;
@@ -516,7 +630,7 @@ audio{
     display: grid;
     grid-template-rows: repeat (8, 50px);
     gap: 10px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 .me{
     display: grid;
@@ -536,8 +650,6 @@ audio{
     font-weight: 100;
     color: white;
     font-size: 15px;
-    position: relative;
-    bottom: 10px;
 }
 .me a{
     border-bottom: unset;
@@ -549,12 +661,14 @@ audio{
     color: rgb(70, 70, 70);
 }
 
+
+
 /*EMPIEZA PÁGINA PLAYLISTS*/
 
 .cuerpo{
     display: grid;
     grid-template-columns: 2fr 6fr;
-    margin-top: 85px;
+    margin-top: 70px;
 }
 .logoo{
     border-radius: 50%;
@@ -562,9 +676,6 @@ audio{
     height: 80px;
     position: relative;
     left: 80px;
-}
-.logo1{
-    margin-top: 5px;
 }
 .columnaa1{
     display: grid;
@@ -607,13 +718,32 @@ audio{
     position: relative;
     bottom: 8px;
 }
-.p h2{
+
+/*Género*/
+.container-genre{
+    margin: auto;
+    gap: 20px;
+    border: 8px solid white;
+    text-align: center;
+    width: 100%;
+    margin-top: 130px;
+    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
+}
+.genres{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(imagenes/bg.degra.jpg);
+    background-repeat: no-repeat;
+    background-size: 250%;
+}
+.masPopulares{
+   text-align: left;
+}
+.porContinente{
     text-align: left;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    color: white;
-    font-size: 15px;
+}
+.tusFavoritos{
+    text-align: left;
 }
 
 @media (max-width: 320px){
@@ -745,7 +875,7 @@ audio{
             font-size: 33px;
             top: 206px;
         }
-        .barraa {
+        #barraa {
             height: 150px;
         }
         #cancionnn img {
@@ -839,6 +969,12 @@ audio{
         font-size: 10px;
         height: 25px;
         border-radius: 10px;
+    }
+    .lineass{
+        position: fixed;
+        right: 20px;
+        top: 18px;
+        font-size: 20px;
     }
     .iconss{
         font-size: 20px;
@@ -957,7 +1093,7 @@ audio{
         position: relative;
         left: 220px;
     }
-    footer{
+    .barrapie{
         height: 50px;
     }
 
@@ -980,12 +1116,6 @@ audio{
         margin-left: unset;
     }
     .p h2{
-        font-size: 12px;
-        margin-left: 4px;
-        position: relative;
-        padding-top: 2px;
-    }
-    .pp{
         font-size: 12px;
         margin-left: 4px;
         position: relative;
