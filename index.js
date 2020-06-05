@@ -47,7 +47,7 @@ fetch(album)
 
     for(let i=0; i<5; i++){
 
-      seccion2div += '<div class="columna">';
+      seccion2div += '<div class="columna-' + (i+1) +'">';
       seccion2div += '                                <img src="' + albumArray[i].cover + '" alt="' + albumArray[i].title + '">';
       seccion2div += '                                <a href="albumDetail.html?id=' + albumArray[i].id + '"' + ' class="t-albums"> ' + albumArray[i].title + '</a>';
       seccion2div += '                        </div>';
@@ -105,7 +105,7 @@ fetch(genres)
     let generos = document.querySelector('.seccion4');
     let seccion4div = '';
 
-    for(let i=0; i<5; i++){
+    for(let i=1; i<6; i++){
 
       seccion4div += '<div class="columna">';
       seccion4div += '                                <img src="' + genresArray[i].picture_medium + '" alt="' + genresArray[i].name + '">';
@@ -127,7 +127,6 @@ let boton = document.querySelector('.buscar');
   boton.onmouseover = function(){
     boton.color = 'red'; 
 }
-  
 
 
 //BARRA DE BÚSQUEDA
