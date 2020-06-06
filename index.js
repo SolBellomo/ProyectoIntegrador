@@ -81,7 +81,7 @@ fetch(tracks)
       seccion3div += '                                <img src="' + tracksArray[i].artist.picture_medium + '" alt="' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '">';
       seccion3div += '                                <a href="perfil.html?id=' + tracksArray[i].id + '"' + ' class="tracks"> ' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '</a>';
       seccion3div += '                        </div>';
-
+      
     }
     canciones.innerHTML = seccion3div;
   })
@@ -159,3 +159,7 @@ fetch(urll)
     .catch(function(error){
         console.log(error)
     })
+
+
+
+  

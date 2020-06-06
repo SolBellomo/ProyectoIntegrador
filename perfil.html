@@ -23,13 +23,14 @@
             <nav class="header-items">
                 <section class="BarraDeBusqueda">
                         <form action="results.html" method="GET" class="buscar">
-                                <input class= "b" id= "ba" type="text" name="search" placeholder = "Search">
+                                <input class= "b" type="text" name="search" placeholder = "Search">
                                 <button type="submit" class="button"><i class="fas fa-search"></i></button>
                         </form>
                         <div class="menu">
                                 <a href="index.html">INICIO</a>
                                 <a href="artistsDetail.html">ARTISTAS</a>
-                                <a href="playlists.html">PLAYLIST</a>
+                                <a href="playlists.html">PLAYLISTS</a>
+                                <a href="genres.html">GÉNEROS</a>
                         </div>
                 </section>
                 <div class="perfil-menu">
@@ -47,12 +48,12 @@
                         <div class="audiios">
                             <img src="imagenes/James Blunt.jpg" alt="">
                             <div class="otros">
-                                <h2>1973</h2>
-                                <h3>James Blunt</h3>
+                                <h2 class="titulo">1973</h2>
+                                <h3 class="artista">James Blunt</h3>
                             </div>
-                            <audio controls="controls">
-                                <source src="audios/y2mate.com - james Blunt 1973 Lyrics__5WSHkXliRU.mp3" class="audio" preload="none" type="audio/mpeg"/>
-                            </audio>
+                            <iframe scrolling="no" frameborder="0" allowTransparency="true"
+                                src="" width="200px" height="50px">
+                            </iframe>
                         </div>
                         <div class="audiios">
                             <img src="imagenes/johnmayer.jpg" alt="">
@@ -256,5 +257,5 @@
         </div>
 </div>
 </body>
-<script type="text/javascript" src="Index.js"></script>
+<script type="text/javascript" src="tracks.js"></script>
 </html>

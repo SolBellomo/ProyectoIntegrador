@@ -4,7 +4,6 @@
 .container{
     margin: auto;
     gap: 20px;
-    border: 8px solid white;
     text-align: center;
     border-top: 1px solid white;
     background-color: white;
@@ -20,7 +19,17 @@
     left: 0;
     z-index: 15;
 }
-
+.header2{ /*pagina playlist y perfil*/
+    display: grid;
+    background: linear-gradient(90deg, rgb(92, 238, 238), rgb(63, 153, 255),rgba(2, 39, 201, 0.726));
+    height: 90px;
+    grid-template-columns: 1fr 3fr;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
+}
 .logo{
     border-radius: 50%;
     width: 110px;
@@ -29,6 +38,14 @@
     position: relative;
     right: 60px;
 }
+.logoo{ /*pagina playlist y perfil*/
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    right: 80px;
+    top: 5px;
+} 
 .icons{
     color: white;
     font-size: 30px;
@@ -44,12 +61,16 @@
 
 .BarraDeBusqueda {
     position: relative; 
-    left: 200px;
-    top: 40px;
+    left: 0%;
+    top: 20%;
+    width: 500px;
 }
 .buscar {
 	padding: 0 66px 0 0; /* Right padding for submit button width */
-	overflow: hidden;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 10px;
 }
 
 .b {
@@ -58,7 +79,12 @@
 	border-color: rgb(34, 34, 34);
     border-radius: 35px;
     color: #333;
-	font-size: 15px;
+    font-size: 15px;
+}
+.menu{
+    margin-top: 10px;
+    position: relative;
+    right: 28%;
 }
 
 /*TERMINA BARRA DE BÚSQUEDA*/
@@ -277,17 +303,7 @@ footer img{
 }
 
 /*MI PERFIL HTML*/
-.header2{
-    grid-template-columns: 1fr 2fr;
-    background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
-    background-size: 100%;
-    height: 90px;
-    position: fixed; 
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 9;
-}
+
 .foto{
     font-size: 80px;
     color: rgba(255, 255, 255, 0.863);
@@ -329,10 +345,9 @@ footer img{
 
 .columnas{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    margin-top: 75px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin-top: 87px;
 }
 .c{
     border: 1px solid black;
@@ -342,30 +357,41 @@ footer img{
     grid-template-rows: 35px 500px;
     padding: 1rem;
     background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    border-radius: 15px;
 }
 .col1 a{
-    border-bottom: double;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: left;
 }
 .col2{
     display: grid;
     grid-template-rows: 35px 500px;
     padding: 1rem;
     background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    border-radius: 15px;
 }
 .col2 a{
-    border-bottom: double;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: left;
 }
 .col3{
-    display: grid;
-    grid-template-rows: 35px 500px;
     padding: 1rem;
     background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    border-radius: 15px;
 }
 .col3 a{
-    border-bottom: double;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
 }
 .playlists{
     display: grid;
@@ -508,6 +534,7 @@ audio{
     font-weight: 100;
     color: white;
     font-size: 15px;
+    margin-left: 20px;
 }
 .me a{
     border-bottom: unset;
@@ -519,21 +546,12 @@ audio{
     color: rgb(70, 70, 70);
 }
 
-
-
 /*EMPIEZA PÁGINA PLAYLISTS*/
 
 .cuerpo{
     display: grid;
     grid-template-columns: 2fr 6fr;
-    margin-top: 70px;
-}
-.logoo{
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    left: 80px;
+    margin-top: 90px;
 }
 .columnaa1{
     display: grid;
