@@ -598,21 +598,21 @@ audio{
     margin-top: 130px;
     background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
 }
-.genreros{
+.generos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-image: url(imagenes/bg.degra.jpg);
     background-repeat: no-repeat;
     background-size: 250%;
 }
-.masPopulares{
-   text-align: left;
+.artistasGeneros{
+   text-align: center;
 }
-.porContinente{
-    text-align: left;
+.top5Generos{
+    text-align: center;
 }
-.tusFavoritos{
-    text-align: left;
+.tusFavoritosGeneros{
+    text-align: center;
 }
 
 @media (max-width: 320px){
