@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JASPO</title>
     <link  rel="icon"   href="imagenes/J.png" type="image/png" />
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="artistsDetail.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
@@ -13,24 +12,28 @@
 </head>
 <body>
     <div class="containerr">
-        <header class="header">
-                <div>
-                    <img src="Logo JASPO...png" alt="logo" class="logo">
-                </div>
-                <nav class="main nav">
-                    <div class="BarraDeBúsqueda">
-                        <div class="buscar">
-                            <input class="b" type="search" placeholder="search">
-                        </div>
-                            <a href="perfil.html"><i class="fas fa-user-circle icons" id="i"></i></a>
-                        <div class="topnav" id="myTopnav">
-                            <a></a>
-                            <a href="index.html">INICIO</a>
-                            <a href="artistsDetail.html">ARTISTAS</a>
-                            <a href="playlists.html">PLAYLIST</a>
-                       </div>  
+        <header class="headerA">
+            <div>
+                    <img src="Logo JASPO...png" alt="logo" class="logoA">
+            </div>
+            <nav class="header-itemsA">
+                    <section class="BarraDeBusqueda">
+                            <form action="results.html" method="GET" class="buscarA">
+                                    <input class= "bA" id= "ba" type="text" name="search" placeholder = "Search">
+                                    <button type="submit" class="button"><i class="fas fa-search"></i></button>
+                            </form>
+                            <div class="menuA">
+                                    <a href="index.html">INICIO</a>
+                                    <a href="albums.html">ALBUMS</a>
+                                    <a href="playlists.html">PLAYLIST</a>
+                            </div>
+                    </section>
+                    <div class="perfil-menu">
+                            <section class="iconsA">
+                                    <a href="perfil.html"><i class="fas fa-user-circle icons" id="i"></i></a>
+                            </section>
                     </div>
-                </nav>
+            </nav>
         </header>
         <section class="nombre-artista">
             <img src="" alt="" class="avatar">
@@ -128,8 +131,8 @@
                 </div>
             </section>
         </section>
-        <footer class="barrapie">
-            <div class="cancionnn">
+        <footer class="barraa">
+            <div class="cancionnn" id="cancionnn">
                     <div class="audiios">
                             <img src="imagenes/losdelpo.jpg" alt="Si La Vieras- Los Del Portezuelo">
                             <div class="otros">
@@ -141,27 +144,30 @@
                             </audio>
                     </div>
             </div>
-            <div class="iconoos">
+            <div class="iconoos" id="iconoos">
                     <div class="ic"></div>
                     <div></div>
                     <div>
-                            <i class="fas fa-random aleatorio"></i>
+                            <i class="fas fa-random aleatorio" id="aleatorio"></i>
                     </div>
                     <div>
-                            <a href="artistsDetail.html"><i class="fab fa-youtube youtube"></i></a>
+                            <a href="artistsDetail.html"><i class="fab fa-youtube youtube" id="youtube"></i></a>
                     </div>
                     <div>
-                            <i class="far fa-play-circle play"></i>
+                            <i class="far fa-play-circle play" id="play"></i>
                     </div>
                     <div>
-                            <i class="fas fa-redo-alt repetir"></i>
+                            <i class="fas fa-redo-alt repetir" id="repetir"></i>
                     </div>
                     <div>
-                            <i class="fas fa-volume-mute mute"></i>
+                            <i class="fas fa-volume-mute mute" id="mute"></i>
                     </div>
                     <div></div>
             </div>
         </footer>
+        <div class="deezer">
+            <img src="imagenes/deezern.png" alt="Deezer">
+        </div>   
     </div>
 <script src="artistsDetail.js"></script>
 </body>
