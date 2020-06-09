@@ -160,6 +160,3 @@ fetch(urll)
         console.log(error)
     })
 
-
-
-  
