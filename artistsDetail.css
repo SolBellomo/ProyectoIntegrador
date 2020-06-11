@@ -13,7 +13,7 @@
 /*HEADER ALTERNATIVO*/
 
 .header2{
-    
+    display: grid;
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     background-repeat: no-repeat;
     background-size: 100%;
@@ -57,7 +57,7 @@
     margin-top: 17px;
 }
 
-/*FIN DE HEADER ALT.*/
+/*FIN DE HEADER ALT.*/ 
 /*BARRA DE BUSQUEDA*/
 
 .BarraDeBusqueda {
