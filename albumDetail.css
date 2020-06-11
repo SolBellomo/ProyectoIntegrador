@@ -3,32 +3,63 @@ body{
     background-image: url(imagenes/bg.degra.jpg);
     background-repeat: no-repeat;
     background-size: cover;   
-}
+}  
+
+/*HEADER ALTERNATIVO*/
+
 .header2{
     
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     background-repeat: no-repeat;
     background-size: 100%;
     height: 90px;
+    grid-template-columns: 2% 6% 92%;
     position: fixed; 
     top: 0;
     right: 0;
     left: 0;
     z-index: 9;
 }
+.caja-logo{
+    height: 90px;
+}
+.icons-alternativo{
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    top: 30px;
+}
+.logo-alternativo{
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 85px;
+    
+}
+.header-items-alt{
+    display: grid;
+    grid-template-columns: 90% 9%;
+
+}
+.b-alt {
+    height: 35px;
+    padding: 0 46px 0 10px;
+    border-color: rgb(34, 34, 34);
+    border-radius: 35px;
+    color: #333;
+    font-size: 15px;
+    width: 35%;
+    margin-top: 17px;
+}
+
+/*FIN DE HEADER ALT.*/
 
 
-
-
-
-
-
-  
 .section1{
     display: grid;
     grid-template-columns: 16% 84%;
     grid-template-rows: 200px;
-    margin-top: 95px;
+    margin-top: 110px;
 }
 
 
@@ -176,21 +207,8 @@ h3{
     left: 5px;
     margin-top: 15px;
 }
-.icons{
-    text-align: center;
-    font-size: 42px;
-    margin-left: 16px;
-    margin-top: 6px;
-    color: white;
-}
-.buscar{
-    overflow: hidden;
-    padding: 20px;
-}
-#i{
-    
-    margin-top: 10px;
-}
+
+
 
 
 #s{
@@ -225,19 +243,7 @@ h3{
     left: 105px;
     top: 60px;
 }
-.b{
-    
-    width: 165px;
-    position: relative;
-    left: -13px;
-    height: 27px;
-    bottom: 5px;
-    border-color: rgb(1, 1, 24);
-    border-radius: 35px;
-    border-style: solid;
-    color: #333;
-    
-}
+
 .audiios {
     display: grid;
     grid-template-rows: repeat (8, 50px);
