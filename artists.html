@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artists</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="artists.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-            <div class="logo">
-                <img src="imagenes/LogoJASPO.png" alt="Logo JASPO" class="logoo">
+    <div class="container">
+        <header class="header2">
+            <div></div>
+            <div class="caja-logo">
+                    <img src="Logo JASPO...png" alt="logo" class="logo-alternativo">
             </div>
-            <nav class="main nav">
-                <div class="BarraDeBúsqueda">
-                    <div class="buscar">
-                        <input class="b" type="search" placeholder="search">
+            <nav class="header-items-alt">
+                    <section class="BarraDeBusqueda">
+                            <form action="results.html" method="GET" class="buscar">
+                                    <input class= "b-alt" id= "ba" type="text" name="search" placeholder = "Search">
+                                    <button type="submit" class="button"><i class="fas fa-search"></i></button>
+                            </form>
+                            <div class="menu">
+                                    <a href="artistsDetail.html">ARTISTAS</a>
+                                    <a href="albums.html">ALBUMS</a>
+                                    <a href="playlists.html">PLAYLIST</a>
+                            </div>
+                    </section>
+                    <div class="perfil-menu">
+                            <section class="ic-perfil">
+                                    <a href="perfil.html"><i class="fas fa-user-circle icons-alternativo" id="i"></i></a>
+                            </section>
                     </div>
-                    <a href="perfil.html"><i class="fas fa-user-circle iconss" id="i"></i></a>
-                    <div class="topnav" id="myTopnav">
-                            <a></a>
-                            <a href="index.html">INICIO</a>
-                            <a href="artists.html">ARTISTAS</a>
-                            <a href="playlists.html">PLAYLIST</a>
-                    </div> 
-                </div>
             </nav>
     </header>
+</div>
     <main class="todo-albums">
         <div class="seccion1">
             <img src="" alt="" class="img">

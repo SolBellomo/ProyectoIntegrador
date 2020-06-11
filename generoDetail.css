@@ -1,19 +1,7 @@
-.container{
-    margin: auto;
-    gap: 20px;
-    
-    text-align: center;
-    width: 100%;
-    margin-top: 130px;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
-}
-.titulo2{
-    margin-right: 100%;
-}
 /*HEADER ALTERNATIVO*/
 
 .header2{
-    
+    display: grid;   
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     background-repeat: no-repeat;
     background-size: 100%;

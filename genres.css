@@ -1,15 +1,3 @@
-.container{
-    margin: auto;
-    gap: 20px;
-    
-    text-align: center;
-    width: 100%;
-    margin-top: 130px;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
-}
-.titulo2{
-    margin-right: 100%;
-}
 /*HEADER ALTERNATIVO*/
 
 .header2{

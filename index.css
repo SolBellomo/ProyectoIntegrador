@@ -17,11 +17,11 @@
     left: 0;
     z-index: 15;
 }
-.header2{ /*pagina playlist y perfil*/
+.header2{ /*perfil*/
     display: grid;
     background: linear-gradient(90deg, rgb(92, 238, 238), rgb(63, 153, 255),rgba(2, 39, 201, 0.726));
     height: 90px;
-    grid-template-columns: 1fr 3fr;
+    
     position: fixed; 
     top: 0;
     right: 0;
@@ -338,7 +338,7 @@ footer img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 7px;
-    margin-top: 87px;
+    margin-top: 90px;
 }
 .c{
     border: 1px solid black;
@@ -542,7 +542,7 @@ audio{
 .cuerpo{
     display: grid;
     grid-template-columns: 2fr 6fr;
-    margin-top: 90px;
+    margin-top: 100px;
 }
 .columnaa1{
     display: grid;
@@ -597,6 +597,7 @@ audio{
     background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
 }
 .generos{
+    margin-top: 110px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-image: url(imagenes/bg.degra.jpg);

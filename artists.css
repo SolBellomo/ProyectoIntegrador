@@ -1,72 +1,58 @@
-.logoo{
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    left: 80px;
+.container{
+    text-align: center;
 }
-header{
-    grid-template-columns: 1fr 2fr;
+.header2{
+    display: grid;   
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     background-repeat: no-repeat;
     background-size: 100%;
     height: 90px;
+    grid-template-columns: 2% 6% 92%;
     position: fixed; 
     top: 0;
     right: 0;
     left: 0;
     z-index: 9;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
 }
-.icons{
+.caja-logo{
+    height: 90px;
+}
+.icons-alternativo{
     color: white;
-    font-size: 32px;
-    position: fixed;
-    right: 110px;
-    top: 35px;
-}
-
-#i{
-	border: 1.5px solid rgb(34, 34, 34);
-    border-radius: 50%;
-}
-
-.BarraDeBúsqueda{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.buscar {
-    width: 450px;
-    position: relative;
-    top: 30px;
-    left: 350px;
-}
-.menu{
-    position: relative;
-    left: 70px;
-    word-spacing: 40px;
-}
-.b {
- 	height: 40px;
-    padding: 0 46px 0 10px;
-	border-color: rgb(34, 34, 34);
-    border-radius: 35px; 
-    border-style: solid;
-    color: #333;
-    font-family: 'Helvetica', sans-serif;
-	font-size: 15px;
-    width: 100%;
-}
-.button{
-    background: transparent;
-    border-color: transparent;
-    color: white;
-    position: relative;
-    left: 250px;
-    bottom: 38px;
     font-size: 30px;
+    position: fixed;
+    top: 30px;
 }
+.logo-alternativo{
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 85px;
+    
+}
+.header-items-alt{
+    display: grid;
+    grid-template-columns: 90% 9%;
+
+}
+.b-alt {
+    height: 35px;
+    padding: 0 46px 0 10px;
+    border-color: rgb(34, 34, 34);
+    border-radius: 35px;
+    color: #333;
+    font-size: 15px;
+    width: 35%;
+    margin-top: 17px;
+}
+.fa-search:before {
+    content: "\f002";
+}
+
+
+/*FIN DE HEADER ALT.*/
+
+
 .todo-albums{
     display: grid;
     grid-template-columns: repeat(5, 1fr);

@@ -6,36 +6,37 @@
     <title>Mis Playlists</title>  
     <link class="logox" rel="icon" href="imagenes/J.png" type="image/png">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="playlist.css">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <script src="text/javascript" src="Index.js" defer></script>
 </head>
 <body>
-<div class="container">
-    <header class="header2">
-        <div>
-                <img src="Logo JASPO...png" alt="logo" class="logoo">
+    <div class="container">
+        <header class="header2">
+            <div></div>
+            <div class="caja-logo">
+                    <img src="Logo JASPO...png" alt="logo" class="logo-alternativo">
+            </div>
+            <nav class="header-items-alt">
+                    <section class="BarraDeBusqueda">
+                            <form action="results.html" method="GET" class="buscar">
+                                    <input class= "b-alt" id= "ba" type="text" name="search" placeholder = "Search">
+                                    <button type="submit" class="button"><i class="fas fa-search"></i></button>
+                            </form>
+                            <div class="menu">
+                                    <a href="artistsDetail.html">ARTISTAS</a>
+                                    <a href="albums.html">ALBUMS</a>
+                                    <a href="playlists.html">PLAYLIST</a>
+                            </div>
+                    </section>
+                    <div class="perfil-menu">
+                            <section class="ic-perfil">
+                                    <a href="perfil.html"><i class="fas fa-user-circle icons-alternativo" id="i"></i></a>
+                            </section>
+                    </div>
+            </nav>
+    </header>
         </div>
-        <nav class="header-items">
-                <section class="BarraDeBusqueda">
-                        <form action="results.html" method="GET" class="buscar">
-                                <input class= "b" id= "ba" type="text" name="search" placeholder = "Search">
-                                <button type="submit" class="button"><i class="fas fa-search"></i></button>
-                        </form>
-                        <div class="menu">
-                                <a href="artistsDetail.html">ARTISTAS</a>
-                                <a href="albums.html">ALBUMS</a>
-                                <a href="playlists.html">PLAYLIST</a>
-                        </div>
-                </section>
-                <div class="perfil-menu">
-                        <section class="ic-perfil">
-                                <a href="perfil.html"><i class="fas fa-user-circle icons" id="i"></i></a>
-                        </section>
-                </div>
-        </nav>
-</header>
-    </div>
     <main class="cuerpo">
             <div class="columnaa1">
                 <a href="playlists.html"><h2 class="titulooo">Mis Playlists</h2></a>
