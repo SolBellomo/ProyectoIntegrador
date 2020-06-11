@@ -8,7 +8,7 @@ body{
 /*HEADER ALTERNATIVO*/
 
 .header2{
-    
+
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     background-repeat: no-repeat;
     background-size: 100%;
@@ -244,10 +244,10 @@ h3{
     top: 60px;
 }
 
-.audiios {
+.audios-album {
     display: grid;
     grid-template-rows: repeat (8, 50px);
-    grid-template-columns: 1fr 5fr 1fr;
+    
     height: 50px;
     margin-left: 20px;
     border-bottom: 1px solid rgba(129, 129, 129, 0.685);
