@@ -24,3 +24,11 @@ fetch(album)
   .catch(function(error){
     return console.log(error);
   })
+
+
+  let queryString1 = location.search; 
+  let queryStringObj = new URLSearchParams(queryString1);
+  
+  let id1 = queryStringObj.get('id');
+  
+  

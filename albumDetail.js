@@ -1,16 +1,16 @@
 let queryString1 = location.search; 
 let queryStringObj = new URLSearchParams(queryString1);
 
-let id1 = queryStringObj.get('id');
+let id = queryStringObj.get('id');
 
 
 
 let proxy1 = 'https://cors-anywhere.herokuapp.com/'
-let url1 = proxy1 + 'https://api.deezer.com/album/' + id1 
+let url = proxy1 + 'https://api.deezer.com/album/' + id
 
 
 
-fetch(url1)
+fetch(url)
     .then(function(response){
         return response.json();
     })
@@ -21,10 +21,10 @@ fetch(url1)
         let albumFoto = document.querySelector('.albumFoto');
         albumFoto.src = resultado.cover_medium; 
 
-        let tituloAlbum = document.querySelector('#tituloAlbum');
+        let tituloAlbum = document.querySelector('.tituloAlbum');
         tituloAlbum.innerHTML = resultado.title;
 
-        let artista = document.querySelector('#nombreDelArtista');
+        let artista = document.querySelector('.nombreDelArtista');
         artista.innerHTML = resultado.artist.name;
 
 })
@@ -32,9 +32,9 @@ fetch(url1)
     console.log(error);
 })
 
-let url2 = proxy1 + 'https://api.deezer.com/album/' + id1 + '/tracks'
+let url1 = proxy1 + 'https://api.deezer.com/album/' + id + '/tracks'
 
-fetch(url2)
+fetch(url1)
     .then(function(response1){
         return response1.json();
     })
@@ -60,6 +60,30 @@ fetch(url2)
 
 
 
+
+let url2 = proxy + 'https://api.deezer.com/album/' + id + '/tracks'
+  
+    fetch(url2)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(resultado){
+            console.log(resultadoAlbum)
+            let profile = resultadoAlbum.data;
+            let imgFooter = document.querySelector('.imgFooter');
+            imgFooter.src = resultado.cover_medium; 
+    
+            let tituloAlbumm = document.querySelector('.tituloAlbum');
+            tituloAlbumm.innerHTML = resultado.title;
+    
+            let artistaa = document.querySelector('.nombreDelArtista');
+            artistaa.innerHTML = resultado.artist.name;
+    
+    })
+    .catch(function(error){
+        console.log(error);
+    })
+    
 
 
 
