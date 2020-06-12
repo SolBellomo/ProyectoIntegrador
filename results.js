@@ -16,7 +16,7 @@ fetch(url)
     })
     .then(function(datos){
         console.log(datos);
-        let lista = document.querySelector('.lista');
+        let lista = document.querySelector('.resultadosTracks');
         let resultados = datos.data; 
 
         resultados.forEach(function(resultado) {
@@ -37,7 +37,7 @@ fetch(urlArtista)
     })
     .then(function(datos){
         console.log(datos);
-        let lista = document.querySelector('.lista');
+        let lista = document.querySelector('.resultadosArtist');
         let resultados = datos.data; 
 
         resultados.forEach(function(resultado) {
@@ -59,7 +59,7 @@ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + buscar;
       })
       .then(function(datos){
           console.log(datos);
-          let lista = document.querySelector('.lista');
+          let lista = document.querySelector('.resultadosAlbums');
           let resultados = datos.data; 
   
           resultados.forEach(function(resultado) {

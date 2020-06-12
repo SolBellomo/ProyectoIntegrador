@@ -4,16 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="results.css">
+    <link class="logox" rel="icon" href="imagenes/J.png" type="image/png">
     <title>Resultados Búsqueda</title>
 </head>
 <body>
+    <header>
         <h1>Resultados de Búsqueda...</h1>
-        <div>
-            <div class="loader"></div>
-            <ul class="lista"> 
+        <div class="menu">
+            <a href="index.html">Inicio |</a>
+            <a href="artists.html">Artistas |</a>
+            <a href="albums.html">Albums |</a>
+            <a href="playlists.html">Playlists |</a>
+            <a href="genres.html">Géneros</a>
+        </div>
+        <div class="perfil-menu">
+            <section class="ic-perfil">
+                    <a href="perfil.html"><i class="fas fa-user-circle icons" id="i"></i></a>
+            </section>
+        </div>
+    </header>
+    <section>
+        <div class="loader"></div>
+    </section>
+    <main>
+        <div class="tracks">
+            <a href="perfil.html" class="titulo">CANCIONES</a>
+            <ul class="resultadosTracks"> 
 
             </ul>
         </div>
+        <div class="artists" >
+            <a href="artists.html" class="titulo">ARTISTAS</a>
+            <ul class="resultadosArtist"> 
+
+            </ul>
+        </div>
+        <div class="albums">
+            <a href="albums.html" class="titulo">ALBUMS</a>
+            <ul class="resultadosAlbums"> 
+
+            </ul>
+        </div>
+    </main>
     <script src="results.js"></script>
 </body>
 </html>
