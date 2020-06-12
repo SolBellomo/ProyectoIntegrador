@@ -45,14 +45,17 @@ fetch(url2)
         let songs = document.querySelector('.Songs')
         let sectionSongs = '';
 
-        for(let i=1; i<6; i++){
+        for(let i=0; i<cancionesArray.length; i++){
     
-          sectionSongs += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+ cancionesArray[i].id +'&app_id=1" width="100%" height="80px"></iframe>'
+          sectionSongs += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+ cancionesArray[i].id +'&app_id=1" width="100%" height="85px"></iframe>'
            
         
         }
     songs.innerHTML = sectionSongs
 
+    })
+    .catch(function(error){
+        console.log(error);
     })
 
 
