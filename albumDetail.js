@@ -8,7 +8,7 @@ let id1 = queryStringObj.get('id');
 let proxy1 = 'https://cors-anywhere.herokuapp.com/'
 let url1 = proxy1 + 'https://api.deezer.com/album/' + id1 
 
-console.log(url1)
+
 
 fetch(url1)
     .then(function(response){
@@ -32,8 +32,28 @@ fetch(url1)
     console.log(error);
 })
 
+let url2 = proxy1 + 'https://api.deezer.com/album/' + id1 + '/tracks'
 
+fetch(url2)
+    .then(function(response1){
+        return response1.json();
+    })
+    .then(function(resultado1){
 
+        console.log(resultado1)
+        let cancionesArray = resultado1.data;
+        let songs = document.querySelector('.Songs')
+        let sectionSongs = '';
+
+        for(let i=1; i<6; i++){
+    
+          sectionSongs += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+ cancionesArray[i].id +'&app_id=1" width="100%" height="80px"></iframe>'
+           
+        
+        }
+    songs.innerHTML = sectionSongs
+
+    })
 
 
 
