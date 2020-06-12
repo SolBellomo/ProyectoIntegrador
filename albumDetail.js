@@ -69,15 +69,12 @@ let url2 = proxy + 'https://api.deezer.com/album/' + id + '/tracks'
         })
         .then(function(resultado){
             console.log(resultadoAlbum)
-            let profile = resultadoAlbum.data;
-            let imgFooter = document.querySelector('.imgFooter');
-            imgFooter.src = resultado.cover_medium; 
-    
-            let tituloAlbumm = document.querySelector('.tituloAlbum');
-            tituloAlbumm.innerHTML = resultado.title;
-    
-            let artistaa = document.querySelector('.nombreDelArtista');
-            artistaa.innerHTML = resultado.artist.name;
+            let cancionesArray = resultado1.data;
+            let FotoFooter = document.querySelector('.h2footer');
+            FotoFooter.innerHTML = resultado.title_short;
+ 
+
+
     
     })
     .catch(function(error){
