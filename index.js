@@ -123,9 +123,9 @@ fetch(genres)
 
 //EVENTOS
 
-let boton = document.querySelector('.buscar');
+let boton = document.querySelector('.img-container');
   boton.onmouseover = function(){
-    boton.color = 'red'; 
+    boton.color = red; 
 }
 
 

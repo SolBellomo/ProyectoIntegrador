@@ -77,9 +77,8 @@ body{
     padding: 5%;
 }
 .Songs{
-    display: grid;
-    grid-template-rows: 23% 23% 23% 23% 23% 23%;
-    grid-template-columns: 100%;
+
+    
     overflow: auto;
     padding: 5px;
     row-gap: 10px;

@@ -47,19 +47,22 @@
 
 /*FIN DE HEADER ALT.*/
 
-
 .todo-albums{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 140px;
+    margin-top: 90px;
     text-align: center;
     row-gap: 50px; 
+    background-image: url("imagenes/bg.degra.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .img{
     border-radius: 50%;
     width: 85%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 .artista1{
