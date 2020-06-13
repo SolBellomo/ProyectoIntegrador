@@ -2,10 +2,9 @@
     box-sizing: border-box;
 }
 body{
-    border: 8px solid white; 
     background-color: white; 
     padding: 1em;
-    background: #2B3134;
+    background: rgb(0, 0, 0);
     color: #777;
     font-family: "Gill sans", sans-serif;
     width: 80%;
@@ -13,10 +12,12 @@ body{
 }
 .container{
     text-align: center;
+    margin-top: 110px;
+    padding: 8px;
 }
 .header{
     display: grid;
-    background: linear-gradient(90deg, rgb(12, 12, 12), rgb(20, 20, 20), rgba(10, 11, 12, 0.726));
+    background: linear-gradient(90deg, rgb(10, 9, 9), rgb(37, 37, 37), rgb(21, 22, 22));
     height: 120px;
     grid-template-columns: 1fr 3fr;
     position: fixed; 
@@ -42,6 +43,8 @@ body{
     margin-top: 5px;
     position: relative;
     right: 60px;
+    background-color: white;
+    border: 1px solid white;
 }
 .header-items{
     display: grid;
@@ -83,6 +86,7 @@ body{
 }
 .menu{
     text-align: end;
+
 }
 
 /*TERMINA BARRA DE BÚSQUEDA*/
@@ -90,10 +94,8 @@ body{
 .todo{
     display: grid;
     grid-template-rows: 50px 380px 50px 400px 50px 345px 50px 400px;
-    background-image: url("imagenes/bg.degra.jpg");
-    background-repeat: no-repeat;
-    background-size: 250%;
-    margin-top: 120px;
+    background: rgba(31, 30, 30, 0.822);
+    box-shadow: -4px 0 15px rgba(202, 201, 201, 0.26);
 }
 
 .seccion1{
@@ -708,12 +710,6 @@ audio{
             background-repeat: no-repeat;
             grid-template-rows: 50px 500px 50px 500px 50px 600px;
         }
-        .lineas{
-            position: fixed;
-            top: 250px;
-            right: 60px;
-            font-size: 70px;
-        }
         .titulo2{
             top: 45px;
         }
@@ -749,9 +745,6 @@ audio{
             left: -31px;
             font-size: 33px;
             top: 206px;
-        }
-        #barraa {
-            height: 150px;
         }
         #cancionnn img {
             width: 125px;

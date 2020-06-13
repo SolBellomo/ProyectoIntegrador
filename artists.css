@@ -48,10 +48,10 @@
 /*FIN DE HEADER ALT.*/
 
 .todoo{
-    background-image: url("imagenes/bg.degra.jpg");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.507), rgba(36, 36, 37, 0.568), rgba(37, 38, 43, 0.575));
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-top: 90px;
+    margin-top: -12px;
 }
 .todo-albums{
     display: grid;
