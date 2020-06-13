@@ -13,7 +13,7 @@ fetch (url)
 
   for(let i=1; i<generoArray.length; i++){ 
 
-    divColumna += '      <div class="img-container">'; 
+    divColumna += '      <div class="img-container1">'; 
     divColumna += '        <img src="' +  generoArray[i].picture + '" alt="' + generoArray[i].name + '" class= "img">';
     divColumna += '        <a href="genres.html?id=' + generoArray[i].id + '"' + ' class="genero1">' + generoArray[i].name + '</a>';
     divColumna += '      </div>';
