@@ -23,6 +23,7 @@ fetch (url)
     divColumna += '    </div>';
   }
   charts.innerHTML = divColumna;  
+  
 })
 
 .catch(function(error){

@@ -57,11 +57,9 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
-    row-gap: 60px; 
+    row-gap: 60px;
     margin-top: 40px;
     overflow: auto;
-    margin-bottom: 45px;
-
 }
 
 .img{
