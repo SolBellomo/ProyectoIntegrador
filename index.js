@@ -15,7 +15,7 @@ fetch (url)
 
   for(let i=0; i<5; i++){ 
 
-    divColumna += '<div class="columna">';
+    divColumna += '<div class="columna-' + (i+1) +'">';
     divColumna += '      <div class="img-container">'; 
     divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
     divColumna += '      </div>';
@@ -78,7 +78,7 @@ fetch(tracks)
 
     for(let i=0; i<5; i++){
 
-      seccion3div += '<div class="columna">';
+      seccion3div += '<div class="columna-' + (i+1) +'">';
       seccion3div += '                                <img src="' + tracksArray[i].artist.picture_medium + '" alt="' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '">';
       seccion3div += '                                <a href="trackDetail.html?id=' + tracksArray[i].id + '"' + ' class="tracks"> ' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '</a>';
       seccion3div += '                        </div>';
@@ -108,7 +108,7 @@ fetch(genres)
 
     for(let i=1; i<6; i++){
 
-      seccion4div += '<div class="columna">';
+      seccion4div += '<div class="columna-' + (i+1) +'">';
       seccion4div += '                                <img src="' + genresArray[i].picture_medium + '" alt="' + genresArray[i].name + '">';
       seccion4div += '                                <a href="genres.html?id=' + genresArray[i].id + '"' + ' class="genres"> ' + genresArray[i].name + '</a>';
       seccion4div += '                        </div>';

@@ -1,3 +1,6 @@
+.bodyresults{
+  background-color: rgb(43, 49, 52);
+}
 main{
   display: grid;
     grid-template-rows: repeat(3, 430px);
