@@ -2,16 +2,21 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0px; 
     border: 8px solid white; 
     background-color: white; 
+    padding: 1em;
+    background: #2B3134;
+    color: #777;
+    font-family: "Gill sans", sans-serif;
+    width: 80%;
+    margin: 0 auto;
 }
 .container{
     text-align: center;
 }
 .header{
     display: grid;
-    background: linear-gradient(90deg, rgb(92, 238, 238), rgb(63, 153, 255),rgba(2, 39, 201, 0.726));
+    background: linear-gradient(90deg, rgb(12, 12, 12), rgb(20, 20, 20), rgba(10, 11, 12, 0.726));
     height: 120px;
     grid-template-columns: 1fr 3fr;
     position: fixed; 

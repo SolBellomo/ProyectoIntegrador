@@ -32,6 +32,11 @@ fetch(url)
     console.log(error);
 })
 
+
+
+
+//----
+
 let url1 = proxy1 + 'https://api.deezer.com/album/' + id + '/tracks'
 
 fetch(url1)
@@ -49,9 +54,8 @@ fetch(url1)
     
           sectionSongs += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+ cancionesArray[i].id +'&app_id=1" width="100%" height="85px"></iframe>'
            
-        
         }
-    songs.innerHTML = sectionSongs
+    songs.innerHTML = sectionSongs; 
 
     })
     .catch(function(error){
@@ -59,7 +63,7 @@ fetch(url1)
     })
 
 
-
+//----
 
 let url2 = proxy + 'https://api.deezer.com/album/' + id + '/tracks'
   
