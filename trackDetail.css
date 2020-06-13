@@ -1,7 +1,11 @@
+body{
+    margin-top: 110px;
+}
+
 /*HEADER ALTERNATIVO*/
 
 .header2{
-    display: grid;   
+
     background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     background-repeat: no-repeat;
     background-size: 100%;
@@ -46,16 +50,3 @@
 }
 
 /*FIN DE HEADER ALT.*/
-
-.todo-generos{
-    background-color: rgb(28, 42, 48);
-}
-.seccion1 a{
-    position: relative;
-    bottom: 130px;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-}
-    text-transform: uppercase;
-    letter-spacing: 3px;
