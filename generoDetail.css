@@ -48,9 +48,14 @@
 /*FIN DE HEADER ALT.*/
 
 .todo-generos{
-    background-image: url(imagenes/bg.degra.jpg);
+    background-color: rgb(28, 42, 48);
 }
-.seccion1{
-    color: white;
+.seccion1 a{
+    position: relative;
+    bottom: 130px;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
 }
+    text-transform: uppercase;
+    letter-spacing: 3px;

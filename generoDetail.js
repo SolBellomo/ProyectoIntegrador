@@ -11,7 +11,7 @@ fetch (url)
     let charts = document.querySelector('.seccion1');
     let divColumna = '';
 
-  for(let i=0; i<generoArray.length; i++){ 
+  for(let i=1; i<generoArray.length; i++){ 
 
     divColumna += '      <div class="img-container">'; 
     divColumna += '        <img src="' +  generoArray[i].picture + '" alt="' + generoArray[i].name + '" class= "img">';
