@@ -1,8 +1,11 @@
+.bodyresults{
+  background-color: rgb(43, 49, 52);
+}
 main{
   display: grid;
     grid-template-rows: repeat(3, 430px);
     background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
-    margin-top: 120px;
+    margin-top: 30px;
 }
 .tracks{
   display: grid;
@@ -56,4 +59,35 @@ main{
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
+}
+
+.headeer{
+  text-align: center;
+}
+.bar{
+  height: 30px;
+  padding: 0 46px 0 10px;
+  background-color: white;
+  color: #333;
+  border: 1px solid white;
+  font-size: 80%;
+  width: 30%;
+  margin-top: 30px;
+  margin-bottom: 3%;
+}
+.button{
+  position: relative;
+  right: 5px;
+  height: 30px;
+  border-left: hidden;
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
+  margin-bottom: 3%;
+}
+.logojaspo{
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  text-align: center;
 }

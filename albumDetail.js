@@ -17,7 +17,7 @@ fetch(url)
     .then(function(resultado){
 
         console.log(resultado)
-        let profile = resultado.data;
+
         let albumFoto = document.querySelector('.albumFoto');
         albumFoto.src = resultado.cover_medium; 
 
@@ -26,6 +26,9 @@ fetch(url)
 
         let artista = document.querySelector('.nombreDelArtista');
         artista.innerHTML = resultado.artist.name;
+
+        let fecha = document.querySelector('.fecha');
+        fecha.innerHTML = resultado.release_date;
 
 })
 .catch(function(error){
@@ -37,7 +40,50 @@ fetch(url)
 
 //----
 
-let url1 = proxy1 + 'https://api.deezer.com/album/' + id + '/tracks'
+let url1 = proxy1 + 'https://api.deezer.com/album/' + id 
+
+
+fetch(url1)
+    .then(function(response1){
+        return response1.json();
+    })
+    .then(function(resultado1){
+
+        console.log(resultado1)
+        let tracksLargo = resultado1.tracks.data;
+        let songs = document.querySelector('.Songs')
+        let sectionSongs = '';
+
+        for(let i=0; i<tracksLargo.length; i++){
+            sectionSongs += '<div class="laCancion" style="height:80px">'
+            sectionSongs += '<div><img src="'+ resultado1.cover_medium +'" alt="" class="prueba"></div>'
+            sectionSongs += '<div class="nameAlbum"><p style="margin-top:11px">'+ resultado1.title +'</p><p>'+ tracksLargo[i].title +'</p></div>'
+            sectionSongs += '<div class="iconosInteractivos"></div>'
+            sectionSongs += '</div>'
+        }
+        songs.innerHTML = sectionSongs; 
+         ;
+
+                
+    })
+
+    .catch(function(error){
+        console.log(error);
+    })
+
+
+
+
+
+//----
+
+
+
+
+
+
+//Plan B
+/*let url1 = proxy1 + 'https://api.deezer.com/album/' + id + '/tracks'
 
 fetch(url1)
     .then(function(response1){
@@ -61,35 +107,6 @@ fetch(url1)
     .catch(function(error){
         console.log(error);
     })
-
-
-//----
-
-let url2 = proxy + 'https://api.deezer.com/album/' + id + '/tracks'
-  
-    fetch(url2)
-        .then(function(response){
-            return response.json();
-        })
-        .then(function(resultado){
-            console.log(resultadoAlbum)
-            let cancionesArray = resultado1.data;
-            let FotoFooter = document.querySelector('.h2footer');
-            FotoFooter.innerHTML = resultado.title_short;
- 
-
-
-    
-    })
-    .catch(function(error){
-        console.log(error);
-    })
-    
-
-
-
-
-
-
+*/ 
 
 
