@@ -7,14 +7,23 @@ showDivs(slideIndex);
 function fotosExtra(fotos) {
   showDivs(slideIndex += fotos);
 }
-
-function showDivs(fotos) {
+function showDivs(start){
   let carrusel = document.getElementsByClassName("seccionArtistass");
-  if (fotos > carrusel.length) {slideIndex = 5}
-  if (fotos < 5) {slideIndex = carrusel.length} ;
-  for (i = 0; i < 5; i++) {
-    carrusel[i].style.display = 'none';
+  console.log(carrusel);
+  start = start % carrusel.length;
+  console.log(start);
+  let totalToShow = 5;
+  if(carrusel.length < totalToShow){
+      start = 0;
+      totalToShow = carrusel.length;
+  } else {
+    for(i = start + totalToShow; i%carrusel.length != start%carrusel.length; i++){
+      console.log('Bye ' + i);
+      carrusel[i%carrusel.length].style.display = 'none';
+    }
   }
-  carrusel[slideIndex-5].style.display = "block";
+  for(i = start; i< start + totalToShow; i++){
+      console.log('Hi ' + i);
+      carrusel[i% carrusel.length].style.display = 'block';
+  }
 }
-
