@@ -1,3 +1,6 @@
+
+//CARROUSEL ARTISTS
+
 let slideIndex = 5;
 showDivs(slideIndex);
 
