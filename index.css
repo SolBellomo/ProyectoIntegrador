@@ -367,7 +367,6 @@ a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 7px;
-    margin-top: 120px;
 }
 .c{
     border: 1px solid black;
@@ -376,7 +375,8 @@ a{
     display: grid;
     grid-template-rows: 35px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    background: rgba(31, 30, 30, 0.822);
+    box-shadow: -4px 0 15px rgba(218, 217, 217, 0.26);
 }
 .col1 a{
     font-family: proxima-nova, sans-serif;
@@ -391,7 +391,8 @@ a{
     display: grid;
     grid-template-rows: 35px 500px;
     padding: 1rem;
-    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    background: rgba(31, 30, 30, 0.822);
+    box-shadow: -4px 0 15px rgba(255, 255, 255, 0.26);
 }
 .col2 a{
     font-family: proxima-nova, sans-serif;
@@ -404,7 +405,8 @@ a{
 }
 .col3{
     padding: 1rem;
-    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    background: rgba(31, 30, 30, 0.822);
+    box-shadow: -4px 0 15px rgba(202, 201, 201, 0.26);
 }
 .col3 a{
     font-family: proxima-nova, sans-serif;

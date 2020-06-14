@@ -25,12 +25,14 @@ fetch (url)
 
   }
   charts.innerHTML = divColumna;  
+  fotosExtra(0); 
   
 })
 
 .catch(function(error){
   return console.log(error);
 })
+
 
 
 //ALBUMS 
@@ -135,7 +137,7 @@ let queryStringObj = new URLSearchParams(queryString); //para usar la API e inte
 let resultadosFormulario = queryStringObj.get('search'); //nombre del parámetro
 console.log(resultadosFormulario)
 
-let urlDeezer = 'https://api.deezer.com/search/album?q=eminem' + resultadosFormulario;
+let urlDeezer = 'https://api.deezer.com/search/album?q=' + resultadosFormulario;
 console.log(urlDeezer)
 
 fetch(urlDeezer)

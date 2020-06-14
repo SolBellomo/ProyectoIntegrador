@@ -55,11 +55,12 @@ fetch(url1)
         let sectionSongs = '';
 
         for(let i=0; i<tracksLargo.length; i++){
-            sectionSongs += '<div class="laCancion" style="height:80px">'
+
+            sectionSongs += '<a href="trackDetail.html?id=' + tracksLargo[i].id + '" class="laCancion" style="height:80px">'
             sectionSongs += '<div><img src="'+ resultado1.cover_medium +'" alt="" class="prueba"></div>'
-            sectionSongs += '<div class="nameAlbum"><p style="margin-top:11px">'+ resultado1.title +'</p><p>'+ tracksLargo[i].title +'</p></div>'
+            sectionSongs += '<div class="nameAlbum"><p style="margin-top:11px">'+ tracksLargo[i].title +'</p><p>'+ resultado1.title +'</p></div>'
             sectionSongs += '<div class="iconosInteractivos"></div>'
-            sectionSongs += '</div>'
+            sectionSongs += '</a>'
         }
         songs.innerHTML = sectionSongs; 
          ;
@@ -111,11 +112,11 @@ fetch(url1)
 
 //EVENTO
 
-var botonCancion = document.getElementsByClassName('laCancion')
+var botonCancion = document.getElementsByClassName('iconosInteractivos')
 
 console.log(botonCancion);
 
 
-botonCancion.onclick = function(){
+botonCancion.onclick = function name(){
     alert('Bienvenido');
 }
