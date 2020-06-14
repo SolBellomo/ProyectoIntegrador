@@ -57,7 +57,7 @@ fetch(url1)
         for(let i=0; i<tracksLargo.length; i++){
             sectionSongs += '<div class="laCancion" style="height:80px">'
             sectionSongs += '<div><img src="'+ resultado1.cover_medium +'" alt="" class="prueba"></div>'
-            sectionSongs += '<div class="nameAlbum"><p style="margin-top:11px">'+ resultado1.title +'</p><p>'+ tracksLargo[i].title +'</p></div>'
+            sectionSongs += '<div class="nameAlbum"><p style="margin-top:11px">'+ tracksLargo[i].title +'</p><p>'+ resultado1.title +'</p></div>'
             sectionSongs += '<div class="iconosInteractivos"></div>'
             sectionSongs += '</div>'
         }
