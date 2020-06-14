@@ -1,8 +1,8 @@
 /*HEADER ALTERNATIVO*/
 
 .header2{
-    
-    background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
+    display: grid;   
+    background: black;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 90px;
@@ -46,3 +46,25 @@
 }
 
 /*FIN DE HEADER ALT.*/
+
+.imagen-genero{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+.generos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    color: white;
+}
+.cancioness{
+    margin-top: 0px;
+}
+
+@media(max-width:768px){
+.generos{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+}
