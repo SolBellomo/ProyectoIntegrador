@@ -13,8 +13,8 @@ fetch(album)
 
     for(let i=0; i<10; i++){
 
-      seccion2div += '<div class="columna">';
-      seccion2div += '                                <img src="' + albumArray[i].cover + '" alt="' + albumArray[i].title + '">';
+      seccion2div += '<div class="columna" style="text-align: center">';
+      seccion2div += '                                <img src="' + albumArray[i].cover_medium + '" alt="' + albumArray[i].title + '">';
       seccion2div += '                                <a href="albumDetail.html?id=' + albumArray[i].id + '"' + ' class="t"> ' + albumArray[i].title + '</a>';
       seccion2div += '                        </div>';
 

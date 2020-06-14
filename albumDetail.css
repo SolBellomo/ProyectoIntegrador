@@ -1,6 +1,7 @@
 /*HEADER ALTERNATIVO*/
 
 .header2{
+    background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
     height: 90px;
     grid-template-columns: 2% 6% 92%;
     position: fixed; 
