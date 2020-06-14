@@ -2,7 +2,7 @@
 
 .header2{
     display: grid;   
-    background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
+    background: black;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 90px;
@@ -48,7 +48,7 @@
 /*FIN DE HEADER ALT.*/
 
 .todo-generos{
-    background-color: rgb(28, 42, 48);
+    background-color: rgba(31, 30, 30, 0.822);
     text-align: center;
 }
 .seccion1 img{
