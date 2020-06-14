@@ -39,28 +39,37 @@
         </header>
         <main class="todo">
                 <a href="artists.html" class="titulo">ARTISTAS</a>
-                <section class="seccion1">
+                <section class="carrusel">
 
+                        <button class="w3-button w3-display-left botonCarrusel" onclick="fotosExtra(-5)">&#10094;</button>
+                                <section class="seccion1">
+                                </section>
+                        <button class="w3-button w3-display-right botonCarrusel" onclick="fotosExtra(+5)">&#10095;</button>
                 </section>
 
                 <a href="albums.html" class="titulo">ALBUMS</a>
-                <div class="seccion2">
-                       
-                </div>
+                <section class="carrusel">
+
+                        <button class="w3-button w3-display-left botonCarrusel" onclick="fotossExtra(-5)">&#10094;</button>
+                                <section class="seccion2">
+                                </section>
+                        <button class="w3-button w3-display-right botonCarrusel" onclick="fotossExtra(+5)">&#10095;</button>
+                </section>
 
                 <a href="genres.html" class="titulo">GÉNEROS</a>
-                <div class="seccion4">
-                       
-                </div>
+                <section class="carrusel">
+
+                        <button class="w3-button w3-display-left botonCarrusel" onclick="fotosExtraa(-5)">&#10094;</button>
+                        <div class="seccion4">
+                        </div>
+                        <button class="w3-button w3-display-right botonCarrusel" onclick="fotosExtraa(+5)">&#10095;</button>
+                </section>
                 
-                <a href="perfil.html" class="titulo">CANCIONES</a>
-                <div class="seccion3">
-                       
-                </div>
-
-
+                        <a href="perfil.html" class="titulo">CANCIONES</a>
+                        <div class="seccion3">
+                        </div>
         </main>
-        <footer class="barraa">
+        <section class="barraa">
                 <div class="cancionnn" id="cancionnn">
                         <div class="audiios">
                                 <img src="imagenes/losdelpo.jpg" alt="Si La Vieras- Los Del Portezuelo">
@@ -93,14 +102,15 @@
                         </div>
                         <div></div>
                 </div>
-        </footer>
-    <div class="nosotros">
+        </section>
+    <footer class="nosotros">
         <div class="slogan">LO QUERÉS, LO JASPEÁS, LO ESCUCHÁS</div>
-    </div> 
+    </footer> 
     <div class="deezer">
         <img src="imagenes/deezern.png" alt="Deezer">
     </div>   
 </div>
 <script type="text/javascript" src="index.js"></script>
+<script src="probando.js"></script>
 </body>
 </html>
