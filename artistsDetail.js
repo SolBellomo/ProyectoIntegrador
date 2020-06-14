@@ -81,7 +81,7 @@ fetch(url)
         divAlbum += '                              <div class="img-container">';
         divAlbum += '        <img src="' +  albumdetail[i].cover + '" alt="' + albumdetail[i].title + '">';
         divAlbum += '      </div>';
-        divAlbum += '        <a href="artistsDetail.html?id=' + albumdetail[i].id + '"' + '>' + albumdetail[i].title + '</a>';
+        divAlbum += '        <a href="albumDetail.html?id=' + albumdetail[i].id + '"' + '>' + albumdetail[i].title + '</a>';
         divAlbum += '    </div>';
       }
       album.innerHTML = divAlbum;  

@@ -33,6 +33,7 @@ fetch (url)
 })
 
 
+
 //ALBUMS 
 
 let proxyy = 'https://cors-anywhere.herokuapp.com/'

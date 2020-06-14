@@ -43,6 +43,7 @@ main{
   margin-left: 80px;
   border-bottom: 1px solid grey;
 }
+
 .loader {
     border: 5px solid #f3f3f3; /* Light grey */
     border-top: 5px solid rgb(56, 54, 54); /* Gris oscuro */
@@ -94,3 +95,4 @@ main{
 .icons{
   size: 40px;
 }
+
