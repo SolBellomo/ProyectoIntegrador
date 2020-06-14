@@ -109,4 +109,13 @@ fetch(url1)
     })
 */ 
 
+//EVENTO
 
+var botonCancion = document.getElementsByClassName('laCancion')
+
+console.log(botonCancion);
+
+
+botonCancion.onclick = function(){
+    alert('Bienvenido');
+}
