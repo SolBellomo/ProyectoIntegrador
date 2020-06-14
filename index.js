@@ -13,14 +13,16 @@ fetch (url)
     let charts = document.querySelector('.seccion1');
     let divColumna = '';
 
-  for(let i=0; i<5; i++){ 
-
+  for(let i=0; i<artistaArray.length; i++){ 
+    divColumna += '                                        <div class="seccionArtistass">'
     divColumna += '<div class="columna-' + (i+1) +'">';
     divColumna += '      <div class="img-container">'; 
     divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
     divColumna += '      </div>';
     divColumna += '        <a href="artistsDetail.html?id=' + artistaArray[i].id + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
     divColumna += '    </div>';
+    divColumna += '                                        </div>'
+
   }
   charts.innerHTML = divColumna;  
   
@@ -122,13 +124,6 @@ fetch(genres)
   })
 
 
-//EVENTOS
-
-let boton = document.querySelector('.img-container');
-  boton.onmouseover = function(){
-    boton.color = red; 
-}
-
 
 //BARRA DE BÚSQUEDA
 
@@ -140,11 +135,10 @@ let queryStringObj = new URLSearchParams(queryString); //para usar la API e inte
 let resultadosFormulario = queryStringObj.get('search'); //nombre del parámetro
 console.log(resultadosFormulario)
 
-let urlDeezer = 'https://api.deezer.com/search/album?q=eminem';
-let urll = urlDeezer + resultadosFormulario;
-console.log(urll)
+let urlDeezer = 'https://api.deezer.com/search/album?q=eminem' + resultadosFormulario;
+console.log(urlDeezer)
 
-fetch(urll)
+fetch(urlDeezer)
     .then(function(ResponseJson){
         return ResponseJson.json();
     })
@@ -160,6 +154,4 @@ fetch(urll)
     .catch(function(error){
         console.log(error)
     })
-
-
 

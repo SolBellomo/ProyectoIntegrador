@@ -70,4 +70,17 @@ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + buscar;
   .catch(function(error){
       return console.log(error);
     })
-   
+
+
+//INTENTANDO LOADER
+
+let myVar;
+
+function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("mostrar").style.display = "block";
+    }

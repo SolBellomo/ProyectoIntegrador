@@ -200,7 +200,6 @@ border-radius: 10%;
 .otros img{
     object-fit: cover;
     border-radius: 50%;
-    height: 240px;
 }
 .otros a{
     font-family: proxima-nova, sans-serif;

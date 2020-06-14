@@ -15,6 +15,8 @@ body{
     margin-top: 110px;
     padding: 8px;
 }
+
+
 .header{
     display: grid;
     height: 120px;
@@ -106,7 +108,10 @@ body{
     background: rgba(31, 30, 30, 0.822);
     box-shadow: -4px 0 15px rgba(202, 201, 201, 0.26);
 }
-
+.carrusel{
+    display: grid;
+    grid-template-columns: 1fr 70fr 1fr;
+}
 .seccion1{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -119,6 +124,12 @@ body{
     object-fit: cover;
     border-radius: 50%;
     overflow: auto;
+}
+.botonCarrusel{
+    background-color: unset;
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    border: none;
 }
 .artista1{
     position: relative;
@@ -201,7 +212,7 @@ a{
 
 /*BARRA FOOTER*/
 
-footer{
+.barraa{
     display: grid;
     grid-template-columns: 2fr 3fr;
     background: linear-gradient(90deg, rgba(2, 39, 201, 0.726),rgb(63, 153, 255));
@@ -213,7 +224,7 @@ footer{
     height: 46px;
     z-index: 15;
 }
-footer img{
+.barraa img{
     width: 40px;
     height: 40px;
 }
@@ -958,9 +969,6 @@ audio{
 }
 
 @media(max-width: 840px){
-    .perfil{
-        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    }
     .foto{
         width: 200px;
     }
