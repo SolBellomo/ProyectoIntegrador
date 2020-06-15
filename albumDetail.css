@@ -1,8 +1,8 @@
 /*HEADER ALTERNATIVO*/
 
 .header2{
-    background: linear-gradient(90deg,rgba(71, 189, 173, 0.726), rgb(53, 136, 132), rgb(27, 108, 110));
-    height: 90px;
+    background: rgba(34,34,34,0.75);
+    height: 95px;
     grid-template-columns: 2% 6% 92%;
     position: fixed; 
     top: 0;
@@ -12,6 +12,7 @@
 }
 .caja-logo{
     height: 90px;
+    margin-top: 5px;
 }
 .icons-alternativo{
     color: white;
@@ -21,9 +22,11 @@
 }
 .logo-alternativo{
     border-radius: 50%;
-    padding-top: 3px;
-    padding-bottom: 3px;
     width: 85px;
+    height: 95%;
+    object-fit: unset;
+    background: white;
+    border: 1px solid white;
     
 }
 .header-items-alt{
@@ -32,14 +35,14 @@
 
 }
 .b-alt {
-    height: 35px;
+    height: 30px;
     padding: 0 46px 0 10px;
-    border-color: rgb(34, 34, 34);
-    border-radius: 35px;
+    background-color: white;
     color: #333;
-    font-size: 15px;
-    width: 35%;
-    margin-top: 17px;
+    border: 1px solid white;
+    font-size: 80%;
+    width: 30%;
+    margin-top: 20px;
 }
 
 /*FIN DE HEADER ALT.*/
@@ -78,12 +81,13 @@
     overflow: auto;
     padding: 5px;
     row-gap: 10px;
+    margin-bottom: 55px;
 }
 .laCancion{
     display: grid;
     grid-template-columns: 11% 64% 25%;
     grid-template-rows: 100%;
-    background-image: url(imagenes/bg.degra.jpg);
+    background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 20px;
@@ -173,7 +177,7 @@ h2{
     height: 46px;
     z-index: 15;
 } 
-.barraa{
+.barraa1{
     
     grid-template-columns: 70% 30%;
     background-color: #25242C;

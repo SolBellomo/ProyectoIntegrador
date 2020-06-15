@@ -329,7 +329,7 @@ a{
     text-align: left;
     position: fixed;
     left: 50px;
-    top: 3px;
+    top: 10px;
     display: grid;
     grid-template-columns: 2fr 2fr;
 }

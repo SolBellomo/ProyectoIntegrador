@@ -112,11 +112,14 @@ fetch(url1)
 
 //EVENTO
 
-var botonCancion = document.getElementsByClassName('iconosInteractivos')
+var botonCancion = document.getElementsByClassName('laCancion')
 
 console.log(botonCancion);
 
 
-botonCancion.onclick = function name(){
-    alert('Bienvenido');
+botonCancion.onmouseover = function(){
+    let header = document.querySelector('.header2');
+    header.style.display = "none";
+    
 }
+
