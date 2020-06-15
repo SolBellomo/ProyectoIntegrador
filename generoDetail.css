@@ -67,9 +67,17 @@
     margin-top: 0px;
 }
 
+.cancionesss img{
+    width: 100px;
+}
+
 @media(max-width:768px){
 .generos{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+.imagen-genero{
+    width: 150px;
+    height: 150px;
 }
 }

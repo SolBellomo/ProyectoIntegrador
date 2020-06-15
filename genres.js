@@ -46,3 +46,15 @@ fetch(urlGenero)
     console.log(error);
   })
 
+fetch()
+.then(function(response){
+  return response.json();
+})
+.then(function(datos){
+  let image = document.querySelector(".cancionesss");
+  image.innerHTML = '<img src="' + datos.picture_medium + '" alt="img">';
+
+  let titulo = document.querySelector('cancionesss');
+  titulo.innerHTML = '<a href=""></a>'
+
+})
