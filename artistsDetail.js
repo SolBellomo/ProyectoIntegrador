@@ -29,7 +29,7 @@ fetch(url)
 //Canciones Artistas
 
 let proxy4 = 'https://cors-anywhere.herokuapp.com/'
-let url4 = proxy4 + 'https://api.deezer.com/artist/27/top' + idArtista
+let url4 = proxy4 + 'https://api.deezer.com/artist/' + idArtista
 
 fetch (url4) 
   .then(function(dataJson){
@@ -38,8 +38,15 @@ fetch (url4)
   .then(function(resultado4){
     console.log(resultado4);
     let cancionArray = resultado4.data; 
-    let charts = document.querySelector('.horacioPlayer');
-    charts.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idArtista + '&app_id=1'
+    let cancion = document.querySelector('.audiiios');
+    let divColumna = '';
+    for(let i=0; i<cancionArray.length; i++){
+      divColumna += '<div class="cancioon">'
+      divColumna += '<a href="trackDetail.html?id="' + url.tracklist + '>'
+      divColumna += '</div>'
+    }
+    //let charts = document.querySelector('.horacioPlayer');
+    //charts.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idArtista + '&app_id=1'
 
     console.log(idArtista)
 })
