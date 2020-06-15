@@ -1,9 +1,14 @@
 .header2{
+    background: rgba(34,34,34,0.75);
     display: grid;
-    height: 120px;
+    height: 110px;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 15;
+}
+.header-items {
+    display: grid;
+    grid-template-columns: 90% 8%;
 }
