@@ -17,7 +17,7 @@ fetch (url)
     divColumna += '                                        <div class="seccionArtistass">'
     divColumna += '<div class="columna-' + (i+1) +'">';
     divColumna += '      <div class="img-container">'; 
-    divColumna += '        <img src="' +  artistaArray[i].picture + '" alt="' + artistaArray[i].name + '">';
+    divColumna += '        <img src="' +  artistaArray[i].picture_big + '" alt="' + artistaArray[i].name + '">';
     divColumna += '      </div>';
     divColumna += '        <a href="artistsDetail.html?id=' + artistaArray[i].id + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
     divColumna += '    </div>';
@@ -54,7 +54,7 @@ fetch(album)
 
       seccion2div += '                                        <div class="seccionAlbumss">'
       seccion2div += '<div class="columna-' + (i+1) +'">';
-      seccion2div += '                                <img src="' + albumArray[i].cover + '" alt="' + albumArray[i].title + '">';
+      seccion2div += '                                <img src="' + albumArray[i].cover_big + '" alt="' + albumArray[i].title + '">';
       seccion2div += '                                <a href="albumDetail.html?id=' + albumArray[i].id + '"' + ' class="t-albums"> ' + albumArray[i].title + '</a>';
       seccion2div += '                        </div>';
       seccion2div += '                                        </div>'
@@ -88,7 +88,7 @@ fetch(tracks)
 
       seccion3div += '                                        <div class="seccionTracks">'
       seccion3div += '<div class="columna-' + (i+1) +'">';
-      seccion3div += '                                <img src="' + tracksArray[i].artist.picture_medium + '" alt="' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '">';
+      seccion3div += '                                <img src="' + tracksArray[i].artist.picture_big + '" alt="' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '">';
       seccion3div += '                                <a href="trackDetail.html?id=' + tracksArray[i].id + '"' + ' class="tracks"> ' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '</a>';
       seccion3div += '                        </div>';
       seccion3div += '                                        </div>'
@@ -121,7 +121,7 @@ fetch(genres)
 
       seccion4div += '                                        <div class="seccionGenres">'
       seccion4div += '<div class="columna-' + (i+1) +'">';
-      seccion4div += '                                <img src="' + genresArray[i].picture_medium + '" alt="' + genresArray[i].name + '">';
+      seccion4div += '                                <img src="' + genresArray[i].picture_big + '" alt="' + genresArray[i].name + '">';
       seccion4div += '                                <a href="genres.html?id=' + genresArray[i].id + '"' + ' class="genres"> ' + genresArray[i].name + '</a>';
       seccion4div += '                        </div>';
       seccion4div += '                                        </div>'
