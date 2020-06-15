@@ -179,7 +179,7 @@ body{
 .genres{
     position: relative;
     bottom: 140px;
-    font-size: 38px;
+    font-size: 120%;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
