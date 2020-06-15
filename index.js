@@ -25,7 +25,7 @@ fetch (url)
 
   }
   charts.innerHTML = divColumna;  
-  fotosExtra(0); 
+  fotosExtra(0); //la estructura del carrusel empieza desde el artista 0
   
 })
 
@@ -50,15 +50,19 @@ fetch(album)
     let albuum = document.querySelector('.seccion2');
     let seccion2div = '';
 
-    for(let i=0; i<5; i++){
+    for(let i=0; i<albumArray.length; i++){
 
+      seccion2div += '                                        <div class="seccionAlbumss">'
       seccion2div += '<div class="columna-' + (i+1) +'">';
       seccion2div += '                                <img src="' + albumArray[i].cover + '" alt="' + albumArray[i].title + '">';
       seccion2div += '                                <a href="albumDetail.html?id=' + albumArray[i].id + '"' + ' class="t-albums"> ' + albumArray[i].title + '</a>';
       seccion2div += '                        </div>';
+      seccion2div += '                                        </div>'
 
     }
     albuum.innerHTML = seccion2div;
+    fotossExtra(0); 
+
   })
   .catch(function(error){
     return console.log(error);
@@ -80,15 +84,18 @@ fetch(tracks)
     let canciones = document.querySelector('.seccion3');
     let seccion3div = '';
 
-    for(let i=0; i<5; i++){
+    for(let i=0; i<tracksArray.length; i++){
 
+      seccion3div += '                                        <div class="seccionTracks">'
       seccion3div += '<div class="columna-' + (i+1) +'">';
       seccion3div += '                                <img src="' + tracksArray[i].artist.picture_medium + '" alt="' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '">';
       seccion3div += '                                <a href="trackDetail.html?id=' + tracksArray[i].id + '"' + ' class="tracks"> ' + tracksArray[i].title + '<br>' + tracksArray[i].artist.name + '</a>';
       seccion3div += '                        </div>';
+      seccion3div += '                                        </div>'
       
     }
     canciones.innerHTML = seccion3div;
+    fotosExtra3(0);
   })
   
   .catch(function(error){
@@ -110,15 +117,19 @@ fetch(genres)
     let generos = document.querySelector('.seccion4');
     let seccion4div = '';
 
-    for(let i=1; i<6; i++){
+    for(let i=1; i<genresArray.length; i++){
 
+      seccion4div += '                                        <div class="seccionGenres">'
       seccion4div += '<div class="columna-' + (i+1) +'">';
       seccion4div += '                                <img src="' + genresArray[i].picture_medium + '" alt="' + genresArray[i].name + '">';
       seccion4div += '                                <a href="genres.html?id=' + genresArray[i].id + '"' + ' class="genres"> ' + genresArray[i].name + '</a>';
       seccion4div += '                        </div>';
+      seccion4div += '                                        </div>'
 
     }
     generos.innerHTML = seccion4div;
+    fotosExtra4(0);
+
   })
   
   .catch(function(error){

@@ -123,7 +123,6 @@ body{
 .seccion1 div img{
     object-fit: cover;
     border-radius: 50%;
-    overflow: auto;
 }
 .botonCarrusel{
     background-color: unset;
@@ -751,15 +750,6 @@ audio{
         }
         #mute{
             font-size: 60px;
-        }
-        .columna-3{
-            display: none;
-        }
-        .columna-4{
-            display: none;
-        }
-        .columna-5{
-            display: none;
         }
     /*PLAYLISTS*/
     .cuerpo{
