@@ -76,23 +76,11 @@ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + buscar;
 
 document.onreadystatechange = function (){
     if (document.readyState != "complete"){
-        document.querySelector("main").style.visibility = "hidden"; 
+        document.querySelector(".mostrar").style.visibility = "hidden"; 
         document.getElementsByClassName(".loader").style.display = "visible"; 
     } else{
         document.getElementsByClassName(".loader").style.display = "none"; 
-        document.querySelector("main").style.display = "visible"; 
+        document.querySelector(".mostrar").style.display = "visible"; 
     }
-}
+}; 
 
-
-
-//INTENTO 2
-let loader = document.getElementsById("spinner"); 
-
-function mostrarLoader () {
-    loader.className = "mostrar"; 
-    
-    setTimeout(() => {
-        loader.className = loader.className.replace ("mostrar", ""); 
-    }, 2500); 
-}

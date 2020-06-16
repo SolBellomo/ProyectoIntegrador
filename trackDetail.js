@@ -58,7 +58,7 @@ agregar.addEventListener('click', function(e){
         //Si el track esta, tenemos que quitarlo. 
         let indiceEnElArray = playlist.indexOf(idTrack);
         playlist.splice(indiceEnElArray, 1);
-        document.querySelector('.agregar').innerHTML = "Agregar a la pLaylist";
+        document.querySelector('.agregar').innerHTML = "Agregar a la Playlist";
         console.log(playlist);
         
     } else {

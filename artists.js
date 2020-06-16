@@ -28,33 +28,38 @@ fetch (url)
 })
 
 
-//barra búsqueda
-/*
-let queryString = location.search; 
-let queryStringObj = new URLSearchParams(queryString);
+//RESULTADOS BÚSQUEDA
 
-console.log(queryString); 
-console.log(queryStringObj); 
+let queryString2 = location.search; 
+let queryStringObj2 = new URLSearchParams(queryString2);
 
-let buscar = queryStringObj.get('search'); 
+let buscar = queryStringObj2.get('search'); 
 console.log(buscar); 
-
 
 urlArtista= proxy + 'https://api.deezer.com/search/artist?q=' + buscar; 
 
-  fetch(urlArtista)
+fetch(urlArtista)
     .then(function(response){
-      return response.json(); 
+        return response.json(); 
     })
     .then(function(datos){
-      console.log(datos); 
+        console.log(datos);
+        let lista = document.querySelector('.todo-albums');
+        let artistaArrayy = datos.data; 
+        let divColumnaa = '';
 
-      let lista = document.querySelector('.todo-albums');
-      let resultados = datos.data; 
+        for(let i=0; i<artistaArrayy.length; i++){ 
 
-      resultados.forEach(function(resultado) {
-            lista.innerHTML += '<div>' + '<img src="' +  resultado.picture  + '"></img class="fotoArtistasBusqueda">' + resultado.name + '</div>'
-        });
-        console.log(datos)
-    });
-    */
+          divColumnaa = '<div class="columna">';
+          divColumnaa = '      <div class="img-container">'; 
+          divColumnaa = '        <img src="' +  artistaArrayy[i].picture_big + '" alt="' + artistaArrayy[i].name + '" class= "img">';
+          divColumnaa = '      </div>';
+          divColumnaa = '        <a href="artistsDetail.html?id=' + artistaArrayy[i] + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
+          divColumnaa = '    </div>';
+        }
+        lista.innerHTML = divColumnaa;  
+      })
+      
+      .catch(function(error){
+        return console.log(error);
+      })
