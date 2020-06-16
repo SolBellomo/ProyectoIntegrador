@@ -37,7 +37,7 @@ fetch(urlGenero)
         .then(function(datos){
         console.log(datos);
         let image = document.querySelector(".artistasss");
-        image.innerHTML += '<img src="' + datos.picture_big + '>';
+        image.innerHTML += '<img src="' + datos.picture_big + '">';
 
         let titulo = document.querySelector('.titulo-artist');
         titulo.innerHTML += datos.name;
