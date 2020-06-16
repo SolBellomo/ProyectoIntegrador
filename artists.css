@@ -1,5 +1,7 @@
-.container{
+.containerr{
     text-align: center;
+    margin-top: 90px;
+
 }
 .header2{
     display: grid;   
@@ -94,4 +96,27 @@
     border-bottom: 1px solid grey;
     position: relative;
     top: 30px;
+}
+
+/*mediaqueries*/
+
+@media(max-width:1024px){
+    .todo-albums{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:768px){
+    .todo-albums{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:425px){
+    .todo-albums{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

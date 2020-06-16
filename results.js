@@ -74,14 +74,13 @@ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + buscar;
 
 //INTENTANDO LOADER
 
-let myVar;
+document.onreadystatechange = function (){
+    if (document.readyState != "complete"){
+        document.querySelector(".mostrar").style.visibility = "hidden"; 
+        document.getElementsByClassName(".loader").style.display = "visible"; 
+    } else{
+        document.getElementsByClassName(".loader").style.display = "none"; 
+        document.querySelector(".mostrar").style.display = "visible"; 
+    }
+}; 
 
-function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    
-function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("mostrar").style.display = "block";
-    }
-    

@@ -61,23 +61,15 @@ agregar.addEventListener('click', function(e){
         document.querySelector('.agregar').innerHTML = "Agregar a la Playlist";
         console.log(playlist);
         
-
-
     } else {
         //Agrego el id del track a la playlist
         playlist.push(idTrack);
         document.querySelector('.agregar').innerHTML = "Quitar de la Playlist"
     }
 
-
-
     //Guardar lista en el Local Storage
     let playlistParaStorage = JSON.stringify(playlist);
     localStorage.setItem('playlist', playlistParaStorage);
     console.log(localStorage);
     
-
-
-
-
 })

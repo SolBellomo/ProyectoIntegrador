@@ -3,16 +3,23 @@
 .header2{
     display: grid;   
     background: rgba(34,34,34,0.75);
+<<<<<<< HEAD
     
     background-repeat: no-repeat;
     background-size: 100%;
     height: 95px;
+=======
+    height: 90px;
+>>>>>>> 49af11ec3619fa2c69ecb9f8f3c3f17b8fbe92a8
     grid-template-columns: 2% 6% 92%;
     position: fixed; 
     top: 0;
     right: 0;
     left: 0;
     z-index: 9;
+}
+.containerr{
+    margin-top: 90px;
 }
 .caja-logo{
     height: 90px;
@@ -26,13 +33,11 @@
 }
 .logo-alternativo{
     border-radius: 50%;
-
     width: 85px;
     height: 95%;
     object-fit: unset;
     background: white;
     border: 1px solid white;
-    
 }
 .header-items-alt{
     display: grid;
@@ -49,29 +54,48 @@
     width: 30%;
     margin-top: 20px;
 }
+.menuu{
+    text-align: right;
+}
 
 /*FIN DE HEADER ALT.*/
-
 .todo-generos{
     background-color: rgba(31, 30, 30, 0.822);
-    text-align: center;
+    padding-top: 30px;
 }
-.seccion1 img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.seccion12{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 10px;  
+    border-bottom: 1px solid rgba(34, 30, 30, 0.918);
+}
+.titulo1{
+    font-size: 17px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 80px;
+    border-bottom: 1px solid grey;
 }
 .genero1{
     position: relative;
-    bottom: 120px;
-    font-size: 21px;
+    bottom: 140px;
+    font-size: 120%;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 3px;  
+    letter-spacing: 3px;
+}
+.img-containerr{
+    height: 250px;
+    width: 100%;
+    text-align: center;
 }
 
-@media(max-width:768px){
-    .todo-generos{
-        text-align: center;
+@media(max-width:1250px){
+    .seccion1{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

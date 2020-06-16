@@ -10,21 +10,23 @@ main{
 }
 .tracks{
   display: grid;
-  grid-template-rows: 50px 380px;
+  grid-template-rows: 1fr 8fr;
   overflow-x: scroll;
   width: 100%;
 }
 .artists{
   display: grid;
-  grid-template-rows: 50px 380px;
+  grid-template-rows: 1fr 8fr;
   overflow-x: scroll;
   width: 100%;
 }
 .albums{
   display: grid;
-  grid-template-rows: 50px 380px;
+  grid-template-rows: 1fr 8fr;
 }
 .resultadosTracks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   display: inline-flex;
   scroll-behavior: smooth;
 }
@@ -52,7 +54,10 @@ main{
     height: 40px;
     animation: spin 2s linear infinite;
   }
-
+.loader .hidden{
+  animation: fadeOut 1s; 
+  animation-fill-mode: forwards;
+}
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }

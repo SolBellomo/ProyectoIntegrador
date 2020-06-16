@@ -101,7 +101,7 @@ fetch(tracks)
   .catch(function(error){
     return console.log(error);
   })
-
+ 
 //GENRES
 
 let proxygeneros = 'https://cors-anywhere.herokuapp.com/'
@@ -121,7 +121,7 @@ fetch(genres)
 
       seccion4div += '                                        <div class="seccionGenres">'
       seccion4div += '<div class="columna-' + (i+1) +'">';
-      seccion4div += '                                <img src="' + genresArray[i].picture_big + '" alt="' + genresArray[i].name + '">';
+      seccion4div += '                                <img src="' + genresArray[i].picture_medium + '" alt="' + genresArray[i].name + '">';
       seccion4div += '                                <a href="genres.html?id=' + genresArray[i].id + '"' + ' class="genres"> ' + genresArray[i].name + '</a>';
       seccion4div += '                        </div>';
       seccion4div += '                                        </div>'

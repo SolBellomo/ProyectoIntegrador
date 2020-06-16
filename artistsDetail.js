@@ -39,15 +39,15 @@ fetch (url4)
     console.log(resultado4);
     let cancionArray = resultado4.data; 
     let cancion = document.querySelector('.audiiios');
-    let divColumna = '';
-    for(let i=0; i<cancionArray.length; i++){
-      divColumna += '<div class="cancioon">'
-      divColumna += '<a href="trackDetail.html?id="' + url.tracklist + '>'
-      divColumna += '</div>'
-    }
-    //let charts = document.querySelector('.horacioPlayer');
-    //charts.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idArtista + '&app_id=1'
-
+    //let divColumna = '';
+    //for(let i=0; i<cancionArray.length; i++){
+     // divColumna += '<div class="cancioon">'
+     //divColumna += '<a href="trackDetail.html?id="' + url.tracklist + '>'
+     //divColumna += '</div>'
+    
+    let charts = document.querySelector('.horacioPlayer');
+    charts.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idArtista + '&app_id=1'
+    
     console.log(idArtista)
 })
 .catch(function(error){

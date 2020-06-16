@@ -12,19 +12,12 @@ body{
 }
 .container{
     text-align: center;
-    margin-top: 110px;
     padding: 8px;
 }
-
-
 .header{
     display: grid;
-    height: 120px;
+    height: 130px;
     grid-template-columns: 1fr 3fr;
-    position: fixed; 
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 15;
 }
 .header2{ /*perfil*/
@@ -39,13 +32,12 @@ body{
 }
 .logo{
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     margin-top: 5px;
-    position: relative;
-    right: 60px;
     background-color: white;
     border: 1px solid white;
+    margin-right: 50px;
 }
 .header-items{
     display: grid;
@@ -57,9 +49,8 @@ body{
 .icons{
     color: white;
     font-size: 30px;
-    position: fixed;
-
-    top: 46px;
+    position: relative;
+    top: 30px;
 }
 #i{
 	border: 1.5px solid rgb(34, 34, 34);
@@ -610,72 +601,14 @@ audio{
     bottom: 8px;
 }
 
-/*Género*/
-.container-genre{
-    margin: auto;
-    gap: 20px;
-    border: 8px solid white;
-    text-align: center;
-    width: 100%;
-    margin-top: 130px;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
-}
-.generos{
-    margin-top: 110px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-image: url(imagenes/bg.degra.jpg);
-    background-repeat: no-repeat;
-    background-size: 250%;
-}
-.artistasGeneros{
-   text-align: center;
-}
-.top5Generos{
-    text-align: center;
-}
-.tusFavoritosGeneros{
-    text-align: center;
-}
 
 @media (max-width: 320px){
     .todo{
         width: 100%;
-        grid-template-rows: 70px 400px 70px 400px 70px 400px;
-    }
-    .seccion1{
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 400px 70px 400px 70px 400px 70px 400px;
     }
     .titulo{
         font-size: 30px;
-    }
-    .seccion1 div img{
-        width: 300px;
-        height: 300px;
-    }
-    .seccion1 div a{
-        top: 40px;
-        right: 180px;
-        font-size: 30px;
-    }
-    .titulo2{
-        font-size: 30px;
-    }
-    .seccion2{
-        grid-template-columns: 1fr 1fr;
-    }
-    .seccion2 div img{
-        width: 300px;
-        height: 300px;
-    }
-    .seccion2 div a{
-        font-size: 30px;
-    }
-    .titulo3{
-        font-size: 30px;
-    }
-    .seccion3{
-        grid-template-columns: 1fr 1fr;
     }
     .col3{
         height: 100%;
@@ -708,16 +641,6 @@ audio{
         }
         .todo{
             margin-top: 188px;
-        }
-        .titulo2{
-            top: 45px;
-        }
-        .titulo2{
-            top: 53px;
-        }
-        .seccion2 div img {
-            margin-left: 32px;
-            width: 379px;
         }
         #cancionnn img {
             width: 125px;
