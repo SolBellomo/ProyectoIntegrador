@@ -104,7 +104,7 @@ body{
 
 .todo{
     display: grid;
-    grid-template-rows: 50px 360px 50px 380px 50px 330px 50px 400px;
+    grid-template-rows: 50px 340px 50px 360px 50px 330px 50px 400px;
     background: rgba(31, 30, 30, 0.822);
     box-shadow: -4px 0 15px rgba(202, 201, 201, 0.26);
 }
@@ -144,7 +144,6 @@ body{
 }
 .seccion2 img{
     border-radius: 10%;
-    height: 240px;
 }
 .t-albums{
     position: relative;
@@ -157,9 +156,6 @@ body{
     padding: 20px;
     margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
-}
-.seccion3 img{
-    height: 240px;
 }
 .tracks{
     position: relative;
