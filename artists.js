@@ -27,3 +27,34 @@ fetch (url)
   return console.log(error);
 })
 
+
+//barra búsqueda
+/*
+let queryString = location.search; 
+let queryStringObj = new URLSearchParams(queryString);
+
+console.log(queryString); 
+console.log(queryStringObj); 
+
+let buscar = queryStringObj.get('search'); 
+console.log(buscar); 
+
+
+urlArtista= proxy + 'https://api.deezer.com/search/artist?q=' + buscar; 
+
+  fetch(urlArtista)
+    .then(function(response){
+      return response.json(); 
+    })
+    .then(function(datos){
+      console.log(datos); 
+
+      let lista = document.querySelector('.todo-albums');
+      let resultados = datos.data; 
+
+      resultados.forEach(function(resultado) {
+            lista.innerHTML += '<div>' + '<img src="' +  resultado.picture  + '"></img class="fotoArtistasBusqueda">' + resultado.name + '</div>'
+        });
+        console.log(datos)
+    });
+    */
