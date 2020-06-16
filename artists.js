@@ -36,7 +36,7 @@ let queryStringObj2 = new URLSearchParams(queryString2);
 let buscar = queryStringObj2.get('search'); 
 console.log(buscar); 
 
-urlArtista= proxy + 'https://api.deezer.com/search/artist?q=' + buscar; 
+urlArtista = proxy + 'https://api.deezer.com/search/artist?q=' + buscar; 
 
 fetch(urlArtista)
     .then(function(response){
@@ -44,21 +44,22 @@ fetch(urlArtista)
     })
     .then(function(datos){
         console.log(datos);
-        let lista = document.querySelector('.todo-albums');
         let artistaArrayy = datos.data; 
+        let lista = document.querySelector('.todo-albums');
         let divColumnaa = '';
 
         for(let i=0; i<artistaArrayy.length; i++){ 
 
-          divColumnaa = '<div class="columna">';
-          divColumnaa = '      <div class="img-container">'; 
-          divColumnaa = '        <img src="' +  artistaArrayy[i].picture_big + '" alt="' + artistaArrayy[i].name + '" class= "img">';
-          divColumnaa = '      </div>';
-          divColumnaa = '        <a href="artistsDetail.html?id=' + artistaArrayy[i] + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
-          divColumnaa = '    </div>';
+          divColumnaa += '<div class="columna">';
+          divColumnaa += '      <div class="img-container">'; 
+          divColumnaa += '        <img src="' +  artistaArrayy[i].picture_big + '" alt="' + artistaArrayy[i].name + '" class= "img">';
+          divColumnaa += '      </div>';
+          divColumnaa += '        <a href="artistsDetail.html?id=' + artistaArrayy[i].id + ' class="artista1">' + artistaArrayy[i].name + '</a>';
+          divColumnaa += '    </div>';
         }
-        lista.innerHTML = divColumnaa;  
+        lista.innerHTML == divColumnaa;  
       })
+      
       
       .catch(function(error){
         return console.log(error);
