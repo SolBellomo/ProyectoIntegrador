@@ -10,21 +10,23 @@ main{
 }
 .tracks{
   display: grid;
-  grid-template-rows: 50px 380px;
+  grid-template-rows: 1fr 8fr;
   overflow-x: scroll;
   width: 100%;
 }
 .artists{
   display: grid;
-  grid-template-rows: 50px 380px;
+  grid-template-rows: 1fr 8fr;
   overflow-x: scroll;
   width: 100%;
 }
 .albums{
   display: grid;
-  grid-template-rows: 50px 380px;
+  grid-template-rows: 1fr 8fr;
 }
 .resultadosTracks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   display: inline-flex;
   scroll-behavior: smooth;
 }

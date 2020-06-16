@@ -59,22 +59,35 @@
     background-color: rgba(31, 30, 30, 0.822);
     text-align: center;
 }
+.seccion1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .seccion1 img{
-    width: 100%;
+    width: 200px;
     height: 200px;
-    object-fit: cover;
 }
 .genero1{
     position: relative;
     bottom: 120px;
-    font-size: 21px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;  
 }
 
-@media(max-width:768px){
-    .todo-generos{
-        text-align: center;
+@media(max-width:1250px){
+    .seccion1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:1024px){
+    .seccion1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .seccion1 img{
+        width: 150px;
+        height: 150px;
     }
 }

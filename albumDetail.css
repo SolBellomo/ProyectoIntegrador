@@ -358,12 +358,11 @@ audio {
     }
     #i{
         position: absolute;
-    
         top: 7px;
     }
-    
-    
-   
+    .menu a{
+        font-size: 11px;
+    }
     
     #s{
         margin-top: 10px;
