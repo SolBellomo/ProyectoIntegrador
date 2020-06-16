@@ -58,14 +58,12 @@ fetch(url1)
 
             sectionSongs += '<a href="trackDetail.html?id=' + tracksLargo[i].id + '" class="laCancion" style="height:80px">'
             sectionSongs += '<div><img src="'+ resultado1.cover_medium +'" alt="" class="prueba"></div>'
-            sectionSongs += '<div class="nameAlbum"><p style="margin-top:11px">'+ tracksLargo[i].title +'</p><p>'+ resultado1.title +'</p></div>'
-            sectionSongs += '<div class="iconosInteractivos"></div>'
+            sectionSongs += '<div class="nameAlbum"><p style="margin-top:11px">'+ tracksLargo[i].title +'</p><p>'+ resultado1.artist.name +'</p></div>'
+            sectionSongs += '<button class="botonPlaylist">AÑADIR A PLAYLIST</button>'
             sectionSongs += '</a>'
         }
         songs.innerHTML = sectionSongs; 
-         ;
-
-                
+         
     })
 
     .catch(function(error){

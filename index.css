@@ -104,7 +104,7 @@ body{
 
 .todo{
     display: grid;
-    grid-template-rows: 50px 360px 50px 380px 50px 345px 50px 400px;
+    grid-template-rows: 50px 340px 50px 360px 50px 330px 50px 400px;
     background: rgba(31, 30, 30, 0.822);
     box-shadow: -4px 0 15px rgba(202, 201, 201, 0.26);
 }
@@ -136,7 +136,7 @@ body{
 }
 .seccion2{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap:20px;
     padding: 20px;
     margin-top: 30px;
@@ -144,7 +144,6 @@ body{
 }
 .seccion2 img{
     border-radius: 10%;
-    height: 240px;
 }
 .t-albums{
     position: relative;
@@ -152,14 +151,11 @@ body{
 }
 .seccion3 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
-}
-.seccion3 img{
-    height: 240px;
 }
 .tracks{
     position: relative;
@@ -167,14 +163,11 @@ body{
 }
 .seccion4 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    padding: 20px;    
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 10px;  
     margin-top: 30px;
     border-bottom: 1px solid rgba(34, 30, 30, 0.918);
-}
-.seccion4 img{
-    height: 240px;
 }
 .genres{
     position: relative;
@@ -183,6 +176,7 @@ body{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
+    
 }
 .titulo{
     font-size: 17px;

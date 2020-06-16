@@ -24,7 +24,7 @@ function showDivs(start){ // % --> resto de la división que quiero mostrar --> 
 }
 
 //CARRUSEL ALBUMS
-let slideIndex1 = 5;
+let slideIndex1 = 4;
 showDivs1(slideIndex1);
 
 function fotossExtra(fotoss) {
@@ -33,7 +33,7 @@ function fotossExtra(fotoss) {
 function showDivs1(startt){ 
   let carrusel2 = document.getElementsByClassName("seccionAlbumss");
   startt = startt % carrusel2.length; 
-  let totalQueQuieroMostrarr = 5; 
+  let totalQueQuieroMostrarr = 4; 
   if(carrusel2.length < totalQueQuieroMostrarr){ 
       totalQueQuieroMostrarr = carrusel2.length;
   } else {
@@ -48,7 +48,7 @@ function showDivs1(startt){
 
 //CARRUSEL GENRES
 
-let slideIndexGenres = 5;
+let slideIndexGenres = 4;
 showDivsGenres(slideIndexGenres);
 
 function fotosExtra4(fotosGenres) {
@@ -57,7 +57,7 @@ function fotosExtra4(fotosGenres) {
 function showDivsGenres(start4){ 
   let carruselGenres = document.getElementsByClassName("seccionGenres");
   start4 = start4 % carruselGenres.length; 
-  let GenerosQueQuieroMostrar = 5; 
+  let GenerosQueQuieroMostrar = 4; 
   if(carruselGenres.length < GenerosQueQuieroMostrar){ 
     GenerosQueQuieroMostrar = carruselGenres.length;
   } else {
@@ -72,7 +72,7 @@ function showDivsGenres(start4){
 
 //CARRUSEL TRACKS
 
-let slideIndexTracks = 5;
+let slideIndexTracks = 4;
 showDivsTracks(slideIndexTracks);
 
 function fotosExtra3(fotosTracks) {
@@ -81,7 +81,7 @@ function fotosExtra3(fotosTracks) {
 function showDivsTracks(start3){ 
   let carruselTracks = document.getElementsByClassName("seccionTracks");
   start3 = start3 % carruselTracks.length; 
-  let TracksQueQuieroMostrar = 5; 
+  let TracksQueQuieroMostrar = 4; 
   if(carruselTracks.length < TracksQueQuieroMostrar){ 
     TracksQueQuieroMostrar = carruselTracks.length;
   } else {
