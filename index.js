@@ -101,7 +101,7 @@ fetch(tracks)
   .catch(function(error){
     return console.log(error);
   })
-
+ 
 //GENRES
 
 let proxygeneros = 'https://cors-anywhere.herokuapp.com/'

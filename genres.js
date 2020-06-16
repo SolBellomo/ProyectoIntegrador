@@ -12,13 +12,13 @@ fetch (url)
   .then(function(resultado){
     console.log(resultado);
     let generoArray = resultado.data; 
-    let charts = document.querySelector('.seccion1');
+    let charts = document.querySelector('.seccion12');
     let divColumna = '';
 
   for(let i=1; i<generoArray.length; i++){ 
 
-    divColumna += '      <div class="img-container1">'; 
-    divColumna += '        <img src="' +  generoArray[i].picture + '" alt="' + generoArray[i].name + '" class= "img">';
+    divColumna += '      <div class="img-containerr">'; 
+    divColumna += '        <img src="' +  generoArray[i].picture_big + '" alt="' + generoArray[i].name + '" class= "img">';
     divColumna += '        <a href="generoDetail.html?id=' + generoArray[i].id + '"' + ' class="genero1">' + generoArray[i].name + '</a>';
     divColumna += '      </div>';
   }
@@ -54,6 +54,6 @@ fetch()
   let image = document.querySelector(".cancionesss");
   image.innerHTML = '<img src="' + datos.picture_medium + '" alt="img">';
 
-  let titulo = document.querySelector('cancionesss');
+  let titulo = document.querySelector('.cancionesss');
   titulo.innerHTML = '<a href=""></a>'
 })

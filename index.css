@@ -601,33 +601,6 @@ audio{
     bottom: 8px;
 }
 
-/*Género*/
-.container-genre{
-    margin: auto;
-    gap: 20px;
-    border: 8px solid white;
-    text-align: center;
-    width: 100%;
-    margin-top: 130px;
-    background: linear-gradient(90deg, rgb(87, 84, 84), rgb(58, 58, 58));
-}
-.generos{
-    margin-top: 110px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-image: url(imagenes/bg.degra.jpg);
-    background-repeat: no-repeat;
-    background-size: 250%;
-}
-.artistasGeneros{
-   text-align: center;
-}
-.top5Generos{
-    text-align: center;
-}
-.tusFavoritosGeneros{
-    text-align: center;
-}
 
 @media (max-width: 320px){
     .todo{
