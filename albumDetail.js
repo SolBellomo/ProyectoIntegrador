@@ -120,4 +120,52 @@ botonCancion.onmouseover = function(){
     header.style.display = "none";
     
 }
+let recuperoDelStorage = localStorage.getItem('reproductor');
+
+if(recuperoDelStorage == null){
+    reproductor = [];
+} else {
+    reproductor = JSON.parse(recuperoDelStorage);
+}
+
+//Me fijo que no este en la lista y cambio el texto del botón
+if(playlist.includes(id)){
+    document.querySelector('.agregar').innerHTML = "Quitar de la Playlist";   
+}
+
+//Agregar un track 
+
+let agregar = document.querySelector('.agregar');
+
+agregar.addEventListener('click', function(e){
+    //detener el a 
+    e.preventDefault();
+
+    if(playlist.includes(idTrack)){
+        //Si el track esta, tenemos que quitarlo. 
+        let indiceEnElArray = playlist.indexOf(idTrack);
+        playlist.splice(indiceEnElArray, 1);
+        document.querySelector('.agregar').innerHTML = "Agregar a la pLaylist";
+        console.log(playlist);
+        
+
+
+    } else {
+        //Agrego el id del track a la playlist
+        playlist.push(idTrack);
+        document.querySelector('.agregar').innerHTML = "Quitar de la Playlist"
+    }
+
+
+
+    //Guardar lista en el Local Storage
+    let playlistParaStorage = JSON.stringify(playlist);
+    localStorage.setItem('playlist', playlistParaStorage);
+    console.log(localStorage);
+    
+
+
+
+
+})
 
