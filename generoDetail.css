@@ -57,24 +57,22 @@
     height: 200px;
     align-items: center;
 }
-.generos{
+.artistasss{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
     text-align: center;
     color: white;
 }
-.cancioness{
-    margin-top: 0px;
-}
+.imagenn{
+    width: 150px;
+    height: 150px;
 
-.cancionesss img{
-    width: 100px;
 }
 
 @media(max-width:768px){
-.generos{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.artistasss{
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .imagen-genero{
     width: 150px;
