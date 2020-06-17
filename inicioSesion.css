@@ -1,6 +1,13 @@
 *{
     box-sizing: border-box;
-    margin: auto;
+    
+}
+.form-group{
+    margin-top: 20px
+}
+button{
+    margin-top: 20px;
+    border-radius: 5px;
 }
 body{
     background-color: white; 
@@ -12,8 +19,10 @@ body{
 header{
     display: grid;
     height: 130px;
-    grid-template-columns: 1fr 3fr;
     z-index: 15;
+}
+.logo{
+    margin-right: 0px;
 }
 .inicio{
     background: rgba(143, 141, 141, 0.637);
@@ -23,10 +32,15 @@ header{
     width: 500px;
     height: 500px;
     text-align: center;
+    margin: auto;
 }
 .forms{
     background-color: black;
     color: rgba(143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+
 }
 
 /*SLIDER ABAJO*/
@@ -37,6 +51,7 @@ header{
     overflow: hidden;
 }
 .slider ul{
+    margin-top: 20px;
     padding: 0;
     width: 400%;
     display: flex;
@@ -49,6 +64,10 @@ header{
     width: 100%;
     list-style: none;
     height: 100%;
+    
+}
+.slider li img{
+    width: 100%;
 }
 
 @keyframes cambio {

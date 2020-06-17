@@ -20,7 +20,7 @@ fetch(url)
         let resultados = datos.data; 
 
         resultados.forEach(function(resultado) {
-            lista.innerHTML += '<li><a href="trackDetail.html?id=' + resultado.id + '"' + ' class="tracks1"><div class="columna"><img src="' + resultado.album.cover_medium + '" alt="' + resultado.title + '<br>' + resultado.name + '"><p>' + resultado.title + '<br>' + resultado.artist.name + '</p></div></a></li>'
+            lista.innerHTML += '<li style="padding: 10px;"><a href="trackDetail.html?id=' + resultado.id + '"' + ' class="tracks1"><div class="columna"><img src="' + resultado.album.cover_medium + '" alt="' + resultado.title + '<br>' + resultado.name + '"><p>' + resultado.title + '<br>' + resultado.artist.name + '</p></div></a></li>'
             
         });
         console.log(datos)
@@ -42,7 +42,7 @@ fetch(urlArtista)
         let resultados = datos.data; 
 
         resultados.forEach(function(resultado) {
-            lista.innerHTML += '<li><a href="artistsDetail.html?id=' + resultado.id + '"' + ' class="tracks1"><div class="columna"><img src="' + resultado.picture_big + '" alt="' + resultado.name + '"class="fotoArtistasBusqueda"><p>' + resultado.name + '</p></div></a></li>'
+            lista.innerHTML += '<li style="padding: 10px;"><a href="artistsDetail.html?id=' + resultado.id + '"' + ' class="tracks1"><div class="columna"><img src="' + resultado.picture_big + '" alt="' + resultado.name + '"class="fotoArtistasBusqueda"><p>' + resultado.name + '</p></div></a></li>'
         });
         console.log(datos)
     })
@@ -64,7 +64,7 @@ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + buscar;
           let resultados = datos.data; 
   
           resultados.forEach(function(resultado) {
-              lista.innerHTML += '<li><a href="albumDetail.html?id=' + resultado.id + '"' + ' class="tracks1"><div class="columna"><img src="' + resultado.cover_medium + '" alt="' + resultado.title + '"class="fotoArtistasBusqueda"><p>' + resultado.title + '</p></div></a></li>'
+              lista.innerHTML += '<li style="padding: 10px;"><a href="albumDetail.html?id=' + resultado.id + '"' + ' class="tracks1"><div class="columna"><img src="' + resultado.cover_medium + '" alt="' + resultado.title + '"class="fotoArtistasBusqueda"><p>' + resultado.title + '</p></div></a></li>'
           });
           console.log(datos)
       })

@@ -91,3 +91,8 @@
         grid-template-columns: 1fr;
     }
 }
+
+.seccion2 img{
+    width: auto;
+    height: auto;
+}
