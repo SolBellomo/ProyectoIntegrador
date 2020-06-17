@@ -11,6 +11,9 @@
     background: rgba(31, 30, 30, 0.822);
     border-radius: 4px;
 }
+.nameAlbum{
+    text-align: left;
+}
 /*HEADER ALTERNATIVO*/
 
 .header2{
@@ -118,9 +121,11 @@
     font-size: 19px;
     color: white;
     text-align: center;
+    
 }
 .audiiios{
     display: grid;
+    row-gap: 5px;
     grid-template-rows: repeat(5, 1fr);
 }
 .songs{

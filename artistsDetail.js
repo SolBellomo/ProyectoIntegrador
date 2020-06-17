@@ -40,9 +40,10 @@ fetch (url4)
     let cancion = document.querySelector('.audiiios');
     let divColumna = '';
     for(let i=0; i<5; i++){
-     divColumna += '<div class="cancioon">'
-     divColumna += '<a href="trackDetail.html?id="' + url4.tracklist + ' class="songs">' + cancionArray[i].title + '</a>'
-     divColumna += '</div>'
+      divColumna += '<a href="trackDetail.html?id=' + cancionArray[i].id + '" class="laCancion" style="height:80px">'
+      divColumna += '<div><img src="'+ cancionArray[i].album.cover_medium +'" alt="" class="prueba"></div>'
+      divColumna += '<div class="nameAlbum"><p style="margin-top:11px">'+ cancionArray[i].title +'</p><p>'+ cancionArray[i].artist.name +'</p></div>'
+      divColumna += '</a>'
     }
     cancion.innerHTML = divColumna;
     console.log(idArtista);
