@@ -26,7 +26,6 @@
 }
 .logo-alternativo{
     border-radius: 50%;
-
     width: 85px;
     height: 95%;
     object-fit: unset;
@@ -58,6 +57,7 @@
     margin: auto;
     position: relative;
     top: 100px;
+    text-transform: uppercase;
 }
 .tituloo{
     font-family: proxima-nova, sans-serif;
@@ -67,7 +67,6 @@
     bottom: 150px;
     font-size: 30px;
     color: white;
-    background-color: rgba(94, 94, 94, 0.7);
     text-align: center;
 }
 .artistass{
