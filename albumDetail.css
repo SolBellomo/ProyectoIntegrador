@@ -28,6 +28,9 @@
     background: white;
     border: 1px solid white;
 }
+.perfil-menu{
+    text-align: center;
+}
 .botonPlaylist{
     color: white;
     background-color: rgb(0, 0, 0);

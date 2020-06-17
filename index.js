@@ -120,7 +120,7 @@ fetch(genres)
     for(let i=1; i<genresArray.length; i++){
 
       seccion4div += '                                        <div class="seccionGenres">'
-      seccion4div += '<div class="columna-' + (i+1) +'">';
+      seccion4div += '<div class="columna-' + (i+1) +' ">';
       seccion4div += '                                <img src="' + genresArray[i].picture_medium + '" alt="' + genresArray[i].name + '">';
       seccion4div += '                                <a href="genres.html?id=' + genresArray[i].id + '"' + ' class="genres"> ' + genresArray[i].name + '</a>';
       seccion4div += '                        </div>';
@@ -166,4 +166,3 @@ fetch(urlDeezer)
     .catch(function(error){
         console.log(error)
     })
-
