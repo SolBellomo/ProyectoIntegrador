@@ -27,8 +27,8 @@ main{
 .resultadosTracks{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  display: inline-flex;
   scroll-behavior: smooth;
+  display: inline-flex;
 }
 .resultadosArtist{
   display: inline-flex;

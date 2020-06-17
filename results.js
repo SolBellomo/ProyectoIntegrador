@@ -20,7 +20,8 @@ fetch(url)
         let resultados = datos.data; 
 
         resultados.forEach(function(resultado) {
-            lista.innerHTML += '<li>' + resultado.title + '</li>';
+            lista.innerHTML += '<li  style="list-style: none;"><a href="trackDetail.html?id=' + resultado.id + '"' + ' class="tracks1"><div class="columna" style="width: 200px;""><img src="' + resultado.album.cover_medium + '" alt="' + resultado.title + '<br>' + resultado.name + '"><p>' + resultado.title + '<br>' + resultado.artist.name + '</p></div></a></li style=>'
+            
         });
         console.log(datos)
     })
@@ -74,7 +75,7 @@ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + buscar;
 
 //INTENTANDO LOADER
 
-document.onreadystatechange = function (){
+/*document.onreadystatechange = function (){
     if (document.readyState != "complete"){
         document.querySelector(".mostrar").style.visibility = "hidden"; 
         document.getElementsByClassName(".loader").style.display = "visible"; 
@@ -82,5 +83,8 @@ document.onreadystatechange = function (){
         document.getElementsByClassName(".loader").style.display = "none"; 
         document.querySelector(".mostrar").style.display = "visible"; 
     }
-}; 
+};*/ 
+
+//Segundo intento xd
+
 

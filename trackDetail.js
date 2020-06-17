@@ -73,3 +73,6 @@ agregar.addEventListener('click', function(e){
     console.log(localStorage);
     
 })
+
+
+

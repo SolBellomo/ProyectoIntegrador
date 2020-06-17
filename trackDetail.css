@@ -18,6 +18,9 @@ body{
     left: 0;
     z-index: 9;
 }
+.titulo{
+    margin-left: 0px;
+}
 .caja-logo{
     height: 90px;
     margin-top: 5px;
