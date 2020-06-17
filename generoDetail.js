@@ -14,8 +14,10 @@ fetch(url)
         .then(function(datos){
         console.log(datos);
         let imagen = document.querySelector(".imagen-genero");
-        imagen.innerHTML += '<img src="' + datos.picture_big + '">';
-
+        imagen.innerHTML += '<div titulo>';
+        imagen.innerHTML +=   '<img src="' + datos.picture_big + '">';
+        imagen.innerHTML +=   '<p class="tituloo">' + datos.name +'</p>';
+        imagen.innerHTML += '</div>';
         //let titulo = document.querySelector('.titulo-artist');
         //titulo.innerHTML += datos.name;
 
@@ -33,9 +35,13 @@ fetch(urlGenero)
         let image = document.querySelector(".artistasss");
         let artistasGenero = datos.data;
         let artistas = '';
-        for(let i=0; i<artistasGenero.length; i++){
-          artistas += '<img src="' + artistasGenero[i].picture_big + '" class="imagenn" alt="' + artistasGenero[i].name + '">';
-          artistas += '<a href="artistsDetail.html?id=' + artistasGenero[i].id + '"class="artistsGeneros">' + artistasGenero[i].name + '</a>';
+        for(let i=0; i<10; i++){
+          artistas += '<div>'; 
+          artistas +=   '<div>'; 
+          artistas +=     '<img src="' + artistasGenero[i].picture_big + '" class="imagenn" alt="' + artistasGenero[i].name + '">';
+          artistas +=   '</div>';
+          artistas +=   '<a href="artistsDetail.html?id=' + artistasGenero[i].id + '"class="artistsGeneros">' + artistasGenero[i].name + '</a>';
+          artistas += '</div>';
         }
         image.innerHTML = artistas;
 
