@@ -212,10 +212,6 @@ a{
     width: 40px;
     height: 40px;
 }
-.iconoos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
 .cancionnn div h2{
     color: white;
     position: relative;
@@ -245,40 +241,6 @@ a{
     position: relative;
     bottom: 15px;
 }
-.play{
-    font-size: 33px;
-    color: white;
-    position: fixed;
-    bottom: 7px;
-}
-
-.youtube{
-    font-size: 25px;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-}
-
-.aleatorio{
-    font-size: 20px;
-    color: white;
-    position: fixed;
-    bottom: 12px;
-}
-.repetir{
-    font-size: 25px;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-}
-
-.mute{
-    font-size: 20px;
-    color: white;
-    position: fixed;
-    bottom: 12px;
-}
-
 /*ABAJO*/
 
 .nosotros{
@@ -339,18 +301,11 @@ a{
     font-weight: 100;
     text-align: left;
 }
-.iconss{
-    color: white;
-    font-size: 30px;
-    position: fixed;
-    right: 100px;
-    top: 25px;
-}
-
 .columnas{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 7px;
+    margin-top: 100px;
 }
 .c{
     border: 1px solid black;
@@ -602,6 +557,48 @@ audio{
 }
 
 
+/*SLIDER ABAJO*/
+
+.slider{
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    overflow: hidden;
+}
+.slider ul{
+    padding: 0;
+    width: 400%;
+    display: flex;
+    height: 100%;
+
+    animation: cambio 20s infinite alternate-reverse;
+    
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left:0; }
+    20% {margin-left:0; }
+
+    25% {margin-left:-100%; }
+    45% {margin-left:-100%; }
+
+    50% {margin-left:-200%; }
+    75% {margin-left:-200%; }
+
+    80% {margin-left:-300%; }
+    100% {margin-left:-300%; }
+}
+
+
+
+
+/*MEDIAQUERIS*/
+
 @media (max-width: 320px){
     .todo{
         width: 100%;
@@ -651,22 +648,6 @@ audio{
             font-size: 27px;
             position: relative;
             top: 33px
-        }
-        #aleatorio{
-            font-size: 60px;
-        }
-        #youtube{
-            font-size: 60px;
-        }
-        #play{
-            font-size: 80px;
-            top: 0px;
-        }
-        #repetir{
-            font-size: 60px;
-        }
-        #mute{
-            font-size: 60px;
         }
     /*PLAYLISTS*/
     .cuerpo{
@@ -742,36 +723,6 @@ audio{
     .cancionnn div audio{
         position: relative;
         left: 10px;
-    }
-    .play{
-        position: relative;
-        top: 18px;
-        font-size: 22px;
-        right: 2px;
-    }
-    .aleatorio{
-        font-size: 12px;
-        position: relative;
-        top: 18px;
-        right: 5px;
-    }
-    .youtube{
-        font-size: 17px;
-        position: relative;
-        top: 20px;
-        right: 7px;
-    }
-    .repetir{
-        font-size: 17px;
-        position: relative;
-        top: 21px;
-        left: 4px;
-    }
-    .mute{
-        font-size: 12px;
-        position: relative;
-        top: 20px;
-        left: 8px;
     }
 }
 
@@ -907,9 +858,6 @@ audio{
     .datos{
         display: none;
     }
-    .iconoos{
-        width: 100%;
-    }
 }
 @media(max-width: 440px){
     .fotonombre{
@@ -945,41 +893,4 @@ audio{
         font-size: 10px;
         margin-left: 2px;
     }
-}
-
-/*SLIDER ABAJO*/
-
-.slider{
-    width: 100%;
-    margin: auto;
-    height: 300px;
-    overflow: hidden;
-}
-.slider ul{
-    padding: 0;
-    width: 400%;
-    display: flex;
-    height: 100%;
-
-    animation: cambio 20s infinite alternate-reverse;
-    
-}
-.slider li{
-    width: 100%;
-    list-style: none;
-    height: 100%;
-}
-
-@keyframes cambio {
-    0% {margin-left:0; }
-    20% {margin-left:0; }
-
-    25% {margin-left:-100%; }
-    45% {margin-left:-100%; }
-
-    50% {margin-left:-200%; }
-    75% {margin-left:-200%; }
-
-    80% {margin-left:-300%; }
-    100% {margin-left:-300%; }
 }
