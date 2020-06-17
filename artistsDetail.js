@@ -27,9 +27,7 @@ fetch(url)
     })
 
 //Canciones Artistas
-
-let proxy4 = 'https://cors-anywhere.herokuapp.com/'
-let url4 = proxy4 + 'https://api.deezer.com/artist/' + idArtista
+let url4 = proxy + 'https://api.deezer.com/artist/' + idArtista + '/top?limit=5'
 
 fetch (url4) 
   .then(function(dataJson){
@@ -39,16 +37,15 @@ fetch (url4)
     console.log(resultado4);
     let cancionArray = resultado4.data; 
     let cancion = document.querySelector('.audiiios');
-    //let divColumna = '';
-    //for(let i=0; i<cancionArray.length; i++){
-     // divColumna += '<div class="cancioon">'
-     //divColumna += '<a href="trackDetail.html?id="' + url.tracklist + '>'
-     //divColumna += '</div>'
-    
-    let charts = document.querySelector('.horacioPlayer');
-    charts.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idArtista + '&app_id=1'
-    
-    console.log(idArtista)
+    let divColumna = '';
+    for(let i=0; i<5; i++){
+     divColumna += '<div class="cancioon">'
+     divColumna += '<a href="trackDetail.html?id="' + url4.tracklist + '>' + cancionArray[i].title + '</a>'
+     divColumna += '</div>'
+    }
+    cancion.innerHTML = divColumna;
+    console.log(idArtista);
+
 })
 .catch(function(error){
   return console.log(error);
@@ -57,7 +54,7 @@ fetch (url4)
 //ARTISTAS RECOMENDADOS 
 
     let proxy2 = 'https://cors-anywhere.herokuapp.com/'
-    let url2 = proxy2 + 'https://api.deezer.com/artist/27/related'
+    let url2 = proxy2 + 'https://api.deezer.com/artist/' + idArtista + '/related'
     
     fetch (url2) 
       .then(function(dataJson){
@@ -89,7 +86,7 @@ fetch (url4)
 //ALBUMS DETAIL
 
     let proxy3 = 'https://cors-anywhere.herokuapp.com/'
-    let url3 = proxy3 + 'https://api.deezer.com/chart/0/albums'
+    let url3 = proxy3 + 'https://api.deezer.com/artist/' + idArtista + '/albums'
     
     fetch (url3) 
       .then(function(dataJson){
