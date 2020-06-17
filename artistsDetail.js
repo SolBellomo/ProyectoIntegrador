@@ -27,6 +27,7 @@ fetch(url)
     })
 
 //Canciones Artistas
+
 let url4 = proxy + 'https://api.deezer.com/artist/' + idArtista + '/top?limit=5'
 
 fetch (url4) 
@@ -40,7 +41,7 @@ fetch (url4)
     let divColumna = '';
     for(let i=0; i<5; i++){
      divColumna += '<div class="cancioon">'
-     divColumna += '<a href="trackDetail.html?id="' + url4.tracklist + '>' + cancionArray[i].title + '</a>'
+     divColumna += '<a href="trackDetail.html?id="' + url4.tracklist + ' class="songs">' + cancionArray[i].title + '</a>'
      divColumna += '</div>'
     }
     cancion.innerHTML = divColumna;
@@ -110,6 +111,22 @@ fetch (url4)
       album.innerHTML = divAlbum;  
     })
 
+    .catch(function(error){
+      return console.log(error);
+    })
+
+    
+    fetch (url) 
+      .then(function(dataJson){
+      return dataJson.json()
+      })
+      .then(function(resultado5){
+        console.log(resultado5); 
+        let fans = document.querySelector('.numeroDeFans');
+
+      fans.innerHTML += '<p>' + 'Número de Fans: ' + resultado5.nb_fan + '</p>';   
+    })
+    
     .catch(function(error){
       return console.log(error);
     })

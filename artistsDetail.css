@@ -103,10 +103,6 @@
 .nombre-artista h2{
     font-family: "Gill Sans", sans-serif;
 }
-.cancioness{
-    margin-left: 50px;
-    margin-right: 50px;
-}
 .titulo1{
     font-family: proxima-nova, sans-serif;
     font-style: normal;
@@ -116,9 +112,28 @@
     color: white;
     text-align: left;
 }
-.horacioPlayer{
-    width: 100%;
-    height: 100px;
+.numeroDeFans{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+}
+.audiiios{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+.songs{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
+.cancioon{
+    border: solid 1px white;
+    height: 55px;
+    text-align: left;
 }
 .otrosss{
     position: relative;
