@@ -3,14 +3,7 @@
 .header2{
     display: grid;   
     background: rgba(34,34,34,0.75);
-<<<<<<< HEAD
-    
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 95px;
-=======
     height: 90px;
->>>>>>> 49af11ec3619fa2c69ecb9f8f3c3f17b8fbe92a8
     grid-template-columns: 2% 6% 92%;
     position: fixed; 
     top: 0;
@@ -95,7 +88,7 @@
 }
 
 @media(max-width:1250px){
-    .seccion1{
+    .seccion12{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }

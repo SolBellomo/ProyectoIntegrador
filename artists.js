@@ -37,29 +37,28 @@ let buscar = queryStringObj2.get('search');
 console.log(buscar); 
 
 urlArtista= proxy + 'https://api.deezer.com/search/artist?q=' + buscar; 
-
-fetch(urlArtista)
-    .then(function(response){
-        return response.json(); 
+if(buscar !== null){
+  fetch(urlArtista)
+    .then(function (response) {
+      return response.json();
     })
-    .then(function(datos){
-        console.log(datos);
-        let lista = document.querySelector('.todo-albums');
-        let artistaArrayy = datos.data; 
-        let divColumnaa = '';
-
-        for(let i=0; i<artistaArrayy.length; i++){ 
-
-          divColumnaa = '<div class="columna">';
-          divColumnaa = '      <div class="img-container">'; 
-          divColumnaa = '        <img src="' +  artistaArrayy[i].picture_big + '" alt="' + artistaArrayy[i].name + '" class= "img">';
-          divColumnaa = '      </div>';
-          divColumnaa = '        <a href="artistsDetail.html?id=' + artistaArrayy[i] + '"' + ' class="artista1">' + artistaArray[i].name + '</a>';
-          divColumnaa = '    </div>';
-        }
-        lista.innerHTML = divColumnaa;  
-      })
-      
-      .catch(function(error){
-        return console.log(error);
-      })
+    .then(function (datos) {
+      console.log(datos);
+      let lista = document.querySelector('.todo-albums');
+      lista.innerHTML = '';
+      let artistaArrayy = datos.data;
+      let divColumnaa = '';
+      for (let i = 0; i < artistaArrayy.length; i++) {
+        divColumnaa += '<div class="columna">';
+        divColumnaa += '      <div class="img-container">';
+        divColumnaa += '        <img src="' + artistaArrayy[i].picture_big + '" alt="' + artistaArrayy[i].name + '" class= "img">';
+        divColumnaa += '      </div>';
+        divColumnaa += '        <a href="artistsDetail.html?id=' + artistaArrayy[i] + '"' + ' class="artista1">' + artistaArrayy[i].name + '</a>';
+        divColumnaa += '    </div>';
+      }
+      lista.innerHTML = divColumnaa;
+    })
+    .catch(function (error) {
+      return console.log(error);
+    })
+}

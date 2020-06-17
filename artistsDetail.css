@@ -208,10 +208,6 @@ footer img{
     width: 40px;
     height: 40px;
 }
-.iconoos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
 .cancionnn div h2{
     color: white;
     position: relative;
@@ -240,39 +236,6 @@ footer img{
 .cancionnn div audio{
     position: relative;
     bottom: 15px;
-}
-.play{
-    font-size: 33px;
-    color: white;
-    position: fixed;
-    bottom: 7px;
-}
-
-.youtube{
-    font-size: 25px;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-}
-
-.aleatorio{
-    font-size: 20px;
-    color: white;
-    position: fixed;
-    bottom: 12px;
-}
-.repetir{
-    font-size: 25px;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-}
-
-.mute{
-    font-size: 20px;
-    color: white;
-    position: fixed;
-    bottom: 12px;
 }
 
 /*ABAJO*/
