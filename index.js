@@ -137,7 +137,6 @@ fetch(genres)
   })
 
 
-
 //BARRA DE BÚSQUEDA
 
 let results = document.querySelector('.buscar');
