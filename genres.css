@@ -105,11 +105,11 @@
     gap: 5px;
 }
 .redes img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: relative;
     top: 60px;
-    right: 105px;
+    right: 115px;
     border-radius: 20px;
 }
 .deezer img{
@@ -123,7 +123,7 @@
 }
 .integrantes{
     display: grid;
-    grid-template-rows: repeat(4, 45px);
+    grid-template-rows: 35px 20px 20px 20px;
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
@@ -168,5 +168,43 @@
 @media(max-width: 425px){
     .img-containerr{
         width: 170px;
+    }
+}
+@media(max-width: 915px){
+    .integrantes{
+        display: grid;
+        grid-template-rows: 45px 45px 45px 45px;
+        text-align: left;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+}
+@media(max-width:768px){
+    .footerjaja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .deezer{
+        object-fit: fill;
+        width: 150px;
+        height: 80px;
+        text-align: left;
+        position: relative;
+        left: 80px;
+        margin-bottom: 90px;
+    }
+    .integrantes{
+        display: grid;
+        grid-template-rows: 35px 20px 20px 20px;
+        text-align: left;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
     }
 }
