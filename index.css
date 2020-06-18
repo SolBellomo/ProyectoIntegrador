@@ -497,10 +497,7 @@ a{
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     }
-    .audiiios img{
-        position: relative;
-        right: 40px;
-    }
+
     .otroos{
         position: relative;
         right: 40px;
