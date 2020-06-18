@@ -12,11 +12,33 @@
 </head>
 <body>
 <div class="container">
-    <header>
+    <header class="header2">
+        <section class="foto">
+                    <div class="fotonombre">
+                        <i class="fas fa-user-circle fotos"></i>
+                    </div>
+                    <adress class="datos">
+                        <h2>NOMBRE USUARIO</h2>
+                        <h3 id="email"></h3>
+                    </adress>
+        </section>
+        <nav class="header-items">
+                <div class="menuuu">
+                        <a href="index.html">Inicio |</a>
+                        <a href="artists.html">Artistas |</a>
+                        <a href="albums.html">Albums |</a>
+                        <a href="playlists.html">Playlists |</a>
+                        <a href="genres.html">Géneros</a>
+                </div>
+            <div class="perfil-menu">
+                    <section class="ic-perfil">
+                            <a href="inicioSesion.html"><i class="fas fa-user-circle icons" id="i"></i><br><p class="login">Log In</p></a>
+                    </section>
+            </div>
+        </nav>
         <div>
             <img src="imagenes/jaspomusica.png" alt="logo" class="logo">
-    </div>
-
+        </div>
     </header>
     <main class="inicio">
         <div class="slider">
@@ -30,10 +52,10 @@
     
         <form action="" method="GET"> 
             <div class="form-group">
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" class="forms">
             </div>
             <div class="form-group">
-                <input type="password" name="password" placeholder="password">
+                <input type="password" name="password" placeholder="Password" class="forms">
             </div>
                 <button type="submit">Inicia Sesión</button>                      
             </form>  
