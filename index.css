@@ -266,7 +266,7 @@ a{
 .integrantes{
     display: grid;
     grid-template-rows: 35px 20px 20px 20px;
-    text-align: left;
+    text-align: center;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -589,7 +589,6 @@ a{
 
 @media(max-width: 768px){
     .todo{
-        width: 1105px;
         background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
     }
     .perfil{
@@ -632,8 +631,8 @@ a{
         position: relative;
         top: 80px;
     }
-    .nosotros{
-        width: 1105px;
+    .slogan{
+        font-size: 33px;
     }
     .BarraDeBúsqueda{
         position: fixed;
@@ -650,6 +649,30 @@ a{
     }
     .barrapie{
         height: 50px;
+    }
+    .footerjaja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .deezer{
+        object-fit: fill;
+        width: 150px;
+        height: 80px;
+        text-align: left;
+        position: relative;
+        left: 80px;
+        margin-bottom: 90px;
+    }
+    .integrantes{
+        display: grid;
+        grid-template-rows: 35px 20px 20px 20px;
+        text-align: left;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
     }
 
     /*PLAYLISTS*/
@@ -743,6 +766,9 @@ a{
         position: relative;
         top: 5px;
     }
+    .slogan{
+        font-size: 27px;
+    }
 }
 @media(max-width: 375px){
     .otros h2{
@@ -758,7 +784,7 @@ a{
     .integrantes{
         display: grid;
         grid-template-rows: 45px 45px 45px 45px;
-        text-align: left;
+        text-align: center;
         font-family: proxima-nova, sans-serif;
         font-style: normal;
         font-weight: 100;
@@ -766,29 +792,4 @@ a{
         color: white;
     }
 }
-@media(max-width:768px){
-    .footerjaja{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .deezer{
-        object-fit: fill;
-        width: 150px;
-        height: 80px;
-        text-align: left;
-        position: relative;
-        left: 80px;
-        margin-bottom: 90px;
-    }
-    .integrantes{
-        display: grid;
-        grid-template-rows: 35px 20px 20px 20px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
-}
+
