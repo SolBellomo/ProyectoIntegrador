@@ -125,3 +125,75 @@ main{
   height: 10%;
   text-align: center;
 }
+.resultadosTracks::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.resultadosTracks::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.resultadosTracks::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.resultadosTracks::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.resultadosTracks::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  
+}
+
+.resultadosTracks::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+.resultadosArtist::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.resultadosArtist::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.resultadosArtist::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.resultadosArtist::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.resultadosArtist::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  
+}
+
+.resultadosArtist::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+.resultadosAlbums::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.resultadosAlbums::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.resultadosAlbums::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.resultadosAlbums::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.resultadosAlbums::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  
+}
+
+.resultadosAlbums::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
