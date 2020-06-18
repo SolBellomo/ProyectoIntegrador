@@ -4,7 +4,7 @@
     display: grid;   
     background: rgba(34,34,34,0.75);
     height: 90px;
-    grid-template-columns: 2% 6% 92%;
+    grid-template-columns: 2% 10% 88%;
     position: fixed; 
     top: 0;
     right: 0;
@@ -14,7 +14,7 @@
 .containerr{
     margin-top: 90px;
 }
-.caja-logo{
+.caja-logoo{
     height: 90px;
     margin-top: 5px;
 }
@@ -22,7 +22,7 @@
     color: white;
     font-size: 30px;
     position: fixed;
-    top: 30px;
+    top: 6%;
 }
 .logo-alternativo{
     border-radius: 50%;
@@ -50,7 +50,10 @@
 .menuu{
     text-align: right;
 }
-
+#ii{
+	border: 1.5px solid rgb(34, 34, 34);
+    border-radius: 50%;
+}
 /*FIN DE HEADER ALT.*/
 .todo-generos{
     background-color: rgba(31, 30, 30, 0.822);
