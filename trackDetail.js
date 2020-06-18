@@ -73,4 +73,45 @@ agregar.addEventListener('click', function(error){
 })
 
 
+//CANCIONES FAV
 
+let recuperoDelStoragee = localStorage.getItem('favoritos'); //Recuperar datos del storage
+
+if(recuperoDelStoragee == null){
+    favoritos = [];
+} else {
+    favoritos = JSON.parse(recuperoDelStoragee);
+}
+
+//Me fijo que no este en la lista y cambio el texto del botón
+if(favoritos.includes(idTrack)){
+    document.querySelector('.agregar2').innerHTML = "Quitar de la Playlist";   
+}
+
+//Agregar un track 
+
+let agregar2 = document.querySelector('.agregar2');
+
+agregar2.addEventListener('click', function(error){
+    //detener el a 
+    error.preventDefault();
+
+    if(favoritos.includes(idTrack)){
+        //Si el track esta, tenemos que quitarlo. 
+        let indiceEnElArray = favoritos.indexOf(idTrack);
+        favoritos.splice(indiceEnElArray, 1);
+        document.querySelector('.agregar2').innerHTML = "Agregar a la Playlist";
+        console.log(favoritos);
+        
+    } else {
+        //Agrego el id del track a la playlist
+        favoritos.push(idTrack);
+        document.querySelector('.agregar2').innerHTML = "Quitar de la Playlist"
+    }
+
+    //Guardar lista en el Local Storage
+    let favoritosParaStorage = JSON.stringify(favoritos);
+    localStorage.setItem('favoritos', favoritosParaStorage);
+    console.log(localStorage);
+    
+})
