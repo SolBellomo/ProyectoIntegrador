@@ -487,11 +487,7 @@ a{
         .header{
             height: 190px;
         }
-        .logo{
-            width: 170px;
-            height: 170px;
-            right: 30px;
-        }
+        
         #i{
             position: relative;
             top: -94px;
@@ -510,6 +506,7 @@ a{
             position: relative;
             top: 33px
         }
+
     /*PLAYLISTS*/
     .cuerpo{
         grid-template-columns: 1fr;
@@ -588,9 +585,8 @@ a{
 }
 
 @media(max-width: 768px){
-    .todo{
-        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    }
+    
+    
     .perfil{
         background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
         border: 0;
@@ -598,6 +594,7 @@ a{
     .titulo{
         position: relative;
         top: 15px;
+        margin-left: 20px;
     }
     .seccion1{
         gap: 10px;
@@ -618,18 +615,13 @@ a{
         top: 30px;
     }
     
-    .seccion3{
-        height: 380px;
-        position: relative;
-        right: 8px;
-    }
+    
     .seccion3 div img{
-        position: relative;
-        top: 60px;
+        
     }
     .seccion3 a{
         position: relative;
-        top: 80px;
+        top: 10px;
     }
     .slogan{
         font-size: 33px;
@@ -666,7 +658,7 @@ a{
     }
     .integrantes{
         display: grid;
-        grid-template-rows: 35px 20px 20px 20px;
+        ;
         text-align: left;
         font-family: proxima-nova, sans-serif;
         font-style: normal;
@@ -674,6 +666,36 @@ a{
         font-size: 20px;
         color: white;
     }
+    .footerjaja{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+img.instagram{
+    width: 82%;
+    height: 30%;
+}
+img.twitter{
+    width: 82%;
+    height: 30%;
+}
+img.facebook{
+    width: 82%;
+    height: 30%;
+}
+.deezer{
+    font-size: 50px;
+    text-align: right;
+    position: relative;
+    bottom: 5px;
+}
+.integrantes{
+    text-align: right;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    color: grey;
+}
 
     /*PLAYLISTS*/
     .cuerpo{
@@ -710,7 +732,40 @@ a{
         background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
     }
 }
-
+@media(max-width: 915px){
+    .integrantes{
+        display: grid;
+        grid-template-rows: 45px 45px 45px 45px;
+        text-align: center;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+    .artista1 {
+        position: relative;
+        top: 5px;
+    }
+    .seccion1{
+        overflow: hidden;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 100px;
+    }
+    .todo{
+        grid-template-rows: 50px 280px 50px 280px 50px 280px 50px 400px;
+    }
+    .genres{
+        
+        bottom: 105px;
+        font-size: 90%;
+    }
+    .seccion4{
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+        row-gap: 100px;
+    }
+}
 @media(max-width: 840px){
     .foto{
         width: 200px;
@@ -737,9 +792,34 @@ a{
         display: none;
     }
 }
+@media(max-width: 600px){
+    .titulo{
+        margin-left: 20px;
+    }
+    .todo {
+        grid-template-rows: 50px 190px 50px 190px 50px 190px 50px 390px;
+    }
+    .seccion2{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 200px;
+        overflow: hidden;
+    }
+}
+
 @media(max-width: 530px){
     .datos{
         display: none;
+    }
+    .todo {
+        grid-template-rows: 50px 190px 50px 245px 50px 190px 50px 300px;
+    }
+    .seccion4 {
+        grid-template-columns: repeat(2, 50%);
+    }
+    .seccion3{
+        grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
+        row-gap: 100px;
     }
 }
 @media(max-width: 440px){
@@ -769,6 +849,15 @@ a{
     .slogan{
         font-size: 27px;
     }
+    .seccion1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .seccion2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .seccion3{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media(max-width: 375px){
     .otros h2{
@@ -779,17 +868,33 @@ a{
         font-size: 10px;
         margin-left: 2px;
     }
-}
-@media(max-width: 915px){
-    .integrantes{
-        display: grid;
-        grid-template-rows: 45px 45px 45px 45px;
-        text-align: center;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
+    body{
+        width: 100%;
+    }
+    .todo {
+        grid-template-rows: 50px 210px 50px 245px 50px 190px 50px 300px;
+    }
+    .b{
+        width: 75%;
+    }
+    .header{
+        grid-template-columns: 25% 105% 1%;
+    }
+    .titulo{
         font-size: 20px;
-        color: white;
     }
 }
+@media(max-width: 320px){
+    .menu{
+        margin-top: 20px;
+    }
+    .b-alt{
+        margin-top: 45px;
+    }
+    .menu a {
+        font-size: 13px;
+    }
+}
+
+
 

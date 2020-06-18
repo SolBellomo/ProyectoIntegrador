@@ -1,3 +1,4 @@
+
 /*HEADER ALTERNATIVO*/
 
 .header2{
@@ -19,18 +20,18 @@
 .icons-alternativo{
     color: white;
     font-size: 30px;
-    position: fixed;
-    top: 30px;
+    position: relative;
+    top: 40px;
+    right: 13%;
 }
 .logo-alternativo{
     border-radius: 50%;
-
     width: 85px;
     height: 95%;
     object-fit: unset;
     background: white;
     border: 1px solid white;
-    
+    margin-left: 190%;
 }
 .header-items-alt{
     display: grid;
@@ -55,7 +56,6 @@
 .cuerpo{
     margin-top: 100px;
     box-shadow: -4px 0 15px rgba(202, 201, 201, 0.26);
-
 }
 .columnaa2{
     display: grid;
@@ -120,88 +120,71 @@
 .songs::-webkit-scrollbar-track {
     border-radius: 10px;  
 } 
-
 .footerjaja{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.seguinos{
-    font-size: 17px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: center;
+img.instagram{
+    width: 82%;
+    height: 30%;
 }
-.redes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+img.twitter{
+    width: 82%;
+    height: 30%;
 }
-.redes img{
-    width: 60px;
-    height: 60px;
+img.facebook{
+    width: 82%;
+    height: 30%;
+}
+.deezer{
+    font-size: 50px;
+    text-align: right;
     position: relative;
-    top: 60px;
-    right: 115px;
-    border-radius: 20px;
-}
-.deezer img{
-    object-fit: fill;
-    width: 150px;
-    height: 80px;
-    position: relative;
-    top: 50px;
-    right: 60px;
-    margin-bottom: 90px;
+    bottom: 5px;
 }
 .integrantes{
-    display: grid;
-    grid-template-rows: 35px 20px 20px 20px;
-    text-align: left;
+    text-align: right;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
-    color: white;
+    font-size: 14px;
+    color: grey;
 }
-
-@media(max-width: 915px){
+@media(max-width: 1440px){
+    .redes{
+        margin-left: 30px;
+    }
+}
+@media(max-width: 1024px){
+    .deezer{
+        bottom: 20px;
+    }
+    img.instagram{
+        width: 20px;
+        height: 20px;
+    }
+    img.facebook{
+        width: 20px;
+        height: 20px;
+    }
+    img.twitter{
+        width: 20px;
+        height: 20px;
+    }
     .integrantes{
-        display: grid;
-        grid-template-rows: 45px 45px 45px 45px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
+        font-size: 11px;
     }
 }
 @media(max-width:768px){
-    .footerjaja{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+    body{
+        width: unset;
     }
-    .deezer{
-        object-fit: fill;
-        width: 150px;
-        height: 80px;
-        text-align: left;
-        position: relative;
-        left: 80px;
-        margin-bottom: 90px;
+}
+@media(max-width: 530px){
+    .nameAlbum{
+        font-size: 15px;
     }
-    .integrantes{
-        display: grid;
-        grid-template-rows: 35px 20px 20px 20px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
+    .laCancion{
+        grid-template-columns: 30% 70% 0%;
     }
 }
