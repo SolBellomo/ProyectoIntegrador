@@ -25,6 +25,18 @@
     margin-top: 20px;
     text-align: center;
 }
+.formsMail{
+    background-color: black;
+    color: rgba(143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;}
+.formsContra{
+    background-color: black;
+    color: rgba(143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;}
 .redes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
