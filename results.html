@@ -34,15 +34,15 @@
                         </div>
                 </nav>
     </header>
-    <section id="spinner">
-        <div class="loader"></div>
-    </section>
     <h1>Resultados de Búsqueda...</h1>
     <main class="mostrar">
         <div class="tracks">
             <a href="perfil.html" class="tituloResults">CANCIONES</a>
             <ul class="resultadosTracks"> 
-
+                <section id="spinner">
+                    <div class="loader">
+                    </div>
+                </section>
             </ul>
         </div>
         <div class="artists" >
@@ -59,12 +59,5 @@
         </div>
     </main>
     <script src="results.js"></script>
-    <script>
-        window.onload = function(){
-        let contenedor = document.getElementById('spinner');
-        contenedor.style.visibility = 'hidden';
-        contenedor.style.opacity = '0';
-    }
-    </script>
 </body>
 </html>

@@ -71,3 +71,13 @@ urlAlbum = proxy + 'https://api.deezer.com/search/album?q=' + buscar;
   .catch(function(error){
       return console.log(error);
     })
+
+
+
+//SPINNER
+
+window.onload = function(){
+    let contenedor = document.getElementById('spinner');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0';
+}
