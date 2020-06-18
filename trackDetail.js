@@ -30,10 +30,8 @@ fetch(url)
     
 })
 
-//Pasos para agregar temas a una playlist
-//Recuperar datos del storage
-
-let recuperoDelStorage = localStorage.getItem('playlist');
+//AGREGAR A PLAYLIST
+let recuperoDelStorage = localStorage.getItem('playlist'); //Recuperar datos del storage
 
 if(recuperoDelStorage == null){
     playlist = [];
