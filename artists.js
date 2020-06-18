@@ -48,6 +48,7 @@ if(buscar !== null){
       lista.innerHTML = '';
       let artistaArrayy = datos.data;
       let divColumnaa = '';
+      
       for (let i = 0; i < artistaArrayy.length; i++) {
         divColumnaa += '<div class="columna">';
         divColumnaa += '      <div class="img-container">';
