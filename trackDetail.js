@@ -48,9 +48,9 @@ if(playlist.includes(idTrack)){
 
 let agregar = document.querySelector('.agregar');
 
-agregar.addEventListener('click', function(e){
+agregar.addEventListener('click', function(error){
     //detener el a 
-    e.preventDefault();
+    error.preventDefault();
 
     if(playlist.includes(idTrack)){
         //Si el track esta, tenemos que quitarlo. 
