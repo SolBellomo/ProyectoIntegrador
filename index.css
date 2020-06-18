@@ -91,6 +91,14 @@ body{
 .menu{
     text-align: end;
 }
+.menuuu{
+    text-align: end;
+    margin-right: 10%;
+    margin-top: 4%;
+}
+.login{
+    margin-top: 30px;
+}
 /*TERMINA BARRA DE BÚSQUEDA*/
 
 .todo{
@@ -480,17 +488,6 @@ a{
 .cancioness{
     margin-top: 20px;
 }
-.audiios .escuchando{
-    color: rgb(6, 148, 148);
-}
-.p .escuchando{
-    color: rgb(123, 211, 211);
-    position: relative;
-    bottom: 8px;
-}
-
-
-
 /*MEDIAQUERIS*/
 
 @media (max-width: 320px){
@@ -709,7 +706,6 @@ a{
         position: relative;
         padding-top: 2px;
     }
-
 
 }
 @media(max-width: 1200px){

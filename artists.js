@@ -27,15 +27,10 @@ fetch (url)
   return console.log(error);
 })
 
-
 //RESULTADOS BÚSQUEDA
-
 let queryString2 = location.search; 
 let queryStringObj2 = new URLSearchParams(queryString2);
-
 let buscar = queryStringObj2.get('search'); 
-console.log(buscar); 
-
 urlArtista= proxy + 'https://api.deezer.com/search/artist?q=' + buscar; 
 if(buscar !== null){
   fetch(urlArtista)
@@ -48,7 +43,6 @@ if(buscar !== null){
       lista.innerHTML = '';
       let artistaArrayy = datos.data;
       let divColumnaa = '';
-      
       for (let i = 0; i < artistaArrayy.length; i++) {
         divColumnaa += '<div class="columna">';
         divColumnaa += '      <div class="img-container">';
