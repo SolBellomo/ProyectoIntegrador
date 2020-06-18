@@ -220,7 +220,6 @@ main{
   height: 60px;
   position: relative;
   top: 60px;
-  right: 105px;
   border-radius: 20px;
 }
 .deezer img{
@@ -260,6 +259,15 @@ main{
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
   }
+  .redes{
+    position: relative;
+    top: 100px;
+  }
+  .redes img{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+  }
   .deezer{
       object-fit: fill;
       width: 150px;
@@ -267,6 +275,7 @@ main{
       text-align: left;
       position: relative;
       left: 80px;
+      top: 30px;
       margin-bottom: 90px;
   }
   .integrantes{
@@ -278,5 +287,10 @@ main{
       font-weight: 100;
       font-size: 20px;
       color: white;
+  }
+}@media(max-width:320px){
+  #i{
+    position: relative;
+    top: 20px;
   }
 }

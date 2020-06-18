@@ -251,7 +251,7 @@ a{
     height: 60px;
     position: relative;
     top: 60px;
-    right: 115px;
+    right: 105px;
     border-radius: 20px;
 }
 .deezer img{
@@ -460,6 +460,214 @@ a{
 
 /*MEDIAQUERIS*/
 
+
+@media(max-width: 1200px){
+    .columnas{
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    }
+    .perfil{
+        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    }
+}
+@media(max-width: 915px){
+    .integrantes{
+        display: grid;
+        grid-template-rows: 45px 45px 45px 45px;
+        text-align: center;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media(max-width: 840px){
+    .foto{
+        width: 200px;
+    }
+    .fotonombre{
+        width: 50px;
+    }
+    .BarraDeBúsquedax{
+        width: 130px;
+    }
+    .columnas{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    }
+    .audiiios img{
+        position: relative;
+        right: 40px;
+    }
+    .otroos{
+        position: relative;
+        right: 40px;
+    }
+    .otroos h3{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .todo{
+        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+    }
+    .perfil{
+        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
+        border: 0;
+    }
+    .titulo{
+        position: relative;
+        top: 15px;
+    }
+    .seccion1{
+        gap: 10px;
+        position: relative;
+        right: 8px;
+    }
+    .titulo2{
+        position: relative;
+        top: 15px;
+    }
+    .seccion2{
+        position: relative;
+        right: 8px;
+        top: 15px;
+    }
+    .titulo3{
+        position: relative;
+        top: 30px;
+    }
+    
+    .seccion3{
+        height: 380px;
+        position: relative;
+        right: 8px;
+    }
+    .seccion3 div img{
+        position: relative;
+        top: 60px;
+    }
+    .seccion3 a{
+        position: relative;
+        top: 80px;
+    }
+    .slogan{
+        font-size: 33px;
+    }
+    .BarraDeBúsqueda{
+        position: fixed;
+        top: 20px;
+    }
+    
+    .lineas{
+        position: fixed;
+        top: 25px;
+    }
+    .deezer{
+        position: relative;
+        left: 220px;
+    }
+    .barrapie{
+        height: 50px;
+    }
+    .footerjaja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .deezer{
+        object-fit: fill;
+        width: 150px;
+        height: 80px;
+        text-align: left;
+        position: relative;
+        left: 80px;
+        margin-bottom: 90px;
+    }
+    .integrantes{
+        display: grid;
+        grid-template-rows: 35px 20px 20px 20px;
+        text-align: left;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+
+    /*PLAYLISTS*/
+    .cuerpo{
+        grid-template-columns: 2fr 5fr;
+        width: 100%;
+        height: 100%;
+    }
+    .titulocanciones{
+        font-size: 20px;
+    }
+    .columnaa1 .titulooo{
+        font-size: 20px;
+    }
+    .columnaa1{
+        padding: 5px;
+    }
+    .p{
+        margin-left: unset;
+    }
+    .p h2{
+        font-size: 12px;
+        margin-left: 4px;
+        position: relative;
+        padding-top: 2px;
+    }
+
+}
+@media(max-width: 530px){
+    .datos{
+        display: none;
+    }
+}
+@media(max-width: 440px){
+    .fotonombre{
+        display: none;
+    }
+    .col1{
+    height: 600px;
+    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px ;
+    }
+    .col1 h2{
+        position: relative;
+        top: 10px;
+    }
+    .audiios img{
+    position: relative;
+    top: 10px;
+    }
+    .otros h2{
+        font-size: 13px;
+    }
+    .otros h3{
+        font-size: 12px;
+        position: relative;
+        top: 5px;
+    }
+    .slogan{
+        font-size: 27px;
+    }
+}
+@media(max-width: 375px){
+    .otros h2{
+        font-size: 10px;
+        margin-left: 2px;
+    }
+    .otros h3{
+        font-size: 10px;
+        margin-left: 2px;
+    }
+}
+
 @media (max-width: 320px){
     .todo{
         width: 100%;
@@ -586,210 +794,3 @@ a{
         left: 10px;
     }
 }
-
-@media(max-width: 768px){
-    .todo{
-        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    }
-    .perfil{
-        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-        border: 0;
-    }
-    .titulo{
-        position: relative;
-        top: 15px;
-    }
-    .seccion1{
-        gap: 10px;
-        position: relative;
-        right: 8px;
-    }
-    .titulo2{
-        position: relative;
-        top: 15px;
-    }
-    .seccion2{
-        position: relative;
-        right: 8px;
-        top: 15px;
-    }
-    .titulo3{
-        position: relative;
-        top: 30px;
-    }
-    
-    .seccion3{
-        height: 380px;
-        position: relative;
-        right: 8px;
-    }
-    .seccion3 div img{
-        position: relative;
-        top: 60px;
-    }
-    .seccion3 a{
-        position: relative;
-        top: 80px;
-    }
-    .slogan{
-        font-size: 33px;
-    }
-    .BarraDeBúsqueda{
-        position: fixed;
-        top: 20px;
-    }
-    
-    .lineas{
-        position: fixed;
-        top: 25px;
-    }
-    .deezer{
-        position: relative;
-        left: 220px;
-    }
-    .barrapie{
-        height: 50px;
-    }
-    .footerjaja{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .deezer{
-        object-fit: fill;
-        width: 150px;
-        height: 80px;
-        text-align: left;
-        position: relative;
-        left: 80px;
-        margin-bottom: 90px;
-    }
-    .integrantes{
-        display: grid;
-        grid-template-rows: 35px 20px 20px 20px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
-
-    /*PLAYLISTS*/
-    .cuerpo{
-        grid-template-columns: 2fr 5fr;
-        width: 100%;
-        height: 100%;
-    }
-    .titulocanciones{
-        font-size: 20px;
-    }
-    .columnaa1 .titulooo{
-        font-size: 20px;
-    }
-    .columnaa1{
-        padding: 5px;
-    }
-    .p{
-        margin-left: unset;
-    }
-    .p h2{
-        font-size: 12px;
-        margin-left: 4px;
-        position: relative;
-        padding-top: 2px;
-    }
-
-}
-@media(max-width: 1200px){
-    .columnas{
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    }
-    .perfil{
-        background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
-    }
-}
-
-@media(max-width: 840px){
-    .foto{
-        width: 200px;
-    }
-    .fotonombre{
-        width: 50px;
-    }
-    .BarraDeBúsquedax{
-        width: 130px;
-    }
-    .columnas{
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    }
-    .audiiios img{
-        position: relative;
-        right: 40px;
-    }
-    .otroos{
-        position: relative;
-        right: 40px;
-    }
-    .otroos h3{
-        display: none;
-    }
-}
-@media(max-width: 530px){
-    .datos{
-        display: none;
-    }
-}
-@media(max-width: 440px){
-    .fotonombre{
-        display: none;
-    }
-    .col1{
-    height: 600px;
-    grid-template-rows: 45px 45px 45px 45px 45px 45px 45px 45px ;
-    }
-    .col1 h2{
-        position: relative;
-        top: 10px;
-    }
-    .audiios img{
-    position: relative;
-    top: 10px;
-    }
-    .otros h2{
-        font-size: 13px;
-    }
-    .otros h3{
-        font-size: 12px;
-        position: relative;
-        top: 5px;
-    }
-    .slogan{
-        font-size: 27px;
-    }
-}
-@media(max-width: 375px){
-    .otros h2{
-        font-size: 10px;
-        margin-left: 2px;
-    }
-    .otros h3{
-        font-size: 10px;
-        margin-left: 2px;
-    }
-}
-@media(max-width: 915px){
-    .integrantes{
-        display: grid;
-        grid-template-rows: 45px 45px 45px 45px;
-        text-align: center;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
-}
-
