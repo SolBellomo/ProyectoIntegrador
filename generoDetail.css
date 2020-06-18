@@ -98,6 +98,8 @@
 .footerjaja{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    top: 120px;
 }
 .seguinos{
     font-size: 17px;
