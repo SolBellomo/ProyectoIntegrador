@@ -27,7 +27,7 @@ function buscarYMostrarTrack(idTrack){
         console.log(track);
         let canciones = document.querySelector('.songs')
        
-        canciones.innerHTML += '<a href="trackDetail.html?id=' + track.id + '" class="laCancion" style="height:80px"> <div><img src="'+ track.album.cover_medium +'" alt="" class="prueba"></div><div class="nameAlbum"><p style="margin-top:11px">'+ track.artist.name +'</p><p>'+ track.title +'</p></div> <div class="iconosInteractivos"></div></a>'
+        canciones.innerHTML += '<a href="trackDetail.html?id=' + track.id + '" class="laCancion" style="height:80px"> <div><img src="'+ track.album.cover_medium +'" alt="" class="prueba"></div><div class="nameAlbum"><p style="margin-top:11px">'+ track.artist.name +'</p><p style="position: relative; top: -10px;">'+ track.title +'</p></div> <div class="iconosInteractivos"></div></a>'
       
     })
     .catch(function(error){

@@ -367,10 +367,10 @@ audio {
         position: absolute;
         top: 10px;
     }
-    #i{
-        position: absolute;
-        top: 7px;
+    .laCancion{
+        grid-template-columns: 30% 64% 25%;
     }
+    
     .menu a{
         font-size: 11px;
     }
