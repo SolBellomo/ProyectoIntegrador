@@ -255,7 +255,6 @@ a{
     border-radius: 20px;
 }
 .deezer img{
-    object-fit: fill;
     width: 150px;
     height: 80px;
     position: relative;
@@ -483,7 +482,7 @@ a{
     }
     /*PAG PPAL*/
         .header{
-            height: 110px;
+            height: 150px;
         }
         
         #i{
@@ -494,15 +493,20 @@ a{
         .todo{
             margin-top: unset;
         }
-        #cancionnn img {
-            width: 125px;
-            height: 145px;
+        .menu{
+            margin-bottom: -20px;
         }
-        #cancionnn div h3 {
-            margin-left: 0;
-            font-size: 27px;
+        .todo{
+            margin-top: 150px;
+        }
+        .integrantes{
             position: relative;
-            top: 33px
+            right: 50px;
+        }
+        .deezer img{
+            position: relative;
+            right: 150px;
+            top: 85px;
         }
 
     /*PLAYLISTS*/
@@ -510,9 +514,6 @@ a{
         grid-template-columns: 1fr;
         height: 840px;
         width: 100%;
-    }
-    .columnaa1{
-        display: none;
     }
     .columnaa2{
         width: 325px;
@@ -522,55 +523,9 @@ a{
     .columnaa2 .titulocanciones{
         font-size: 15px;
     }
-
-    .otroos{
-        position: relative;
-        left: 0px;
-        top: 10px;
-    }
-    .BarraDeBúsquedax{
-        position: fixed;
-        right: 10px;
-        top: 45px;
-        width: 160px;
-    }
-    .b{
-        font-size: 10px;
-        height: 25px;
-        border-radius: 10px;
-    }
-    .lineass{
-        position: fixed;
-        right: 20px;
-        top: 18px;
-        font-size: 20px;
-    }
-    .iconss{
-        font-size: 20px;
-    }
-    .cancionnn div img{
-        margin-left: 5px;
-    }
-    .cancionnn div h2{
-        margin-left: 0;
-        font-size: 10px;
-        width: 80px;
-    }
-    .cancionnn div h3{
-        margin-left: 0;
-        font-size: 8px;
-        position: relative;
-        top: 1px;
-    }
-    .cancionnn div audio{
-        position: relative;
-        left: 10px;
-    }
 }
 
 @media(max-width: 768px){
-    
-    
     .perfil{
         background: linear-gradient(90deg,rgba(20, 20, 20, 0.534), rgb(53, 53, 53));
         border: 0;
@@ -598,7 +553,6 @@ a{
         position: relative;
         top: 30px;
     }
-      
     .seccion3 a{
         position: relative;
         top: 10px;
@@ -610,22 +564,12 @@ a{
         position: fixed;
         top: 20px;
     }
-    
-    .lineas{
-        position: fixed;
-        top: 25px;
-    }
     .deezer{
         position: relative;
         left: 220px;
     }
     .barrapie{
         height: 50px;
-    }
-    .footerjaja{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
     }
     .deezer{
         object-fit: fill;
@@ -636,47 +580,28 @@ a{
         left: 80px;
         margin-bottom: 90px;
     }
-    .integrantes{
-        display: grid;
-        ;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
     .footerjaja{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-img.instagram{
-    width: 82%;
-    height: 30%;
-}
-img.twitter{
-    width: 82%;
-    height: 30%;
-}
-img.facebook{
-    width: 82%;
-    height: 30%;
-}
-.deezer{
-    font-size: 50px;
-    text-align: right;
-    position: relative;
-    bottom: 5px;
-}
-.integrantes{
-    text-align: right;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 14px;
-    color: grey;
-}
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img.instagram{
+        width: 82%;
+        height: 30%;
+    }
+    img.twitter{
+        width: 82%;
+        height: 30%;
+    }
+    img.facebook{
+        width: 82%;
+        height: 30%;
+    }
+    .deezer{
+        font-size: 50px;
+        text-align: right;
+        position: relative;
+        bottom: 5px;
+    }
     /*PLAYLISTS*/
     .cuerpo{
         grid-template-columns: 2fr 5fr;
@@ -713,16 +638,6 @@ img.facebook{
     }
 }
 @media(max-width: 915px){
-    .integrantes{
-        display: grid;
-        grid-template-rows: 45px 45px 45px 45px;
-        text-align: center;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
     .artista1 {
         position: relative;
         top: 5px;
@@ -759,17 +674,6 @@ img.facebook{
     .columnas{
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    }
-    .audiiios img{
-        position: relative;
-        right: 40px;
-    }
-    .otroos{
-        position: relative;
-        right: 40px;
-    }
-    .otroos h3{
-        display: none;
     }
 }
 @media(max-width: 600px){
@@ -814,18 +718,6 @@ img.facebook{
         position: relative;
         top: 10px;
     }
-    .audiios img{
-    position: relative;
-    top: 10px;
-    }
-    .otros h2{
-        font-size: 13px;
-    }
-    .otros h3{
-        font-size: 12px;
-        position: relative;
-        top: 5px;
-    }
     .slogan{
         font-size: 27px;
     }
@@ -864,6 +756,23 @@ img.facebook{
     }
     .titulo{
         font-size: 20px;
+    }
+    .header-items{
+        width: 300px;
+    }
+    .BarraDeBusqueda{
+        position: relative;
+        bottom: 20px;
+    }
+    .menu{
+        position: relative;
+        top: 20px;
+    }
+    .header{
+        width: 100%;
+    }
+    .icons{
+        margin-right: 30px;
     }
 }
 @media(max-width: 320px){
@@ -905,5 +814,18 @@ img.facebook{
 @media(max-width:768px){
     body{
         width: unset;
+    }
+}
+@media(max-width: 425px){
+    .menu a{
+        font-size: 15px;
+    }
+    .integrantes{
+        font-size: 10px;
+    }
+    .deezer{
+        width: 20px;
+        position: relative;
+        left: -30px;
     }
 }
