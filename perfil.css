@@ -12,62 +12,27 @@
     display: grid;
     grid-template-columns: 90% 8%;
 }
-.footerjaja{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.seguinos{
-    font-size: 17px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: center;
+.nombre{
+    background-color: black;
+    color: rgba(143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 .formsMail{
     background-color: black;
     color: rgba(143, 141, 141, 0.637);
     width: 50%;
     height: 30px;
-    border-radius: 10px;}
+    border-radius: 10px;
+}
 .formsContra{
     background-color: black;
     color: rgba(143, 141, 141, 0.637);
     width: 50%;
     height: 30px;
-    border-radius: 10px;}
-.redes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-}
-.redes img{
-    width: 60px;
-    height: 60px;
-    position: relative;
-    top: 60px;
-    right: 115px;
-    border-radius: 20px;
-}
-.deezer img{
-    object-fit: fill;
-    width: 150px;
-    height: 80px;
-    position: relative;
-    top: 50px;
-    right: 60px;
-    margin-bottom: 90px;
-}
-.integrantes{
-    display: grid;
-    grid-template-rows: 35px 20px 20px 20px;
-    text-align: left;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 20px;
-    color: white;
+    border-radius: 10px;
 }
 
 @media(max-width: 915px){
