@@ -108,3 +108,87 @@
         color: white;
     }
 }
+*{
+    box-sizing: border-box;
+    
+}
+.form-group{
+    margin-top: 20px
+}
+button{
+    margin-top: 20px;
+    border-radius: 5px;
+}
+body{
+    background-color: white; 
+    padding: 1em;
+    background: rgb(0, 0, 0);
+    font-family: "Gill sans", sans-serif;
+    width: 80%;
+}
+header{
+    display: grid;
+    height: 130px;
+    z-index: 15;
+}
+.logo{
+    margin-right: 0px;
+}
+.inicio{
+    background: rgba(143, 141, 141, 0.637);
+    border-radius: 10px;
+    box-shadow: -4px 0 15px rgba(204, 204, 204, 0.37);    
+    margin-top: 6%;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 120px;
+}
+.forms{
+    background-color: black;
+    color: rgba(143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+/*CARRUSEL ABAJO*/
+.slider{
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    overflow: hidden;
+}
+.slider ul{
+    margin-top: 20px;
+    padding: 0;
+    width: 400%;
+    display: flex;
+    height: 100%;
+    animation: cambio 15s infinite alternate-reverse;
+    
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    
+}
+.slider li img{
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left:0; }
+    20% {margin-left:0; }
+
+    25% {margin-left:-100%; }
+    45% {margin-left:-100%; }
+
+    50% {margin-left:-200%; }
+    75% {margin-left:-200%; }
+
+    80% {margin-left:-300%; }
+    100% {margin-left:-300%; }
+}
