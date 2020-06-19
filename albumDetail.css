@@ -106,11 +106,12 @@
     background-size: cover;
     margin-right: 20px;
     border-radius: 10px;
-
+    margin-bottom: 7px;
 }
 .prueba{
     padding: 5px;
     border-radius: 10px;   
+    row-gap: 5px;
 }
 .nameAlbum{
     display: grid;
@@ -333,7 +334,7 @@ audio {
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 101;
     font-size: 20px;
     color: white;
 }
