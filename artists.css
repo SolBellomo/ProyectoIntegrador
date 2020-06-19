@@ -1,12 +1,10 @@
 .containerr{
     text-align: center;
     margin-top: 90px;
-
 }
 .header2{
     display: grid;   
     background: rgba(34,34,34,0.75);
-    
     background-repeat: no-repeat;
     background-size: 100%;
     height: 95px;
@@ -29,7 +27,6 @@
 }
 .logo-alternativo{
     border-radius: 50%;
-
     width: 85px;
     height: 95%;
     object-fit: unset;
@@ -56,8 +53,6 @@
 
 .todoo{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.507), rgba(36, 36, 37, 0.568), rgba(37, 38, 43, 0.575));
-    background-repeat: no-repeat;
-    background-size: 100%;
     margin-top: -12px;
 }
 .todo-albums{
@@ -65,17 +60,15 @@
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
     row-gap: 60px;
-    margin-top: 40px;
+    margin-top: 70px;
     overflow: auto;
 }
-
 .img{
     border-radius: 50%;
     width: 85%;
     margin-bottom: 5px;
     margin-top: 20px;
 }
-
 .artista1{
     text-decoration: none;
     color: white;
@@ -96,6 +89,7 @@
     border-bottom: 1px solid grey;
     position: relative;
     top: 30px;
+    margin-bottom: 50px;
 }
 .footerjaja{
     display: grid;
@@ -189,6 +183,12 @@
 .todo-albums::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
+@media(max-width:1440px){
+    .todo-albums{
+        grid-template-columns: repeat(4, 1fr);
+        margin: unset;
+    }
+}
 @media(max-width: 915px){
     .integrantes{
         display: grid;
@@ -225,5 +225,58 @@
         font-weight: 100;
         font-size: 20px;
         color: white;
+    }
+    .redes{
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    .redes img{
+        font-size: 10px;
+    }
+    .deezer{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 425px){
+    body{
+        padding: unset;
+        width: 100%;
+    }
+    .menu a{
+        font-size: 15px;
+    }
+    .todo-albums{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .BarraDeBusqueda{
+        width: 80%;
+        position: relative;
+        left: 35px;
+    }
+    .icons-alternativo{
+        position: relative;
+        right: 20px;
+    }
+    .integrantes{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}
+@media(max-width: 375px){
+    .menu a{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 320px){
+    .menu a{
+        font-size: 10px;
+    }
+    .tituloo{
+        font-size: 15px;
+        margin-left: unset;
+    }
+    .todo-albums{
+        margin-top: 30px;
     }
 }

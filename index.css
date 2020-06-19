@@ -15,11 +15,12 @@ body{
     padding: 8px;
 }
 .header{
+    position: fixed;
     display: grid;
     height: 130px;
     grid-template-columns: 1fr 3fr;
     z-index: 15;
-    position: fixed;
+    
     top: 0;
     bottom: 0;
     left: 10%;
@@ -264,14 +265,12 @@ a{
     margin-bottom: 90px;
 }
 .integrantes{
-    display: grid;
-    grid-template-rows: 35px 20px 20px 20px;
-    text-align: center;
+    text-align: right;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
-    color: white;
+    font-size: 14px;
+    color: grey;
 }
 
 /*MI PERFIL HTML*/
@@ -485,7 +484,7 @@ a{
     }
     /*PAG PPAL*/
         .header{
-            height: 190px;
+            height: 110px;
         }
         
         #i{
@@ -494,7 +493,7 @@ a{
             left: 0px;        
         }
         .todo{
-            margin-top: 188px;
+            margin-top: unset;
         }
         #cancionnn img {
             width: 125px;
@@ -614,11 +613,7 @@ a{
         position: relative;
         top: 30px;
     }
-    
-    
-    .seccion3 div img{
-        
-    }
+      
     .seccion3 a{
         position: relative;
         top: 10px;
@@ -878,6 +873,8 @@ img.facebook{
         width: 75%;
     }
     .header{
+        left: 0%;
+        right: 16%;
         grid-template-columns: 25% 105% 1%;
     }
     .titulo{
@@ -895,6 +892,33 @@ img.facebook{
         font-size: 13px;
     }
 }
-
-
-
+@media(max-width: 1440px){
+    .redes{
+        margin-left: 30px;
+    }
+}
+@media(max-width: 1024px){
+    .deezer{
+        bottom: 20px;
+    }
+    img.instagram{
+        width: 20px;
+        height: 20px;
+    }
+    img.facebook{
+        width: 20px;
+        height: 20px;
+    }
+    img.twitter{
+        width: 20px;
+        height: 20px;
+    }
+    .integrantes{
+        font-size: 11px;
+    }
+}
+@media(max-width:768px){
+    body{
+        width: unset;
+    }
+}
