@@ -12,10 +12,15 @@ let recuperoPw = localStorage.getItem('userPw');
 
 let iniciar = document.querySelector('#boton'); 
 
-iniciar.onclick = function(){
-    let inicio = document.querySelector('.inicio');
-    inicio.innerHTML = '<img src="imagenes/.png" alt="Inicio">';
+if(recuperoMail == null){
+    let login = document.querySelector('.login');
+    login.innerHTML = 'Log In'; 
+} else {
+    let login = document.querySelector('.login');
+    login.innerHTML = recuperoMail;
 }
+
+
 
 
 
