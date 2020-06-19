@@ -33,17 +33,6 @@ if(recuperoUser == null){
     let user2 = document.querySelector('.user2');
     user2.innerHTML = recuperoUser;
 }
-if(recuperoUser == null){
-    let user3 = document.querySelector('.user3');
-    user3.innerHTML += ''; 
-} else {
-    let user3 = document.querySelector('.user3');
-    user3.innerHTML = recuperoUser;
-}
-var login = document.querySelector('.login')
-if(login = null){
-    login.innerHTML = 'Log In'
-}
 
 
 
