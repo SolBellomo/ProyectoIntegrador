@@ -22,10 +22,10 @@ fetch(url)
         albumFoto.src = resultado.cover_medium; 
 
         let tituloAlbum = document.querySelector('.tituloAlbum');
-        tituloAlbum.innerHTML = resultado.title;
+        tituloAlbum.innerHTML =  resultado.title;
 
         let artista = document.querySelector('.nombreDelArtista');
-        artista.innerHTML = resultado.artist.name;
+        artista.innerHTML =  '<a href="artistsDetail.html?id=' + resultado.artist.id + '"><p>' + resultado.artist.name + '</p> ';
 
         let fecha = document.querySelector('.fecha');
         fecha.innerHTML = resultado.release_date;

@@ -48,7 +48,7 @@ if(buscar !== null){
         divColumnaa += '      <div class="img-container">';
         divColumnaa += '        <img src="' + artistaArrayy[i].picture_big + '" alt="' + artistaArrayy[i].name + '" class= "img">';
         divColumnaa += '      </div>';
-        divColumnaa += '        <a href="artistsDetail.html?id=' + artistaArrayy[i] + '"' + ' class="artista1">' + artistaArrayy[i].name + '</a>';
+        divColumnaa += '        <a href="artistsDetail.html?id=' + artistaArrayy[i].id + '"' + ' class="artista1">' + artistaArrayy[i].name + '</a>';
         divColumnaa += '    </div>';
       }
       lista.innerHTML = divColumnaa;
