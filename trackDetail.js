@@ -20,7 +20,7 @@ fetch(url)
 
 
     let interprete = document.querySelector('.interprete');
-    interprete.innerHTML += datos.artist.name;
+    interprete.innerHTML += '<a href="artistsDetail.html?id=' + datos.artist.id + '"><p style="color: #777;">' + datos.artist.name + '</p></a>';
 
     let album = document.querySelector('.album');
     album.innerHTML += datos.album.title;
