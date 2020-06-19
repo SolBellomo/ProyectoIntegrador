@@ -61,3 +61,11 @@ if(buscar !== null){
 }
   
   
+
+
+
+window.onload = function(){
+  let contenedor = document.getElementById('spinner');
+  contenedor.style.visibility = 'hidden';
+  contenedor.style.opacity = '0';
+}
