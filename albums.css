@@ -86,7 +86,6 @@
     .seccion222{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 5px;
         row-gap: 10px;
     }
     .columna img{
@@ -95,9 +94,40 @@
     }
 }
 
-@media(max-width:555px){
-    .seccion2{
+@media(max-width: 555px){
+    .seccion222{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 425px){
+    .columna img{
+        width: 180px;
+        height: 180px;
+    }
+    .icons-alternativo{
+        position: relative;
+        right: 6px;
+    }
+}
+
+@media(max-width: 375px){
+    .columna img{
+        width: 150px;
+        height: 150px;
+    }
+    .menu a{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 330px){
+    .columna img{
+        width: 120px;
+        height: 120px;
+    }
+    .titulo{
+        font-size: 15px;
     }
 }
