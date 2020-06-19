@@ -166,3 +166,6 @@ fetch(urlDeezer)
     .catch(function(error){
         console.log(error)
     })
+
+
+    

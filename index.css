@@ -121,6 +121,11 @@ body{
     display: grid;
     grid-template-columns: 70fr 1fr;
 }
+.user3{
+    position: relative;
+    bottom: -15px;
+    right: 20px;
+}
 .seccion1{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
