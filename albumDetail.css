@@ -106,11 +106,12 @@
     background-size: cover;
     margin-right: 20px;
     border-radius: 10px;
-
+    margin-bottom: 7px;
 }
 .prueba{
     padding: 5px;
     border-radius: 10px;   
+    row-gap: 5px;
 }
 .nameAlbum{
     display: grid;
