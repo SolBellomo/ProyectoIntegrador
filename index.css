@@ -523,22 +523,8 @@ a{
     .columnaa2 .titulocanciones{
         font-size: 15px;
     }
-    .audiios{
-        margin-left: 2px;
-        height: 53.3px;
-    }
-    .audiios h2{
-        margin-left: 5px;
-        font-size: 12px;
-        position: relative;
-        top: 5px;
-    }
-    .audiios h3{
-        margin-left: 5px;
-    }
-    .logoo{
-        width: 60px;
-        height: 60px;
+
+    .otroos{
         position: relative;
         left: 0px;
         top: 10px;
