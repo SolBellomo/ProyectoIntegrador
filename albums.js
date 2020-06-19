@@ -8,7 +8,7 @@ fetch(album)
   .then(function(results){
     console.log(results);
     let albumArray = results.data; 
-    let albuum = document.querySelector('.seccion2');
+    let albuum = document.querySelector('.seccion222');
     let seccion2div = '';
 
     for(let i=0; i<10; i++){
@@ -42,7 +42,7 @@ if(buscar !== null){
     })
     .then(function (datos) {
       console.log(datos);
-      let albuum = document.querySelector('.seccion2');
+      let albuum = document.querySelector('.seccion222');
       let albumArray = datos.data;
       let seccion2div = '';
       for(let i=0; i<albumArray.length; i++){
