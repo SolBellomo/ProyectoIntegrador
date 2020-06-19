@@ -1,7 +1,9 @@
 /*HEADER ALTERNATIVO*/
 
 .header2{
+    
     background: rgba(34,34,34,0.75);
+    
     background-repeat: no-repeat;
     background-size: 100%;
     height: 95px;
@@ -50,26 +52,6 @@
 
 /*FIN DE HEADER ALT.*/
 
-/*EMPIEZA PÁGINA PLAYLISTS*/
-
-.cuerpo{
-    margin-top: 100px;
-    box-shadow: -4px 0 15px rgba(202, 201, 201, 0.26);
-
-}
-.columnaa2{
-    display: grid;
-    grid-template-rows: 50px 490px;
-    background: linear-gradient(90deg,rgba(26, 26, 26, 0.849), rgba(14, 14, 14, 0.836));
-    padding: 20px;
-    position: relative;
-    bottom: 5px;
-}
-.titulocanciones{
-    text-align: center;
-    margin-top: 10px;
-    font-weight: 600;
-}
 .laCancion{
     display: grid;
     grid-template-columns: 11% 64% 25%;
@@ -88,6 +70,12 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     margin-bottom: 30px;
+}
+.sectionSongs {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    padding: 0px;
 }
 .songs{
     display: grid;
@@ -140,11 +128,11 @@
     gap: 5px;
 }
 .redes img{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     position: relative;
     top: 60px;
-    right: 115px;
+    right: 105px;
     border-radius: 20px;
 }
 .deezer img{
@@ -158,50 +146,11 @@
 }
 .integrantes{
     display: grid;
-    grid-template-rows: 35px 20px 20px 20px;
+    grid-template-rows: repeat(4, 45px);
     text-align: left;
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
     color: white;
-}
-
-@media(max-width: 915px){
-    .integrantes{
-        display: grid;
-        grid-template-rows: 45px 45px 45px 45px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
-}
-@media(max-width:768px){
-    .footerjaja{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .deezer{
-        object-fit: fill;
-        width: 150px;
-        height: 80px;
-        text-align: left;
-        position: relative;
-        left: 80px;
-        margin-bottom: 90px;
-    }
-    .integrantes{
-        display: grid;
-        grid-template-rows: 35px 20px 20px 20px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
 }

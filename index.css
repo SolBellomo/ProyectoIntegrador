@@ -28,7 +28,6 @@ body{
 }
 .header2{ /*perfil*/
     display: grid;
-    background: linear-gradient(90deg, rgb(92, 238, 238), rgb(63, 153, 255),rgba(2, 39, 201, 0.726));
     height: 90px;
     position: fixed; 
     top: 0;
