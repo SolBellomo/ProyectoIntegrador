@@ -47,9 +47,6 @@
     width: 30%;
     margin-top: 20px;
 }
-.menuu{
-    text-align: right;
-}
 #ii{
 	border: 1.5px solid rgb(34, 34, 34);
     border-radius: 50%;
@@ -153,89 +150,61 @@
         text-align: center;
     }
 }
-@media(max-width: 425px){
-    .img-containerr{
-        width: 170px;
-    }
-    .titulo1{
-        margin-left: 10px;
-     }
-     .seccion12{
-         grid-template-columns: 100%;
-     }
-     .genero1 {
-        font-size: 75%;
-    }
-}
 @media(max-width: 530px){
-    img{
-        height: 80%;
-    }
-    .seccion12{
-        grid-template-columns: 50% 50%;
-        row-gap: 0px;
+    div.seccion12{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5px;
     }
     .genero1{
         font-size: 80%;
         bottom: 85px;
     }
-}
-@media (max-width: 440px){
-.genero1 {
-    font-size: 60%;
-    bottom: 80px;
-}
-}
-@media(max-width: 915px){
-    .integrantes{
-        display: grid;
-        grid-template-rows: 45px 45px 45px 45px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
+    .seccion12 img{
+        width: 160px;
+        
     }
 }
-@media(max-width:768px){
-    .footerjaja{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .deezer{
-        object-fit: fill;
-        width: 150px;
-        height: 80px;
-        text-align: left;
-        position: relative;
-        left: 80px;
-        margin-bottom: 90px;
-    }
-    .integrantes{
-        display: grid;
-        grid-template-rows: 35px 20px 20px 20px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
-}
-
 @media(max-width: 425px){
-    .img-containerr{
-        width: 170px;
-    }
     .titulo1{
         margin-left: 10px;
      }
-     .seccion12{
-         grid-template-columns: 100%;
+     .menuuu a{
+         font-size: 15px;
      }
-     .genero1 {
-        font-size: 75%;
+     .icons-alternativo{
+         position: relative;
+         top: 17px;
+
+     }
+}
+
+@media(max-width: 375px){
+     .menuuu a{
+         font-size: 10px;
+         position: relative;
+         top: 30px;
+     }
+     .icons-alternativo{
+         position: relative;
+         top: 20px;
+         font-size: 20px;         
+     }
+    .seccion12 img{
+        width: 130px;
     }
+    .img{
+        column-gap: unset;
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media(max-width: 320px){
+   div.seccion12{
+       grid-template-columns: 1fr;
+   }
+   .seccion12 img{
+    width: 230px;
+}
 }
