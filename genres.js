@@ -57,3 +57,14 @@ fetch()
   let titulo = document.querySelector('.cancionesss');
   titulo.innerHTML = '<a href=""></a>'
 }); 
+
+
+
+
+
+
+window.onload = function(){
+  let contenedor = document.getElementById('spinner');
+  contenedor.style.visibility = 'hidden';
+  contenedor.style.opacity = '0';
+}
