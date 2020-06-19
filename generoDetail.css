@@ -162,19 +162,6 @@
         bottom: 125px;
     }
 }
-
-@media(max-width:768px){
-    .artistasss{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media(max-width: 525px){
-    .artistasss{
-        grid-template-columns: 1fr;
-    }
-}
-
 @media(max-width: 915px){
     .integrantes{
         display: grid;
@@ -193,13 +180,23 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
+    .redes{
+        position: relative;
+        top: 80px;
+    }
+    .redes img{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
     .deezer{
         object-fit: fill;
         width: 150px;
         height: 80px;
         text-align: left;
         position: relative;
-        left: 80px;
+        left: 55px;
+        bottom: 30px;
         margin-bottom: 90px;
     }
     .integrantes{
@@ -211,5 +208,27 @@
         font-weight: 100;
         font-size: 20px;
         color: white;
+        position: relative;
+        bottom: 90px;
+    }
+    .artistasss{
+        grid-template-columns: 1fr 1fr;
     }
 }
+    
+@media(max-width: 525px){
+    .artistasss img{
+        width: 140px;
+        height: 140px;
+
+    }
+}
+
+@media(max-width: 425px){
+    .artistasss img{
+        width: 100px;
+        height: 100px;
+
+    }
+}
+

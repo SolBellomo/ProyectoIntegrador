@@ -3,7 +3,7 @@
 .header2{
     display: grid;   
     background: rgba(34,34,34,0.75);
-    height: 90px;
+    height: 95px;
     grid-template-columns: 2% 10% 88%;
     position: fixed; 
     top: 0;
@@ -172,6 +172,34 @@
     .img-containerr{
         width: 170px;
     }
+    .titulo1{
+        margin-left: 10px;
+     }
+     .seccion12{
+         grid-template-columns: 100%;
+     }
+     .genero1 {
+        font-size: 75%;
+    }
+}
+@media(max-width: 530px){
+    img{
+        height: 80%;
+    }
+    .seccion12{
+        grid-template-columns: 50% 50%;
+        row-gap: 0px;
+    }
+    .genero1{
+        font-size: 80%;
+        bottom: 85px;
+    }
+}
+@media (max-width: 440px){
+.genero1 {
+    font-size: 60%;
+    bottom: 80px;
+}
 }
 @media(max-width: 915px){
     .integrantes{
@@ -209,5 +237,20 @@
         font-weight: 100;
         font-size: 20px;
         color: white;
+    }
+}
+
+@media(max-width: 425px){
+    .img-containerr{
+        width: 170px;
+    }
+    .titulo1{
+        margin-left: 10px;
+     }
+     .seccion12{
+         grid-template-columns: 100%;
+     }
+     .genero1 {
+        font-size: 75%;
     }
 }

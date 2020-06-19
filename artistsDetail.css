@@ -275,8 +275,19 @@ border-radius: 10%;
 }
 
 /*Tablets*/
-
-@media(max-width: 768px){
+@media(max-width: 915px){
+    .integrantes{
+        display: grid;
+        grid-template-rows: 45px 45px 45px 45px;
+        text-align: left;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+}
+@media(max-width:768px){
     body{
         background: black;
         background-size: 250%;
@@ -302,7 +313,30 @@ border-radius: 10%;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 40px;
     }
-
+    .footerjaja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .deezer{
+        object-fit: fill;
+        width: 150px;
+        height: 80px;
+        text-align: left;
+        position: relative;
+        left: 80px;
+        margin-bottom: 90px;
+    }
+    .integrantes{
+        display: grid;
+        grid-template-rows: 35px 20px 20px 20px;
+        text-align: left;
+        font-family: proxima-nova, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
 }
 
 /*Mobile*/
@@ -332,41 +366,3 @@ border-radius: 10%;
     }
 }
 
-@media(max-width: 915px){
-    .integrantes{
-        display: grid;
-        grid-template-rows: 45px 45px 45px 45px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
-}
-@media(max-width:768px){
-    .footerjaja{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .deezer{
-        object-fit: fill;
-        width: 150px;
-        height: 80px;
-        text-align: left;
-        position: relative;
-        left: 80px;
-        margin-bottom: 90px;
-    }
-    .integrantes{
-        display: grid;
-        grid-template-rows: 35px 20px 20px 20px;
-        text-align: left;
-        font-family: proxima-nova, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-    }
-}
